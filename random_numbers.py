@@ -1,0 +1,107 @@
+import math
+import matplotlib.pyplot as plt
+import random
+
+
+def cuadrado_mitad(seed: int, pasos: int):
+    """
+    Generador pseudoaleatorio usando el método cuadrado–mitad.
+
+    Parámetros
+    ----------
+    seed : int
+        Semilla inicial x0 .
+    pasos : int
+        Cantidad de números a generar.
+    Retorna
+    -------
+    list
+        Lista con los números generados.
+    """
+
+    x = seed
+    resultados = []
+    n = len(str(seed))
+    i = 0
+    while i < pasos:
+        # 1) elevar al cuadrado
+        cuadrado = x**2
+
+        # 2) convertir a string con al menos 2n dígitos
+        s = str(cuadrado).zfill(2 * n)
+
+        # 3) extraer los n dígitos centrales
+        inicio = (len(s) - n) //  2
+        medio = s[inicio:inicio + n]
+
+        # 4) nueva semilla
+        x = int(medio)
+
+        # 5) guardar resultado
+        
+        resultados.append(x)
+        i = i+1 
+
+    return resultados
+
+
+
+class GLC:
+    """
+    Generador Lineal Congruencial (Park & Miller por default)
+
+    x_{n+1} = a (x_n + c) mod m
+    u_n = x_n / m
+    """
+
+    def __init__(self, m=2**31 - 1, a=7**5, c=0, seed=1):
+        """
+        Parámetros
+        ----------
+        m : int
+            Módulo
+        a : int
+            Multiplicador
+        c : int
+            Incremento
+        seed : int
+            Semilla inicial
+        """
+        self.m = m
+        self.a = a
+        self.c = c
+        self.state = seed
+
+    # ---------------------------------------------------
+    # Genera un solo número
+    # ---------------------------------------------------
+    def _next(self):
+        self.state = (self.a * (self.state + self.c)) % self.m
+        return self.state / self.m
+
+    # ---------------------------------------------------
+    # Genera una muestra de tamaño n
+    # ---------------------------------------------------
+    def sample(self, n):
+        """
+        Genera n números pseudoaleatorios en (0,1).
+        """
+        return [self._next() for _ in range(n)]
+
+    # ---------------------------------------------------
+    # Histograma de una muestra
+    # ---------------------------------------------------
+    def histogram(self, n, bins=30):
+        """
+        Genera n números y grafica su histograma.
+        """
+        data = self.sample(n)
+
+        plt.figure()
+        plt.hist(data, bins=bins, density=True)
+        plt.title("Histograma - Generador Lineal Congruencial")
+        plt.xlabel("u")
+        plt.ylabel("Frecuencia")
+        plt.show()
+
+
