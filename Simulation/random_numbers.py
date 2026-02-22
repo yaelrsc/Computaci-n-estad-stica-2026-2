@@ -4,6 +4,7 @@ import random
 from collections import Counter
 import numpy as np
 
+
 class RandomVariableSimulator:
     """
     Clase base para la simulación de variables aleatorias.
@@ -168,8 +169,8 @@ class RandomVariableSimulator:
 
         plt.xlabel("Valores")
         plt.legend()
-        plt.show()
-
+        plt.show()  
+        
 class Bernoulli(RandomVariableSimulator):
     """
     Simulación de una variable aleatoria Bernoulli(p).
@@ -244,6 +245,7 @@ class Bernoulli(RandomVariableSimulator):
         u = random.random()
         return 1 if u < self.p else 0
 
+        
 class GLC(RandomVariableSimulator):
     """
     Generador Lineal Congruencial (GLC) para números pseudoaleatorios continuos.
@@ -535,6 +537,7 @@ class UniformeAB(RandomVariableSimulator):
         """
         u = random.random()
         return (self.b - self.a) * u + self.a
+        
 class Cauchy(RandomVariableSimulator):
     """
     Generador de una variable aleatoria continua Cauchy(mu, gamma).
@@ -698,7 +701,6 @@ class Exponencial(RandomVariableSimulator):
         """
         u = random.random()
         return -math.log(u) / self.lambd
-
 class Erlang(RandomVariableSimulator):
     """
     Generador de una variable aleatoria Erlang (Gamma) con k entero positivo.
