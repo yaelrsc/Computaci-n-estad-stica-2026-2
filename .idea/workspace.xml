@@ -5,8 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/.ipynb_checkpoints/Poisson_process-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/.ipynb_checkpoints/Poisson_process-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation/.ipynb_checkpoints/Simulation_of_random_variables-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/.ipynb_checkpoints/Simulation_of_random_variables-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simulation/Poisson_process.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Poisson_process.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Simulation/Pruebas_de_bondad_de_ajuste.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Pruebas_de_bondad_de_ajuste.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Simulation/Simulation_of_random_variables.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Simulation/Simulation_of_random_variables.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -61,7 +63,8 @@
       <updated>1771798215653</updated>
       <workItem from="1771798217060" duration="2234000" />
       <workItem from="1772051930721" duration="2504000" />
-      <workItem from="1772406278454" duration="717000" />
+      <workItem from="1772406278454" duration="2874000" />
+      <workItem from="1772673705259" duration="8038000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
