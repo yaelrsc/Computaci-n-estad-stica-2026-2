@@ -988,7 +988,6 @@ class CompoundPoisson:
     
         return lam_hat, lower, upper
 
-    
 
 class CramerLundberg:
     """
