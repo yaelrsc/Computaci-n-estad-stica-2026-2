@@ -14,7 +14,6 @@ class MonteCarloIntegration:
 
         dist = torch.distributions.Uniform(a, b)
 
-        # sample y mover al device
         unif_sample = dist.sample((n,)).to(device)
 
         alpha_t = torch.tensor([1-alpha/2], device=device)
@@ -30,11 +29,12 @@ class MonteCarloIntegration:
         conf_int = (integral - z_alpha*se, integral + z_alpha*se)
 
         print(
-            "integral: {:.4f}, Confidence Interval: ({:.4f}, {:.4f})"
-            .format(integral, conf_int[0], conf_int[1])
+            "integral: {:.4f}, Confidence Interval: ({:.4f}, {:.4f}), Var: {:.4f}"
+                .format(integral, conf_int[0], conf_int[1], se**2)
         )
 
-        return integral, conf_int
+        return integral, conf_int, se**2 
+
         
         
         
