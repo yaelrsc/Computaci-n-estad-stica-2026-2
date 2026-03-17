@@ -4,11 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados" />
+    <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
+      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/metodo_monte_carlo-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/metodo_monte_carlo-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/reduccion_varianza-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/reduccion_varianza-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/metodo_monte_carlo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/metodo_monte_carlo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/reduccion_varianza.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/reduccion_varianza.ipynb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Jupyter Notebook" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform)); sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo, NoAppException&#10;for module in [&quot;main.py&quot;, &quot;wsgi.py&quot;, &quot;app.py&quot;]:&#10;    try: locals().update(ScriptInfo(app_import_path=module, create_app=None).load_app().make_shell_context()); print(&quot;\nFlask App: %s&quot; % app.import_name); break&#10;    except NoAppException: pass" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,6 +55,7 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
@@ -37,6 +65,7 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -59,6 +88,14 @@
       <workItem from="1772051930721" duration="2504000" />
       <workItem from="1772406278454" duration="2874000" />
       <workItem from="1772673705259" duration="8422000" />
+      <workItem from="1773523332283" duration="825000" />
+      <workItem from="1773524177187" duration="22986000" />
+      <workItem from="1773596146391" duration="7042000" />
+      <workItem from="1773618568564" duration="71000" />
+      <workItem from="1773618686335" duration="184000" />
+      <workItem from="1773634600078" duration="774000" />
+      <workItem from="1773635413755" duration="6283000" />
+      <workItem from="1773690114990" duration="3791000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -85,5 +122,16 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="cambios realizados" />
     <option name="LAST_COMMIT_MESSAGE" value="cambios realizados" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/../mcmc_glm.ipynb</url>
+          <line>55</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
