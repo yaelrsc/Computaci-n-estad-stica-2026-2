@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
-      <change afterPath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/metodo_monte_carlo-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/metodo_monte_carlo-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/reduccion_varianza-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/.ipynb_checkpoints/reduccion_varianza-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/metodo_monte_carlo.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/metodo_monte_carlo.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/importance_sampling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/importance_sampling.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/reduccion_varianza.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/reduccion_varianza.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monte Carlo/poisson_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/poisson_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +94,11 @@
       <workItem from="1773634600078" duration="774000" />
       <workItem from="1773635413755" duration="6283000" />
       <workItem from="1773690114990" duration="3791000" />
+      <workItem from="1774211803989" duration="14224000" />
+      <workItem from="1774242667600" duration="6193000" />
+      <workItem from="1774329902588" duration="3258000" />
+      <workItem from="1774403927789" duration="13791000" />
+      <workItem from="1774492941424" duration="672000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -130,6 +133,11 @@
           <url>file://$PROJECT_DIR$/../mcmc_glm.ipynb</url>
           <line>55</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

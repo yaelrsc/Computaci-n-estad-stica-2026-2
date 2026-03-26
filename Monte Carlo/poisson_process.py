@@ -1,9 +1,18 @@
+"""
+Módulo de Procesos Estocásticos y Modelos de Riesgo
+
+Este módulo proporciona clases para simular y analizar procesos de Poisson,
+procesos de Poisson compuestos y el modelo clásico de Cramér-Lundberg para
+el riesgo de una aseguradora.
+"""
+
 import torch
 import matplotlib.pyplot as plt
 from scipy.integrate import quad
 import math
 from scipy.stats import norm
-from tqdm import tqdm 
+from tqdm import tqdm
+
 
 class PoissonProcess:
     """
@@ -35,7 +44,6 @@ class PoissonProcess:
         """
         self.lam = lam  # Guardamos la tasa del proceso
 
-
     def simulate(self, t):
         """
         Simula una trayectoria del proceso hasta tiempo t.
@@ -45,15 +53,15 @@ class PoissonProcess:
         t : float
             Horizonte temporal de simulación.
 
-        Returns
+        Retorna
         -------
         S : array-like
             Tiempos de llegada de los eventos.
         N : array-like
             Valores del proceso de conteo en esos tiempos.
 
-        Raises
-        ------
+        Lanza
+        -----
         NotImplementedError
             Este método debe implementarse en una clase hija.
         """
@@ -61,12 +69,11 @@ class PoissonProcess:
             "Debes implementar el metodo en clase hija"
         )
 
-
     def plot(self, t, color="blue", linestyle="-", marker=None):
         """
         Grafica una trayectoria simulada del proceso.
 
-        La gráfica es tipo escalón (step function), 
+        La gráfica es tipo escalón (step function),
         característica de procesos de conteo.
 
         Parámetros
@@ -80,7 +87,6 @@ class PoissonProcess:
         marker : str o None, opcional
             Marcador para los puntos.
         """
-
         # Simulamos una trayectoria hasta tiempo t
         S, N = self.simulate(t)
 
@@ -108,94 +114,87 @@ class PoissonProcess:
 
         # Mostramos la figura
         plt.show()
-    
-        
+
     def monte_carlo_lambda(self, t, n_sim=10000, alpha=0.05):
-        
-    
         """
         Estima la intensidad λ de un Proceso de Poisson homogéneo
         mediante simulación Monte Carlo y grafica su convergencia
         junto con intervalos de confianza asintóticos.
-    
+
         Fundamentación teórica
         -----------------------
         Para un proceso de Poisson homogéneo:
-    
+
             N(t) ~ Poisson(λ t)
-    
+
         Un estimador natural de λ es:
-    
+
             λ̂ = N(t) / t
-    
+
         Si simulamos n trayectorias independientes:
-    
+
             λ̂_n = (1 / (n t)) Σ_{i=1}^n N_i(t)
-    
+
         entonces:
-    
+
             E[λ̂_n] = λ
             Var(λ̂_n) = λ / (n t)
-    
+
         Usando el Teorema Central del Límite:
-    
+
             λ̂_n ≈ Normal(λ, λ/(n t))
-    
+
         Intervalo de confianza aproximado:
-    
+
             λ̂_n ± z_{1-α/2} sqrt(λ̂_n / (n t))
-    
+
         Parámetros
         ----------
         t : float
             Horizonte temporal.
-    
+
         n_sim : int, opcional
             Número de simulaciones.
-    
+
         alpha : float, opcional
             Nivel de significancia.
-    
-        Returns
+
+        Retorna
         -------
         lam_hat : torch.Tensor
             Estimador acumulado de λ.
-    
+
         lower : torch.Tensor
             Límite inferior del IC.
-    
+
         upper : torch.Tensor
             Límite superior del IC.
         """
-
-    
         lam_hat = torch.zeros(n_sim)
         running_sum = 0
-    
+
         for i in tqdm(range(n_sim), desc="Simulando trayectorias"):
-    
             S, N = self.simulate(t)
-    
             N_t = N[-1] if len(N) > 0 else 0
-    
+
             running_sum += N_t
             lam_hat[i] = running_sum / ((i + 1) * t)
-    
+
         n_vals = torch.arange(1, n_sim + 1)
         z = norm.ppf(1 - alpha / 2)
-    
+
         se = torch.sqrt(lam_hat / (n_vals * t))
-    
+
         lower = lam_hat - z * se
         upper = lam_hat + z * se
-    
+
         plt.figure(figsize=(8, 5))
-    
+
         x = n_vals
         y = lam_hat
-    
+
         plt.plot(x, y, label="Estimador Monte Carlo", color="red")
-    
+
         plt.fill_between(
             x,
             lower,
@@ -203,17 +202,17 @@ class PoissonProcess:
             alpha=0.3,
             label=f"IC {(1-alpha)*100:.0f}%"
         )
-    
+
         plt.axhline(self.lam, linestyle="--",
                     label="Valor verdadero λ")
-    
+
         plt.xlabel("Número de simulaciones")
         plt.ylabel("Estimación de λ")
         plt.title("Convergencia Monte Carlo del estimador de λ")
         plt.legend()
         plt.grid(alpha=0.3)
         plt.show()
-    
+
         return lam_hat, lower, upper
 
 class PoissonProcess1(PoissonProcess):
@@ -247,7 +246,6 @@ class PoissonProcess1(PoissonProcess):
         # Si T_i ~ Exp(λ), entonces E[T_i] = 1/λ
         self.expo = torch.distributions.Exponential(self.lam)
 
-
     def simulate(self, t):
         """
         Simula una trayectoria del proceso hasta tiempo t.
@@ -257,7 +255,7 @@ class PoissonProcess1(PoissonProcess):
         t : float
             Horizonte temporal de simulación.
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Vector de tiempos incluyendo:
@@ -273,12 +271,10 @@ class PoissonProcess1(PoissonProcess):
             - Simular tiempos entre llegadas exponenciales
             - Acumular hasta exceder t
         """
-
         time = 0          # Tiempo actual acumulado
         S = []            # Lista para guardar tiempos de llegada
 
         while True:
-
             # Generamos un tiempo entre llegadas T ~ Exp(λ)
             T = self.expo.sample().item()
 
@@ -338,7 +334,7 @@ class PoissonProcess2(PoissonProcess):
         n : int
             Número de subdivisiones del intervalo [0, t].
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Malla uniforme de tiempos.
@@ -353,7 +349,6 @@ class PoissonProcess2(PoissonProcess):
 
         con Δt = t / n.
         """
-
         # Construimos malla uniforme:
         # 0 = t0 < t1 < ... < tn = t
         S = torch.linspace(0, t, n + 1)
@@ -363,21 +358,19 @@ class PoissonProcess2(PoissonProcess):
         N = torch.zeros(n + 1)
 
         # Longitud de cada intervalo
-        delta = t / n  
+        delta = t / n
 
         # Simulación de incrementos independientes
         for i in range(1, n + 1):
-
             # Incremento en el intervalo [t_{i-1}, t_i]
             # ~ Poisson(λ Δt)
             X = torch.distributions.Poisson(self.lam * delta).sample()
-            
+
             # Propiedad fundamental:
             # N(t_i) = N(t_{i-1}) + incremento independiente
             N[i] = N[i - 1] + X
 
         return S, N
-
 
     def plot(self, t, n, color="blue", linestyle="-", marker=None):
         """
@@ -396,7 +389,6 @@ class PoissonProcess2(PoissonProcess):
         marker : str o None, opcional
             Marcador en los puntos.
         """
-
         # Simulamos trayectoria en la malla
         S, N = self.simulate(t, n)
 
@@ -454,7 +446,7 @@ class PoissonProcess3(PoissonProcess):
         t : float
             Horizonte temporal.
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Vector de tiempos incluyendo:
@@ -474,7 +466,6 @@ class PoissonProcess3(PoissonProcess):
 
             (S1,...,Sn) ≍ ordenados de Uniforme(0,t)
         """
-
         # Paso 1: número total de saltos
         # N(t) ~ Poisson(λ t)
         n = int(
@@ -521,7 +512,7 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
     Es decir, los incrementos siguen siendo independientes,
     pero su media depende de la integral de la intensidad.
     """
-    
+
     def simulate(self, t, n):
         """
         Simula una trayectoria del proceso hasta tiempo t
@@ -534,7 +525,7 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
         n : int
             Número de subdivisiones del intervalo [0, t].
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Malla uniforme de tiempos.
@@ -549,7 +540,6 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
 
         La integral se calcula numéricamente usando `quad`.
         """
-        
         # Malla uniforme:
         # 0 = t0 < t1 < ... < tn = t
         S = torch.linspace(0, t, n + 1)
@@ -560,20 +550,19 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
 
         # Simulación de incrementos independientes
         for i in range(1, n + 1):
-
             # Calculamos la intensidad acumulada en el intervalo:
             # ∫_{S[i-1]}^{S[i]} λ(u) du
             lamb = quad(self.lam, S[i-1], S[i])[0]
-            
+
             # Incremento en el intervalo
             # ~ Poisson( integral de λ )
             X = torch.distributions.Poisson(lamb).sample()
-            
+
             # Propiedad de incrementos independientes
             N[i] = N[i - 1] + X
 
         return S, N
-        
+
     def plot(self, t, n, color="blue", linestyle="-", marker=None):
         """
         Grafica una trayectoria simulada del proceso
@@ -592,7 +581,6 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
         marker : str o None, opcional
             Marcador.
         """
-
         # Simulamos trayectoria
         S, N = self.simulate(t, n)
 
@@ -616,44 +604,43 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
         plt.ylabel("N(t)")
 
         # Título descriptivo
-        plt.title(f"Proceso de Poisson No Homegeneo")
+        plt.title(f"Proceso de Poisson No Homogeneo")
 
         # Mostrar gráfica
         plt.show()
-        
+
     def monte_carlo_lambda(self, t, n, n_sim=10000, alpha=0.05):
-        
         """
         Estima E[N(t)] para un Proceso de Poisson No Homogéneo
         mediante simulación Monte Carlo y grafica su convergencia
         con intervalos de confianza asintóticos.
-    
+
         Fundamentación teórica
         -----------------------
         Para un NHPP con intensidad λ(t):
-    
+
             E[N(t)] = Λ(t) = ∫₀ᵗ λ(s) ds
-    
+
         Si simulamos n trayectorias:
-    
+
             Λ̂_n = (1/n) Σ_{i=1}^n N_i(t)
-    
+
         entonces:
-    
+
             E[Λ̂_n] = Λ(t)
             Var(Λ̂_n) = Λ(t) / n
-    
+
         Aproximación normal (CLT):
-    
+
             Λ̂_n ≈ Normal(Λ(t), Λ(t)/n)
-    
+
         Intervalo de confianza:
-    
+
             Λ̂_n ± z_{1-α/2} sqrt(Λ̂_n / n)
-    
+
         El valor verdadero Λ(t) se calcula numéricamente
         usando scipy.integrate.quad.
-    
+
         Parámetros
         ----------
         t : float
@@ -662,51 +649,49 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
             Número de subdivisiones.
         n_sim : int
             Número de simulaciones.
-    
+
         alpha : float
             Nivel de significancia.
-    
-        Returns
+
+        Retorna
         -------
         estimates : torch.Tensor
             Estimador acumulado de E[N(t)].
-    
+
         lower : torch.Tensor
             Límite inferior del IC.
-    
+
         upper : torch.Tensor
             Límite superior del IC.
         """
-    
         true_value, _ = quad(self.lam, 0, t)
-    
+
         estimates = torch.zeros(n_sim)
         running_sum = 0
-    
+
         for i in tqdm(range(n_sim), desc="Simulando trayectorias"):
-    
-            S, N = self.simulate(t,n)
-    
+            S, N = self.simulate(t, n)
+
             N_t = N[-1] if len(N) > 0 else 0
-    
+
             running_sum += N_t
             estimates[i] = running_sum / (i + 1)
-    
+
         n_vals = torch.arange(1, n_sim + 1)
         z = norm.ppf(1 - alpha / 2)
-    
+
         se = torch.sqrt(estimates / n_vals)
-    
+
         lower = estimates - z * se
         upper = estimates + z * se
-    
+
         plt.figure(figsize=(8, 5))
-    
+
         x = n_vals
         y = estimates
-    
+
         plt.plot(x, y, label="Estimador Monte Carlo", color="red")
-    
+
         plt.fill_between(
             x,
             lower,
@@ -714,18 +699,18 @@ class NonHomogeneousPoissonProcess(PoissonProcess):
             alpha=0.3,
             label=f"IC {(1-alpha)*100:.0f}%"
         )
-    
+
         plt.axhline(true_value,
                     linestyle="--",
                     label="Valor verdadero ∫₀ᵗ λ(s)ds")
-    
+
         plt.xlabel("Número de simulaciones")
         plt.ylabel("Estimación de E[N(t)]")
         plt.title("Convergencia Monte Carlo - NHPP")
         plt.legend()
         plt.grid(alpha=0.3)
         plt.show()
-    
+
         return estimates, lower, upper
 
 class CompoundPoisson:
@@ -759,7 +744,6 @@ class CompoundPoisson:
         jump_distribution : torch.distributions.Distribution
             Distribución de los tamaños de salto Y_i.
         """
-
         self.lam = lam
 
         # Proceso de Poisson base
@@ -767,7 +751,6 @@ class CompoundPoisson:
 
         # Distribución de los saltos
         self.jump_dist = jump_distribution
-
 
     def simulate(self, t):
         """
@@ -785,21 +768,20 @@ class CompoundPoisson:
         t : float
             Horizonte temporal.
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Tiempos incluyendo 0 y t.
         X : torch.Tensor
             Valores del proceso compuesto en esos tiempos.
         """
-
         # Paso 1: número total de saltos
         n = int(
             torch.distributions.Poisson(self.lam * t)
             .sample()
             .item()
         )
-        
+
         # Paso 2: tiempos de llegada (no ordenados)
         U = torch.rand(n) * t
 
@@ -814,7 +796,7 @@ class CompoundPoisson:
         X = torch.cumsum(Y, dim=0)
 
         # Valor final en tiempo t
-        X_t = X[-1].item()
+        X_t = X[-1].item() if n > 0 else 0.0
 
         # Agregamos tiempo inicial 0 y final t
         S = torch.cat((torch.tensor([0.0]), S, torch.Tensor([t])))
@@ -823,7 +805,6 @@ class CompoundPoisson:
         X = torch.cat((torch.tensor([0.0]), X, torch.Tensor([X_t])))
 
         return S, X
-
 
     def plot(self, t, color="blue", linestyle="-", marker=None):
         """
@@ -840,7 +821,6 @@ class CompoundPoisson:
         marker : str o None, opcional
             Marcador.
         """
-
         # Simulamos trayectoria
         S, X = self.simulate(t)
 
@@ -868,105 +848,100 @@ class CompoundPoisson:
         plt.show()
 
     def monte_carlo_lambda(self, t, n_sim=10000, alpha=0.05):
-        
         """
         Estima la intensidad λ de un Proceso de Poisson Compuesto
         mediante simulación Monte Carlo y grafica su convergencia
         con intervalos de confianza asintóticos.
-    
+
         Fundamentación teórica
         -----------------------
         Para el proceso compuesto:
-    
+
             X(t) = sum_{i=1}^{N(t)} Y_i
-    
+
         donde N(t) ~ Poisson(λ t) y Y_i son iid independientes.
-    
+
         Se sabe que:
-    
+
             E[X(t)] = λ t E[Y]
-    
+
         Por lo tanto, un estimador natural de λ es:
-    
+
             λ̂ = X̄_n(t) / (t E[Y])
-    
+
         donde:
-    
+
             X̄_n(t) = (1/n) Σ X_i(t)
-    
+
         Además:
-    
+
             Var(X(t)) = λ t E[Y²]
-    
+
         Usando CLT y plug-in, un intervalo de confianza aproximado
         de nivel (1 - α) es:
-    
+
             λ̂ ± z_{1-α/2}
             sqrt( λ̂ E[Y²] / (n t (E[Y])²) )
-    
+
         Parámetros
         ----------
         t : float
             Horizonte temporal.
-    
+
         n_sim : int
             Número de trayectorias simuladas.
-    
+
         alpha : float
             Nivel de significancia.
-    
-        Returns
+
+        Retorna
         -------
         lam_hat : torch.Tensor
             Estimador acumulado de λ.
-    
+
         lower : torch.Tensor
             Límite inferior del IC.
-    
+
         upper : torch.Tensor
             Límite superior del IC.
         """
-    
-        
-    
         # Momentos teóricos de Y
         EY = self.jump_dist.mean
         EY2 = self.jump_dist.variance + EY**2
-    
+
         lam_hat = torch.zeros(n_sim)
         running_sum = 0
-    
+
         for i in tqdm(range(n_sim), desc="Simulando trayectorias"):
-    
             S, X = self.simulate(t)
-    
+
             X_t = X[-1] if len(X) > 0 else 0.0
-    
+
             running_sum += X_t
-    
+
             mean_X = running_sum / (i + 1)
-    
+
             lam_hat[i] = mean_X / (t * EY)
-    
+
         n_vals = torch.arange(1, n_sim + 1)
         z = norm.ppf(1 - alpha / 2)
-    
+
         # Error estándar asintótico (plug-in)
         se = torch.sqrt(
             lam_hat * EY2 / (n_vals * t * (EY**2))
         )
-    
+
         lower = lam_hat - z * se
         upper = lam_hat + z * se
-    
+
         # --- Gráfica ---
         plt.figure(figsize=(8, 5))
-    
+
         x = n_vals
         y = lam_hat
-    
+
         plt.plot(x, y, label="Estimador Monte Carlo", color="red")
-    
+
         plt.fill_between(
             x,
             lower,
@@ -974,20 +949,19 @@ class CompoundPoisson:
             alpha=0.3,
             label=f"IC {(1-alpha)*100:.0f}%"
         )
-    
+
         plt.axhline(self.lam,
                     linestyle="--",
                     label="Valor verdadero λ")
-    
+
         plt.xlabel("Número de simulaciones")
         plt.ylabel("Estimación de λ")
         plt.title("Convergencia Monte Carlo - Proceso Compuesto")
         plt.legend()
         plt.grid(alpha=0.3)
         plt.show()
-    
-        return lam_hat, lower, upper
 
+        return lam_hat, lower, upper
 
 class CramerLundberg:
     """
@@ -1038,7 +1012,6 @@ class CramerLundberg:
 
         donde N(t) ~ Poisson(λt).
         """
-
         self.u = u
         self.c = c
         self.lam = lam
@@ -1050,7 +1023,6 @@ class CramerLundberg:
             self.claim_distribution
         )
 
-
     def simulate(self, t):
         """
         Simula la trayectoria del capital hasta tiempo t.
@@ -1060,7 +1032,7 @@ class CramerLundberg:
         t : float
             Horizonte temporal (t > 0).
 
-        Returns
+        Retorna
         -------
         S : torch.Tensor
             Tiempos relevantes (incluye 0 y t).
@@ -1072,7 +1044,6 @@ class CramerLundberg:
             True si ocurre ruina (U(t) < 0 en algún momento),
             False en caso contrario.
         """
-
         # Simulación del proceso compuesto de reclamaciones
         S, X = self.compound.simulate(t)
 
@@ -1083,7 +1054,6 @@ class CramerLundberg:
         ruined = torch.any(U < 0).item()
 
         return S, U, ruined
-
 
     def ruin_probability(self, T, n, alpha=0.05):
         """
@@ -1098,10 +1068,10 @@ class CramerLundberg:
         n : int
             Número de simulaciones.
 
-        alpha : float, optional
+        alpha : float, opcional
             Nivel de significancia (default 0.05 → 95%).
 
-        Returns
+        Retorna
         -------
         p_hat : float
             Estimador Monte Carlo de la probabilidad de ruina.
@@ -1126,7 +1096,6 @@ class CramerLundberg:
 
             p_hat ± z_{1-α/2} sqrt(p_hat(1-p_hat)/n)
         """
-
         ruin_count = 0
 
         # Monte Carlo
@@ -1150,22 +1119,22 @@ class CramerLundberg:
     def ruin_probability_mc(self, T, n_sim=1000, alpha=0.05):
         """
         Estima la probabilidad de ruina mediante simulación Monte Carlo.
-    
+
         La probabilidad de ruina se define como:
-    
+
             ψ(u, T) = P( τ ≤ T )
-    
+
         donde:
             τ = inf{ t ≥ 0 : U(t) < 0 }
-    
+
         Se estima usando:
-    
+
             ψ̂_n = (1/n) ∑ I{ruina}
-    
+
         y se construye un intervalo de confianza tipo CLT:
-    
+
             ψ̂ ± z_{1-α/2} sqrt( ψ̂(1-ψ̂) / n )
-    
+
         Parámetros
         ----------
         T : float
@@ -1174,8 +1143,8 @@ class CramerLundberg:
             Número de simulaciones Monte Carlo.
         alpha : float
             Nivel de significancia (default 0.05 para IC 95%).
-    
-        Returns
+
+        Retorna
         -------
         psi_hat : float
             Estimador final de la probabilidad de ruina.
@@ -1184,35 +1153,31 @@ class CramerLundberg:
         upper : float
             Límite superior del intervalo de confianza.
         """
-    
         estimates = torch.zeros(n_sim)
         running_sum = 0.0
-    
+
         # Simulación Monte Carlo
         for i in tqdm(range(n_sim)):
-    
             # Se asume que simulate(T) regresa (..., ruined)
             ruined = self.simulate(T)[2]
-    
+
             running_sum += ruined
             p_hat = running_sum / (i + 1)
-    
+
             estimates[i] = p_hat
-    
+
         # Intervalo tipo CLT dinámico
         z = norm.ppf(1 - alpha/2)
-    
+
         n_vals = torch.arange(1, n_sim + 1)
         se = torch.sqrt(estimates * (1 - estimates) / n_vals)
-    
+
         lower_path = estimates - z * se
         upper_path = estimates + z * se
-    
+
         # ---- Gráfica de convergencia ----
         plt.figure()
-    
         plt.plot(estimates, color='red', label="Estimador Monte Carlo")
-    
         plt.fill_between(
             n_vals,
             lower_path,
@@ -1220,18 +1185,17 @@ class CramerLundberg:
             alpha=0.3,
             label=f"IC {(1-alpha)*100:.0f}%"
         )
-    
         plt.xlabel("Número de simulaciones")
         plt.ylabel("Probabilidad de ruina estimada")
         plt.title("Convergencia Monte Carlo - Probabilidad de Ruina")
         plt.legend()
         plt.show()
-    
+
         # Valores finales del intervalo
         psi_hat = estimates[-1].item()
         lower = lower_path[-1].item()
         upper = upper_path[-1].item()
-    
+
         return psi_hat, lower, upper
 
     def ruin_vs_u(self, u_values, T, n_sim=1000, alpha=0.05):
@@ -1292,7 +1256,6 @@ class CramerLundberg:
 
           donde p̂ es el estimador Monte Carlo.
         """
-
         probs = torch.zeros(len(u_values))
         lower = torch.zeros(len(u_values))
         upper = torch.zeros(len(u_values))
@@ -1300,7 +1263,6 @@ class CramerLundberg:
         z = norm.ppf(1 - alpha / 2)
 
         for i, u in enumerate(tqdm(u_values, desc="Variando capital inicial u")):
-
             # Actualizamos capital inicial
             self.u = float(u)
 
@@ -1323,11 +1285,8 @@ class CramerLundberg:
             upper[i] = p_hat + z * se
 
         # --------- Gráfica ---------
-
         plt.figure()
-
         plt.plot(u_values, probs, label="Estimador Monte Carlo")
-
         plt.fill_between(
             u_values,
             lower,
@@ -1335,13 +1294,11 @@ class CramerLundberg:
             alpha=0.3,
             label=f"IC {(1 - alpha) * 100:.0f}%"
         )
-
         plt.xlabel("Capital inicial u")
         plt.ylabel("Probabilidad de ruina")
         plt.title("Probabilidad de ruina vs capital inicial")
         plt.grid(alpha=0.3)
         plt.legend()
-
         plt.show()
 
     def ruin_vs_T(self, T_values, n_sim=1000, alpha=0.05):
@@ -1387,8 +1344,6 @@ class CramerLundberg:
         alpha : float, opcional (default=0.05)
             Nivel de significancia para el intervalo de confianza.
 
-
-
         Notas
         -----
         - La probabilidad de ruina es **creciente en T**.
@@ -1399,7 +1354,6 @@ class CramerLundberg:
 
           donde p̂ es el estimador Monte Carlo.
         """
-
         probs = torch.zeros(len(T_values))
         lower = torch.zeros(len(T_values))
         upper = torch.zeros(len(T_values))
@@ -1407,7 +1361,6 @@ class CramerLundberg:
         z = norm.ppf(1 - alpha / 2)
 
         for i, T in enumerate(tqdm(T_values, desc="Variando horizonte T")):
-
             ruin_count = 0
 
             for _ in range(n_sim):
@@ -1424,11 +1377,8 @@ class CramerLundberg:
             upper[i] = p_hat + z * se
 
         # --------- Gráfica ---------
-
         plt.figure()
-
         plt.plot(T_values, probs, label="Estimador Monte Carlo")
-
         plt.fill_between(
             T_values,
             lower,
@@ -1436,13 +1386,11 @@ class CramerLundberg:
             alpha=0.3,
             label=f"IC {(1 - alpha) * 100:.0f}%"
         )
-
         plt.xlabel("Horizonte temporal T")
         plt.ylabel("Probabilidad de ruina")
         plt.title("Probabilidad de ruina vs horizonte temporal")
         plt.grid(alpha=0.3)
         plt.legend()
-
         plt.show()
 
     def ruin_vs_c(self, c_values, T, n_sim=1000, alpha=0.05):
@@ -1483,7 +1431,6 @@ class CramerLundberg:
         alpha : float, opcional (default=0.05)
             Nivel de significancia para los intervalos de confianza.
 
-
         Notas
         -----
         La probabilidad de ruina se estima como
@@ -1505,7 +1452,6 @@ class CramerLundberg:
         donde ocurre la transición entre pérdida esperada
         y beneficio esperado del modelo.
         """
-
         probs = torch.zeros(len(c_values))
         lower = torch.zeros(len(c_values))
         upper = torch.zeros(len(c_values))
@@ -1519,7 +1465,6 @@ class CramerLundberg:
         c_star = self.lam * EY
 
         for i, c in enumerate(tqdm(c_values, desc="Variando c")):
-
             self.c = float(c)
 
             ruin_count = 0
@@ -1538,11 +1483,8 @@ class CramerLundberg:
             upper[i] = p_hat + z * se
 
         # --------- Gráfica ---------
-
         plt.figure()
-
         plt.plot(c_values, probs, label="Estimador Monte Carlo")
-
         plt.fill_between(
             c_values,
             lower,
@@ -1564,9 +1506,7 @@ class CramerLundberg:
         plt.title("Probabilidad de ruina vs tasa de prima")
         plt.grid(alpha=0.3)
         plt.legend()
-
         plt.show()
-
 
     def plot(self, t, color="blue", linestyle="-", marker=None):
         """
@@ -1577,10 +1517,10 @@ class CramerLundberg:
         t : float
             Horizonte temporal hasta el cual se simula.
 
-        color : str, optional
+        color : str, opcional
             Color de la línea (default="blue").
 
-        linestyle : str, optional
+        linestyle : str, opcional
             Estilo de línea (default="-").
             Ejemplos:
                 "-"  : línea continua
@@ -1588,24 +1528,22 @@ class CramerLundberg:
                 "-." : punto-guion
                 ":"  : punteada
 
-        marker : str or None, optional
+        marker : str or None, opcional
             Marcador de puntos (default=None).
             Ejemplos:
                 "o", "s", "^", "*", etc.
 
-        Returns
+        Retorna
         -------
         None
             Solo genera la gráfica.
         """
-
         S, U = self.simulate(t)[:2]
 
         plt.figure()
 
         # Dibujar cada tramo entre saltos
         for i in range(len(S) - 1):
-
             # Tramo lineal creciente
             t_vals = torch.linspace(S[i], S[i+1], 2)
             u_vals = U[i] + self.c * (t_vals - S[i])
@@ -1673,7 +1611,6 @@ class MixtureDistribution(torch.distributions.Distribution):
 
         y la distribución marginal de X es la mezcla.
         """
-
         super().__init__(validate_args=False)
 
         # Validaciones básicas
@@ -1690,17 +1627,16 @@ class MixtureDistribution(torch.distributions.Distribution):
         # Distribución categórica para seleccionar componente
         self.Ind = torch.distributions.Categorical(probs=self.weights)
 
-
     def sample(self, sample_shape=torch.Size()):
         """
         Genera muestras de la distribución mezcla.
 
         Parámetros
         ----------
-        sample_shape : torch.Size or tuple, optional
+        sample_shape : torch.Size or tuple, opcional
             Forma deseada de las muestras.
 
-        Returns
+        Retorna
         -------
         samples : torch.Tensor
             Tensor con muestras de la mezcla.
@@ -1712,7 +1648,6 @@ class MixtureDistribution(torch.distributions.Distribution):
                Generar tantas muestras como veces aparezca k
         3) Reordenar y devolver
         """
-
         # Número total de muestras
         n = torch.Size(sample_shape).numel() if sample_shape else 1
 
