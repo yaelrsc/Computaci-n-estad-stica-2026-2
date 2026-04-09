@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/importance_sampling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/importance_sampling.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/monte_carlo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Monte Carlo/poisson_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/Monte Carlo/poisson_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +16,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -98,7 +95,16 @@
       <workItem from="1774242667600" duration="6193000" />
       <workItem from="1774329902588" duration="3258000" />
       <workItem from="1774403927789" duration="13791000" />
-      <workItem from="1774492941424" duration="672000" />
+      <workItem from="1774492941424" duration="1506000" />
+      <workItem from="1774575595648" duration="17508000" />
+      <workItem from="1774667068693" duration="8885000" />
+      <workItem from="1774742486300" duration="3172000" />
+      <workItem from="1774809464198" duration="11262000" />
+      <workItem from="1774900082431" duration="13564000" />
+      <workItem from="1774980442938" duration="13349000" />
+      <workItem from="1774995883081" duration="3963000" />
+      <workItem from="1775015728301" duration="7309000" />
+      <workItem from="1775698323373" duration="4286000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -134,10 +140,20 @@
           <line>55</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb</url>
+          <line>1</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MCMC/mcmc.py</url>
+          <line>361</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
