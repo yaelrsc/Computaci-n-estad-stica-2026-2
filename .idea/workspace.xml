@@ -6,7 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yaelrsc&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yaelrsc/Computaci-n-estad-stica-2026-2.git&quot;,
+    &quot;accountId&quot;: &quot;eb9fc8cc-730b-4b43-811d-d47bb3ff71ed&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -104,7 +119,11 @@
       <workItem from="1774980442938" duration="13349000" />
       <workItem from="1774995883081" duration="3963000" />
       <workItem from="1775015728301" duration="7309000" />
-      <workItem from="1775698323373" duration="4286000" />
+      <workItem from="1775698323373" duration="7693000" />
+      <workItem from="1775940544413" duration="432000" />
+      <workItem from="1776143616981" duration="4102000" />
+      <workItem from="1776222868740" duration="11200000" />
+      <workItem from="1776308141332" duration="6548000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -149,11 +168,6 @@
           <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MCMC/mcmc.py</url>
-          <line>361</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
