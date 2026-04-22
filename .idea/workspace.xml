@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
+      <change afterPath="$PROJECT_DIR$/MCMC/glm_numpyro.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -123,7 +122,15 @@
       <workItem from="1775940544413" duration="432000" />
       <workItem from="1776143616981" duration="4102000" />
       <workItem from="1776222868740" duration="11200000" />
-      <workItem from="1776308141332" duration="6548000" />
+      <workItem from="1776308141332" duration="7008000" />
+      <workItem from="1776385305159" duration="6720000" />
+      <workItem from="1776467891153" duration="3030000" />
+      <workItem from="1776488395701" duration="10809000" />
+      <workItem from="1776567157422" duration="1611000" />
+      <workItem from="1776568937541" duration="14241000" />
+      <workItem from="1776623099299" duration="23250000" />
+      <workItem from="1776739413053" duration="2866000" />
+      <workItem from="1776833604273" duration="5778000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -168,6 +175,11 @@
           <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MCMC/mcmc.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
