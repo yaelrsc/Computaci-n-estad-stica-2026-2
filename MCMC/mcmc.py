@@ -1,259 +1,645 @@
-import torch
-import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 from sklearn.metrics import roc_auc_score
 import math
+import torch
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.stats import gaussian_kde
 
 
 class BayesianGLM:
 
-    def __init__(self, X, y):
+    def __init__(self,
+                 link=None,
+                 inverse_link=None,
+                 beta_prior=None,
+                 burn_in=100,
+                 num_samples=1000,
+                 num_chains=1,
+                 step_size=0.05,
+                 seed=0,
+                 device=None,
+                 **kwargs):
 
-        self.X = X
-        self.y = y
+        # funciones de link
+        self.link = link
+        self.inverse_link = inverse_link if inverse_link is not None else (lambda x: x)
 
-    def log_posterior(self, **params):
+        # prior
+        self.beta_prior = beta_prior
+
+        # MCMC params
+        self.burn_in = burn_in
+        self.num_samples = num_samples
+        self.num_chains = num_chains
+        self.step_size = step_size
+
+        # device
+        self.device = device if device is not None else (
+            "cuda" if torch.cuda.is_available() else "cpu"
+        )
+
+        # seed
+        torch.manual_seed(seed)
+
+        # contenedor de muestras
+        self.samples = None
+
+        # kwargs dinámicos
+        for k, v in kwargs.items():
+            setattr(self, k, v)
+
+    # =========================================================
+    # ABSTRACT METHODS
+    # =========================================================
+
+    def log_posterior(self, X, y, params):
         raise NotImplementedError
 
-    def init_params(self, n_chains):
+    def init_params(self, p):
         raise NotImplementedError
 
-    def _store_samples(self, samples):
+    def sample_likelihood(self, mu, params):
         raise NotImplementedError
 
-    def fit_mh(self, n_iter=1000, burn_in=0, n_chains=1, step_size=0.1):
+    def neg_log_likelihood(self, X, y, params):
+        raise NotImplementedError
 
-        params = self.init_params(n_chains)
+    # =========================================================
+    # FIT (Metropolis-Hastings)
+    # =========================================================
+
+    def fit(self, X, y):
+
+        X = X.to(self.device)
+        y = y.to(self.device)
+
+        n, p = X.shape
+
+        params = self.init_params(p)
 
         samples = {
-            k: torch.zeros((n_iter, *v.shape))
+            k: torch.zeros((self.num_samples, self.num_chains, *v.shape[1:]),
+                           device=self.device)
             for k, v in params.items()
         }
 
-        for i in range(n_iter):
+        total_iter = self.burn_in + self.num_samples
 
+        for i in range(total_iter):
+
+            # propuesta
             props = {
-                k: v + step_size * torch.randn_like(v)
+                k: v + self.step_size * torch.randn_like(v)
                 for k, v in params.items()
             }
 
-            logp_current = self.log_posterior(**params)
-            logp_prop = self.log_posterior(**props)
+            logp_current = self.log_posterior(X, y, params)
+            logp_prop = self.log_posterior(X, y, props)
 
             log_alpha = logp_prop - logp_current
-            alpha = torch.minimum(torch.zeros_like(log_alpha), log_alpha)
+            accept = torch.log(torch.rand_like(log_alpha)) < log_alpha
 
-            u = torch.log(torch.rand_like(alpha))
-            accept = u <= alpha
-
+            # update vectorizado por cadenas
             for k in params:
-
                 if params[k].dim() == 2:
                     params[k] = torch.where(accept[:, None], props[k], params[k])
                 else:
                     params[k] = torch.where(accept, props[k], params[k])
 
-                samples[k][i] = params[k]
+            # guardar después de burn-in
+            if i >= self.burn_in:
+                idx = i - self.burn_in
+                for k in samples:
+                    samples[k][idx] = params[k]
 
-        for k in samples:
-            samples[k] = samples[k][burn_in:]
+        self.samples = samples
 
-        return samples
+    # =========================================================
+    # POSTERIOR SAMPLES
+    # =========================================================
 
-    def fit(self, n_iter=1000, burn_in=0, n_chains=1, step_size=0.1):
+    def get_params_samples(self):
+        return self.samples
 
-        samples = self.fit_mh(n_iter, burn_in, n_chains, step_size)
-        self._store_samples(samples)
+    def get_beta_samples(self):
+        return self.samples["beta"]
 
-    def deviance_samples(self, X, y, **params):
-        raise NotImplementedError
+    def get_beta_hat(self):
+        return self.get_beta_samples().mean(dim=(0, 1))
 
-    def deviance_mean(self, X, y):
-        return self.deviance_samples(X, y).mean()
+    def get_plugin_params(self):
+        return {
+            k: v.mean(dim=(0, 1))
+            for k, v in self.samples.items()
+        }
 
-    def deviance_ci(self, X, y, alpha=0.05):
+    # =========================================================
+    # SUMMARY
+    # =========================================================
 
-        dev = self.deviance_samples(X, y)
-        dev_flat = dev.reshape(-1)
+    def summary(self):
 
-        lower = torch.quantile(dev_flat, alpha/2)
-        upper = torch.quantile(dev_flat, 1 - alpha/2)
+        if self.samples is None:
+            raise ValueError("Debes llamar a fit() antes.")
+
+        print("\nPosterior Summary")
+        print("=" * 50)
+
+        for name, values in self.samples.items():
+
+            flat = values.reshape(-1, *values.shape[2:])
+
+            mean = flat.mean(dim=0)
+            std = flat.std(dim=0)
+
+            print(f"\n{name}:")
+            print(f"mean = {mean}")
+            print(f"std  = {std}")
+
+    # =========================================================
+    # PREDICTIONS
+    # =========================================================
+
+    def predict_plugin(self, X):
+
+        X = X.to(self.device)
+        beta = self.get_beta_hat()
+
+        eta = X @ beta
+        return self.inverse_link(eta)
+
+    def predict_posterior_samples(self, X):
+
+        X = X.to(self.device)
+
+        beta = self.get_beta_samples()  # (S, C, d)
+
+        eta = torch.einsum("nd,scd->scn", X, beta)
+
+        return self.inverse_link(eta)
+
+    def predict_posterior_mean(self, X):
+
+        y = self.predict_posterior_samples(X)
+        return y.mean(dim=(0, 1))
+
+    def predict_credible_interval(self, X, alpha=0.05):
+
+        y = self.predict_posterior_samples(X)
+        y_flat = y.reshape(-1, X.shape[0])
+
+        lower = torch.quantile(y_flat, alpha / 2, dim=0)
+        upper = torch.quantile(y_flat, 1 - alpha / 2, dim=0)
 
         return lower, upper
 
-    def plot_deviance_density(self, X, y, figsize=(6, 4)):
+    def forward(self, X):
+        return self.predict_posterior_samples(X)
 
-        dev = self.deviance_samples(X, y)
-        dev_flat = dev.reshape(-1).numpy()
+    # =========================================================
+    # POSTERIOR PREDICTIVE
+    # =========================================================
 
-        df = pd.DataFrame(dev_flat, columns=['deviance'])
+    def sample_posterior_predictive(self, X):
 
-        df.plot.density(figsize=figsize, title='Posterior Density of Deviance')
-        plt.xlabel('Deviance')
+        params = self.get_params_samples()
+        mu = self.predict_posterior_samples(X)
+
+        return self.sample_likelihood(mu, params)
+
+    # =========================================================
+    # NLL
+    # =========================================================
+
+    def normalized_neg_log_likelihood_plugin(self, X, y):
+
+        params = self.get_plugin_params()
+        return self.neg_log_likelihood(X, y, params) / X.shape[0]
+
+    def normalized_neg_log_likelihood_samples(self, X, y):
+
+        params = self.get_params_samples()
+
+        values = []
+
+        for i in range(self.num_samples):
+            for c in range(self.num_chains):
+
+                p = {k: v[i, c] for k, v in params.items()}
+                values.append(self.neg_log_likelihood(X, y, p))
+
+        return torch.stack(values) / X.shape[0]
+
+    # =========================================================
+    # METRICS
+    # =========================================================
+
+    def summary_metrics(self, X, y, return_dict=False):
+
+        nnll = self.normalized_neg_log_likelihood_samples(X, y)
+
+        stats = {
+            "mean": nnll.mean(),
+            "std": nnll.std(),
+            "median": nnll.median(),
+            "5%": torch.quantile(nnll, 0.05),
+            "95%": torch.quantile(nnll, 0.95),
+            "plugin": self.normalized_neg_log_likelihood_plugin(X, y)
+        }
+
+        if return_dict:
+            return stats
+
+        print("\nSummary Normalized Negative Log-Likelihood")
+        print("-" * 50)
+
+        for k, v in stats.items():
+            print(f"{k:10}: {v:.4f}")
+
+    # =========================================================
+    # VISUALIZATIONS
+    # =========================================================
+
+    def plot_nll_density(self, X, y, figsize=(8, 4)):
+
+        nnll = self.normalized_neg_log_likelihood_samples(X, y).cpu().numpy()
+
+        kde = gaussian_kde(nnll)
+        x_grid = np.linspace(nnll.min(), nnll.max(), 200)
+
+        plt.figure(figsize=figsize)
+        plt.plot(x_grid, kde(x_grid))
+        plt.title("Normalized Negative Log-Likelihood")
+        plt.xlabel("NLL")
+        plt.ylabel("Density")
         plt.show()
-
-    def plot_beta_traces(self, figsize=(10, 6), layout=None):
-
-        n_iter, n_chains, d = self.beta_samples.shape
-
-        if layout is None:
-            layout = (d, 1)
-
-        fig, axes = plt.subplots(layout[0], layout[1], figsize=figsize, sharex=True)
-        axes = np.array(axes).reshape(-1)
-
-        for j in range(d):
-
-            data = {}
-
-            for c in range(n_chains):
-                data[f'chain_{c}'] = self.beta_samples[:, c, j].numpy()
-
-            df = pd.DataFrame(data)
-            df.plot(ax=axes[j], title=f'Beta_{j}')
-
-        plt.tight_layout()
-        plt.show()
-
-    def plot_betas_densities(self, figsize=(6, 8), layout=None):
-
-        if layout is None:
-            layout = (self.d, 1)
-
-        columns = [f'Beta_{i}' for i in range(self.d)]
-
-        data = pd.DataFrame(
-            self.beta_samples.reshape(-1, self.d).numpy(),
-            columns=columns
-        )
-
-        data.plot.density(
-            figsize=figsize,
-            subplots=True,
-            title='Betas Densities',
-            sharey=False,
-            sharex=False,
-            layout=layout
-        )
-
-        plt.show()
-
 
 class BayesianLinearRegression(BayesianGLM):
 
-    def __init__(self, X, y, tau2=1.0, a=1.0, b=1.0):
+    def __init__(self,
+                 sigma_prior=None,
+                 **kwargs):
 
-        super().__init__(X, y)
+        super().__init__(**kwargs)
 
-        self.tau2 = tau2
-        self.a = a
-        self.b = b
+        # prior para sigma > 0
+        self.sigma_prior = sigma_prior if sigma_prior is not None else torch.distributions.HalfNormal(1.0)
 
-        self.n, self.d = self.X.shape
+    # =========================================================
+    # INIT PARAMS (para MH)
+    # =========================================================
 
-        self.beta_prior = torch.distributions.MultivariateNormal(
-            torch.zeros(self.d),
-            self.tau2 * torch.eye(self.d)
-        )
+    def init_params(self, p):
 
-    def init_params(self, n_chains):
         return {
-            "beta": torch.zeros((n_chains, self.d)),
-            "eta": torch.zeros(n_chains)
+            "beta": torch.zeros((self.num_chains, p), device=self.device),
+            "log_sigma": torch.zeros(self.num_chains, device=self.device)  # trabajamos en log
         }
 
-    def log_posterior(self, beta, eta):
+    # =========================================================
+    # LOG POSTERIOR
+    # =========================================================
 
-        sigma2 = torch.exp(eta)
+    def log_posterior(self, X, y, params):
 
-        z = self.X @ beta.mT
+        beta = params["beta"]                  # (C, p)
+        log_sigma = params["log_sigma"]        # (C,)
+        sigma = torch.exp(log_sigma)           # (C,)
 
-        like = torch.distributions.Normal(z, torch.sqrt(sigma2))
-        log_like = like.log_prob(self.y[:, None]).sum(0)
+        # likelihood
+        mu = X @ beta.T                        # (n, C)
 
-        log_beta_prior = self.beta_prior.log_prob(beta)
+        dist = torch.distributions.Normal(mu, sigma)
+        log_like = dist.log_prob(y[:, None]).sum(0)  # (C,)
 
-        sigma2_prior = torch.distributions.InverseGamma(self.a, self.b)
-        log_sigma2_prior = sigma2_prior.log_prob(sigma2)
+        # prior beta (Normal isotrópico si no se definió)
+        if self.beta_prior is None:
+            log_prior_beta = -0.5 * (beta ** 2).sum(dim=1)
+        else:
+            log_prior_beta = self.beta_prior.log_prob(beta).sum(dim=1)
 
-        return log_like + log_beta_prior + log_sigma2_prior + eta
+        # prior sigma
+        log_prior_sigma = self.sigma_prior.log_prob(sigma)
 
-    def _store_samples(self, samples):
+        # jacobiano (por cambio log -> sigma)
+        return log_like + log_prior_beta + log_prior_sigma + log_sigma
 
-        self.beta_samples = samples["beta"]
-        self.eta_samples = samples["eta"]
-        self.sigma2_samples = torch.exp(self.eta_samples)
+    # =========================================================
+    # NEG LOG LIKELIHOOD
+    # =========================================================
 
-        self.beta = self.beta_samples.mean(dim=(0, 1))
-        self.sigma2 = self.sigma2_samples.mean()
+    def neg_log_likelihood(self, X, y, params):
 
-    def predict_samples(self, X):
+        beta = params["beta"]
+        sigma = params.get("sigma", None)
 
-        mu = self.beta_samples @ X.mT
-        noise = torch.randn_like(mu) * torch.sqrt(self.sigma2_samples[:, :, None])
+        if sigma is None:
+            sigma = torch.exp(params["log_sigma"])
 
-        return mu + noise
+        mu = X @ beta
 
-    def deviance_samples(self, X, y):
+        dist = torch.distributions.Normal(mu, sigma)
+        return -dist.log_prob(y).sum()
 
-        y_pred = self.predict_samples(X)
-        y = y[None, None, :]
+    # =========================================================
+    # POSTERIOR PREDICTIVE
+    # =========================================================
 
-        dev = (y - y_pred) ** 2
+    def sample_likelihood(self, mu, params):
 
-        return dev.mean(dim=2)
+        # mu: (S, C, n)
+        log_sigma = params["log_sigma"]        # (S, C)
+        sigma = torch.exp(log_sigma)           # (S, C)
 
-    def plot_sigma2_traces(self, figsize=(10, 6)):
+        sigma = sigma[:, :, None]              # (S, C, 1)
 
-        n_iter, n_chains = self.sigma2_samples.shape
+        return mu + sigma * torch.randn_like(mu)
 
-        data = {}
+    # =========================================================
+    # SUMMARY METRICS
+    # =========================================================
 
-        for c in range(n_chains):
-            data[f'chain_{c}'] = self.sigma2_samples[:, c].numpy()
+    def summary_metrics(self, X, y, return_data=False):
 
-        df = pd.DataFrame(data)
+        if self.samples is None:
+            raise ValueError("Debes llamar a fit() antes.")
 
-        df.plot(figsize=figsize, title='Trace sigma2')
-        plt.show()
+        X = X.to(self.device)
+        y = y.to(self.device)
 
-    def plot_sigma2_density(self, figsize=(6, 4)):
+        # =====================================================
+        # PREDICCIONES
+        # =====================================================
+        y_samples = self.predict_posterior_samples(X)   # (S, C, n)
+        y_plugin = self.predict_plugin(X)               # (n,)
 
-        sigma2_flat = self.sigma2_samples.reshape(-1).numpy()
+        # =====================================================
+        # NNLL
+        # =====================================================
+        nnll = self.normalized_neg_log_likelihood_samples(X, y)
+        nnll_plugin = self.normalized_neg_log_likelihood_plugin(X, y)
 
-        df = pd.DataFrame(sigma2_flat, columns=['sigma2'])
+        # =====================================================
+        # MSE / MAE (posterior)
+        # =====================================================
+        y_expanded = y[None, None, :]  # (1,1,n)
 
-        df.plot.density(figsize=figsize, title='Posterior Density of sigma2')
-        plt.xlabel('sigma2')
-        plt.show()
+        mse_samples = ((y_samples - y_expanded) ** 2).mean(dim=2)  # (S,C)
+        mae_samples = torch.abs(y_samples - y_expanded).mean(dim=2)
 
+        # flatten
+        mse_samples = mse_samples.reshape(-1)
+        mae_samples = mae_samples.reshape(-1)
 
-class BayesianLogisticRegression(BayesianGLM):
+        # =====================================================
+        # MSE / MAE (plugin)
+        # =====================================================
+        mse_plugin = ((y_plugin - y) ** 2).mean()
+        mae_plugin = torch.abs(y_plugin - y).mean()
 
-    def __init__(self, X, y, tau2=1.0):
-
-        super().__init__(X, y)
-
-        self.tau2 = tau2
-
-        self.n, self.d = self.X.shape
-
-        self.beta_prior = torch.distributions.MultivariateNormal(
-            torch.zeros(self.d),
-            self.tau2 * torch.eye(self.d)
-        )
-
-    def init_params(self, n_chains):
-        return {
-            "beta": torch.zeros((n_chains, self.d))
+        # =====================================================
+        # TABLA
+        # =====================================================
+        data = {
+            "NNLL": [
+                nnll.mean(),
+                nnll.std(),
+                nnll.median(),
+                torch.quantile(nnll, 0.05),
+                torch.quantile(nnll, 0.95),
+                nnll_plugin,
+            ],
+            "MSE": [
+                mse_samples.mean(),
+                mse_samples.std(),
+                mse_samples.median(),
+                torch.quantile(mse_samples, 0.05),
+                torch.quantile(mse_samples, 0.95),
+                mse_plugin,
+            ],
+            "MAE": [
+                mae_samples.mean(),
+                mae_samples.std(),
+                mae_samples.median(),
+                torch.quantile(mae_samples, 0.05),
+                torch.quantile(mae_samples, 0.95),
+                mae_plugin,
+            ],
         }
 
+        columns = ["mean", "std", "median", "5%", "95%", "plugin"]
+
+        df = pd.DataFrame(
+            {k: [v_i.item() for v_i in v] for k, v in data.items()},
+            index=columns
+        ).T
+
+
+        return df
+
+
+
+
+class BayesianLaplaceRegression(BayesianGLM):
+
+    def __init__(self,
+                 b_prior=None,
+                 **kwargs):
+
+        super().__init__(**kwargs)
+
+        # prior para b > 0
+        self.b_prior = b_prior if b_prior is not None else torch.distributions.HalfNormal(1.0)
+
+    # =========================================================
+    # INIT PARAMS
+    # =========================================================
+
+    def init_params(self, p):
+
+        return {
+            "beta": torch.zeros((self.num_chains, p), device=self.device),
+            "log_b": torch.zeros(self.num_chains, device=self.device)
+        }
+
+    # =========================================================
+    # LOG POSTERIOR
+    # =========================================================
+
+    def log_posterior(self, X, y, params):
+
+        beta = params["beta"]            # (C, p)
+        log_b = params["log_b"]          # (C,)
+        b = torch.exp(log_b)             # (C,)
+
+        # likelihood
+        mu = X @ beta.T                 # (n, C)
+
+        dist = torch.distributions.Laplace(mu, b)
+        log_like = dist.log_prob(y[:, None]).sum(0)  # (C,)
+
+        # prior beta
+        if self.beta_prior is None:
+            log_prior_beta = -0.5 * (beta ** 2).sum(dim=1)
+        else:
+            log_prior_beta = self.beta_prior.log_prob(beta).sum(dim=1)
+
+        # prior b
+        log_prior_b = self.b_prior.log_prob(b)
+
+        # jacobiano
+        return log_like + log_prior_beta + log_prior_b + log_b
+
+    # =========================================================
+    # NEG LOG LIKELIHOOD
+    # =========================================================
+
+    def neg_log_likelihood(self, X, y, params):
+
+        beta = params["beta"]
+
+        if "b" in params:
+            b = params["b"]
+        else:
+            b = torch.exp(params["log_b"])
+
+        mu = X @ beta
+
+        dist = torch.distributions.Laplace(mu, b)
+        return -dist.log_prob(y).sum()
+
+    # =========================================================
+    # POSTERIOR PREDICTIVE
+    # =========================================================
+
+    def sample_likelihood(self, mu, params):
+
+        # mu: (S, C, n)
+        log_b = params["log_b"]          # (S, C)
+        b = torch.exp(log_b)             # (S, C)
+
+        b = b[:, :, None]                # (S, C, 1)
+
+        dist = torch.distributions.Laplace(mu, b)
+        return dist.sample()
+
+    # =========================================================
+    # PREDICT (PLUGIN)
+    # =========================================================
+
+    def predict_plugin(self, X):
+
+        X = X.to(self.device)
+        beta = self.get_beta_hat()
+
+        return X @ beta
+
+    # =========================================================
+    # PREDICT (POSTERIOR)
+    # =========================================================
+
+    def predict_posterior_samples(self, X):
+
+        X = X.to(self.device)
+        beta = self.get_beta_samples()  # (S, C, d)
+
+        return torch.einsum("nd,scd->scn", X, beta)
+
+    # =========================================================
+    # SUMMARY METRICS
+    # =========================================================
+
+    def summary_metrics(self, X, y):
+
+        if self.samples is None:
+            raise ValueError("Debes llamar a fit() antes.")
+
+        X = X.to(self.device)
+        y = y.to(self.device)
+
+        # =====================================================
+        # PREDICCIONES
+        # =====================================================
+        y_samples = self.predict_posterior_samples(X)  # (S,C,n)
+        y_plugin = self.predict_plugin(X)              # (n,)
+
+        # =====================================================
+        # NNLL
+        # =====================================================
+        nnll = self.normalized_neg_log_likelihood_samples(X, y)
+        nnll_plugin = self.normalized_neg_log_likelihood_plugin(X, y)
+
+        # =====================================================
+        # MSE / MAE
+        # =====================================================
+        y_expanded = y[None, None, :]
+
+        mse_samples = ((y_samples - y_expanded) ** 2).mean(dim=2)
+        mae_samples = torch.abs(y_samples - y_expanded).mean(dim=2)
+
+        mse_samples = mse_samples.reshape(-1)
+        mae_samples = mae_samples.reshape(-1)
+
+        mse_plugin = ((y_plugin - y) ** 2).mean()
+        mae_plugin = torch.abs(y_plugin - y).mean()
+
+        # =====================================================
+        # TABLA
+        # =====================================================
+        data = {
+            "NNLL": [
+                nnll.mean(),
+                nnll.std(),
+                nnll.median(),
+                torch.quantile(nnll, 0.05),
+                torch.quantile(nnll, 0.95),
+                nnll_plugin,
+            ],
+            "MSE": [
+                mse_samples.mean(),
+                mse_samples.std(),
+                mse_samples.median(),
+                torch.quantile(mse_samples, 0.05),
+                torch.quantile(mse_samples, 0.95),
+                mse_plugin,
+            ],
+            "MAE": [
+                mae_samples.mean(),
+                mae_samples.std(),
+                mae_samples.median(),
+                torch.quantile(mae_samples, 0.05),
+                torch.quantile(mae_samples, 0.95),
+                mae_plugin,
+            ],
+        }
+
+        columns = ["mean", "std", "median", "5%", "95%", "plugin"]
+
+        df = pd.DataFrame(
+            {k: [v_i.item() for v_i in v] for k, v in data.items()},
+            index=columns
+        ).T
+
+        return df
+
+class BayesianBinaryGLM(BayesianGLM):
+
+    def __init__(self,
+                 inverse_link=None,
+                 **kwargs):
+
+        super().__init__(inverse_link=inverse_link, **kwargs)
+
+    # =========================================================
+    # LOG POSTERIOR
+    # =========================================================
     def log_posterior(self, beta):
 
-        z = self.X @ beta.mT
+        z = self.X @ beta.T
+        mu = self.inverse_link(z)
 
-        log_like = torch.distributions.Bernoulli(logits=z).log_prob(
+        log_like = torch.distributions.Bernoulli(probs=mu).log_prob(
             self.y[:, None]
         ).sum(0)
 
@@ -261,50 +647,55 @@ class BayesianLogisticRegression(BayesianGLM):
 
         return log_like + log_prior
 
+    # =========================================================
+    # INIT PARAMS
+    # =========================================================
+    def init_params(self, n_chains):
+
+        return {
+            "beta": torch.zeros((n_chains, self.d))
+        }
+
+    # =========================================================
+    # STORE SAMPLES
+    # =========================================================
     def _store_samples(self, samples):
 
         self.beta_samples = samples["beta"]
         self.beta = self.beta_samples.mean(dim=(0, 1))
 
+    # =========================================================
+    # PREDICTIONS
+    # =========================================================
     def predict_proba_samples(self, X):
 
-        z = self.beta_samples @ X.mT
-        return torch.sigmoid(z)
+        z = self.beta_samples @ X.T
+        return self.inverse_link(z)
 
     def predict_samples(self, X, threshold=0.5):
 
         probs = self.predict_proba_samples(X)
         return (probs >= threshold).float()
 
+    def predict_plugin(self, X, threshold=0.5):
+
+        z = X @ self.beta
+        probs = self.inverse_link(z)
+
+        return (probs >= threshold).float()
+
+    # =========================================================
+    # METRICS
+    # =========================================================
     def accuracy_samples(self, X, y, threshold=0.5):
 
         y_pred = self.predict_samples(X, threshold)
         return (y[None, None, :] == y_pred).float().mean(dim=2)
 
-    def plot_accuracy_density(self, X, y, figsize=(6, 4)):
-        acc = self.accuracy_samples(X, y)
-        acc_flat = acc.reshape(-1).numpy()
+    def accuracy_plugin(self, X, y, threshold=0.5):
 
-        df = pd.DataFrame(acc_flat, columns=['accuracy'])
-
-        df.plot.density(figsize=figsize, title='Posterior Density of Accuracy')
-        plt.xlabel('Accuracy')
-        plt.show()
-
-    def accuracy_ci(self, X, y, alpha=0.05):
-        acc = self.accuracy_samples(X, y)
-
-        lower = torch.quantile(acc, alpha / 2)
-        upper = torch.quantile(acc, 1 - alpha / 2)
-
-        return lower, upper
-
-    def accuracy_summary(self, X, y, alpha=0.05):
-        mean = self.accuracy_mean(X, y)
-        lower, upper = self.accuracy_ci(X, y, alpha)
-
-        print(f'Accuracy mean: {mean:.4f}')
-        print(f'{100 * (1 - alpha):.1f}% CI: [{lower:.4f}, {upper:.4f}]')
+        y_pred = self.predict_plugin(X, threshold)
+        return (y == y_pred).float().mean()
 
     def auc_samples(self, X, y):
 
@@ -322,189 +713,354 @@ class BayesianLogisticRegression(BayesianGLM):
             probs.shape[0], probs.shape[1]
         )
 
-    def plot_auc_density(self, X, y, figsize=(6, 4)):
+    def auc_plugin(self, X, y):
+
+        probs = self.inverse_link(X @ self.beta)
+        return roc_auc_score(y.numpy(), probs.numpy())
+
+    # =========================================================
+    # VISUALIZACIONES
+    # =========================================================
+    def plot_accuracy_density(self, X, y, threshold=0.5, figsize=(10, 6)):
+
+        acc = self.accuracy_samples(X, y, threshold)
+        acc_flat = acc.reshape(-1).numpy()
+
+        df = pd.DataFrame(acc_flat, columns=['accuracy'])
+
+        df.plot.density(figsize=figsize, title='Accuracy')
+        plt.xlabel('Accuracy')
+        plt.show()
+
+    def plot_auc_density(self, X, y, figsize=(10, 6)):
+
         auc = self.auc_samples(X, y)
         auc_flat = auc.reshape(-1).numpy()
 
         df = pd.DataFrame(auc_flat, columns=['AUC'])
 
-        df.plot.density(figsize=figsize, title='Posterior Density of AUC')
+        df.plot.density(figsize=figsize, title='AUC Score')
         plt.xlabel('AUC')
         plt.show()
 
-    def auc_ci(self, X, y, alpha=0.05):
-        auc = self.auc_samples(X, y)
+    # =========================================================
+    # SUMMARY
+    # =========================================================
+    def summary_metrics(self, X, y, threshold=0.5):
 
-        lower = torch.quantile(auc, alpha / 2)
-        upper = torch.quantile(auc, 1 - alpha / 2)
+        acc_samples = self.accuracy_samples(X, y, threshold)
+        acc_plugin = self.accuracy_plugin(X, y, threshold)
 
-        return lower, upper
+        auc_samples = self.auc_samples(X, y)
+        auc_plugin = self.auc_plugin(X, y)
 
-    def auc_summary(self, X, y, alpha=0.05):
-        mean = self.auc_mean(X, y)
-        lower, upper = self.auc_ci(X, y, alpha)
+        nnll = self.normalized_neg_log_likelihood_samples(X, y)
+        nnll_plugin = self.normalized_neg_log_likelihood_plugin(X, y)
 
-        print(f'AUC mean: {mean:.4f}')
-        print(f'{100 * (1 - alpha):.1f}% CI: [{lower:.4f}, {upper:.4f}]')
-
-    def deviance_samples(self, X, y, eps=1e-8):
-
-        probs = self.predict_proba_samples(X)
-        y = y[None, None, :]
-
-        probs = torch.clamp(probs, eps, 1 - eps)
-
-        dev = -(y * torch.log(probs) + (1 - y) * torch.log(1 - probs))
-
-        return dev.mean(dim=2)
-
-
-class BayesianPoissonRegression(BayesianGLM):
-
-    def __init__(self, X, y, tau2=1.0):
-
-        super().__init__(X, y)
-
-        self.tau2 = tau2
-
-        self.n, self.d = self.X.shape
-
-        self.beta_prior = torch.distributions.MultivariateNormal(
-            torch.zeros(self.d),
-            self.tau2 * torch.eye(self.d)
-        )
-
-    def init_params(self, n_chains):
-        return {
-            "beta": torch.zeros((n_chains, self.d))
+        data = {
+            "NNLL": [
+                nnll.mean(),
+                nnll.std(),
+                nnll.median(),
+                torch.quantile(nnll, 0.05),
+                torch.quantile(nnll, 0.95),
+                nnll_plugin,
+            ],
+            "AUC": [
+                auc_samples.mean(),
+                auc_samples.std(),
+                auc_samples.median(),
+                torch.quantile(auc_samples, 0.05),
+                torch.quantile(auc_samples, 0.95),
+                auc_plugin,
+            ],
+            "ACC": [
+                acc_samples.mean(),
+                acc_samples.std(),
+                acc_samples.median(),
+                torch.quantile(acc_samples, 0.05),
+                torch.quantile(acc_samples, 0.95),
+                acc_plugin,
+            ],
         }
 
+        columns = ["mean", "std", "median", "5%", "95%", "plugin"]
+
+        df = pd.DataFrame.from_dict(data, orient="index", columns=columns)
+
+        return df
+
+class BayesianLogisticRegression(BayesianBinaryGLM):
+
+    def __init__(self, **kwargs):
+
+        super().__init__(inverse_link=torch.sigmoid, **kwargs)
+
+    # =========================================================
+    # LOG POSTERIOR (con logits estable)
+    # =========================================================
     def log_posterior(self, beta):
 
-        z = self.X @ beta.mT
+        z = self.X @ beta.T
 
-        log_like = torch.distributions.Poisson(
-            rate=torch.exp(z)
-        ).log_prob(self.y[:, None]).sum(0)
+        log_like = torch.distributions.Bernoulli(logits=z).log_prob(
+            self.y[:, None]
+        ).sum(0)
 
         log_prior = self.beta_prior.log_prob(beta)
 
         return log_like + log_prior
 
+class BayesianProbitRegression(BayesianBinaryGLM):
+
+    def __init__(self, **kwargs):
+
+        normal = torch.distributions.Normal(0.0, 1.0)
+
+        super().__init__(
+            inverse_link=lambda x: normal.cdf(x),
+            **kwargs
+        )
+
+        self._normal = normal  # para reutilizar
+
+    # =========================================================
+    # LOG POSTERIOR
+    # =========================================================
+    def log_posterior(self, beta):
+
+        z = self.X @ beta.T
+
+        # probit: Φ(z)
+        mu = self._normal.cdf(z)
+
+        # evitar log(0)
+        eps = 1e-8
+        mu = torch.clamp(mu, eps, 1 - eps)
+
+        log_like = torch.distributions.Bernoulli(probs=mu).log_prob(
+            self.y[:, None]
+        ).sum(0)
+
+        log_prior = self.beta_prior.log_prob(beta)
+
+        return log_like + log_prior
+
+class BayesianPoissonRegression(BayesianGLM):
+
+    def __init__(self, inverse_link=torch.exp, **kwargs):
+
+        super().__init__(inverse_link=inverse_link, **kwargs)
+
+    # =========================================================
+    # LOG POSTERIOR (equivalente a model en numpyro)
+    # =========================================================
+    def log_posterior(self, beta):
+
+        eta = self.X @ beta.T
+        mu = self.inverse_link(eta)
+
+        log_like = torch.distributions.Poisson(mu).log_prob(
+            self.y[:, None]
+        ).sum(0)
+
+        log_prior = self.beta_prior.log_prob(beta)
+
+        return log_like + log_prior
+
+    # =========================================================
+    # INIT PARAMS
+    # =========================================================
+    def init_params(self, n_chains):
+
+        return {
+            "beta": torch.zeros((n_chains, self.d))
+        }
+
+    # =========================================================
+    # STORE
+    # =========================================================
     def _store_samples(self, samples):
 
         self.beta_samples = samples["beta"]
         self.beta = self.beta_samples.mean(dim=(0, 1))
 
-    def predict_samples(self, X):
+    # =========================================================
+    # NEG LOG LIKELIHOOD (idéntico a tu versión JAX)
+    # =========================================================
+    def neg_log_likelihood(self, X, y, params):
 
-        z = self.beta_samples @ X.mT
-        return torch.exp(z)
+        beta = params["beta"]
 
-    def deviance_samples(self, X, y, eps=1e-8):
+        eta = X @ beta
+        mu = self.inverse_link(eta)
 
-        y_pred = self.predict_samples(X)
-        y = y[None, None, :]
+        return -torch.distributions.Poisson(mu).log_prob(y).sum()
 
-        y_pred = torch.clamp(y_pred, eps)
-        z = torch.clamp(y / y_pred, eps)
+    # =========================================================
+    # SAMPLE LIKELIHOOD (posterior predictive)
+    # =========================================================
+    def sample_likelihood(self, mu, params):
 
-        dev = (y * torch.log(z) - (y - y_pred))
+        return torch.distributions.Poisson(mu).sample()
 
-        return dev.mean(dim=2)
+class BayesianNegBinomRegression(BayesianGLM):
 
+    def __init__(self, inverse_link=torch.exp, alpha_prior=None, **kwargs):
 
-class BayesianGammaRegression(BayesianGLM):
+        super().__init__(inverse_link=inverse_link, **kwargs)
 
-    def __init__(self, X, y, tau2=1.0, a=1.0, b=1.0):
+        self.alpha_prior = alpha_prior if alpha_prior is not None else torch.distributions.HalfNormal(1.0)
 
-        super().__init__(X, y)
+    # =========================================================
+    # LOG POSTERIOR (equivalente a model en numpyro)
+    # =========================================================
+    def log_posterior(self, beta, alpha):
 
-        self.tau2 = tau2
+        eta = self.X @ beta.T
+        mu = self.inverse_link(eta)
 
-        self.n, self.d = self.X.shape
+        # conversión NB2 -> torch
+        probs = alpha[:, None] / (alpha[:, None] + mu)
 
-        self.beta_prior = torch.distributions.MultivariateNormal(
-            torch.zeros(self.d),
-            self.tau2 * torch.eye(self.d)
-        )
-
-        self.alpha_prior = torch.distributions.Gamma(a, b)
-
-    def init_params(self, n_chains):
-        return {
-            "beta": torch.zeros((n_chains, self.d)),
-            "eta": torch.zeros(n_chains)
-        }
-
-    def log_posterior(self, beta, eta):
-
-        alpha = torch.exp(eta)
-
-        z = beta @ self.X.T
-        mu = torch.exp(z)
-
-        rate = alpha[:, None] / mu
-
-        log_like = torch.distributions.Gamma(
-            concentration=alpha[:, None],
-            rate=rate
-        ).log_prob(self.y[None, :]).sum(1)
+        log_like = torch.distributions.NegativeBinomial(
+            total_count=alpha[:, None],
+            probs=probs
+        ).log_prob(self.y[:, None]).sum(0)
 
         log_prior_beta = self.beta_prior.log_prob(beta)
         log_prior_alpha = self.alpha_prior.log_prob(alpha)
 
-        return log_like + log_prior_beta + log_prior_alpha + eta
+        return log_like + log_prior_beta + log_prior_alpha
 
+    # =========================================================
+    # INIT PARAMS
+    # =========================================================
+    def init_params(self, n_chains):
+
+        return {
+            "beta": torch.zeros((n_chains, self.d)),
+            "alpha": torch.ones(n_chains)  # positivo desde inicio
+        }
+
+    # =========================================================
+    # STORE
+    # =========================================================
     def _store_samples(self, samples):
 
         self.beta_samples = samples["beta"]
-        self.eta_samples = samples["eta"]
-        self.alpha_samples = torch.exp(self.eta_samples)
+        self.alpha_samples = samples["alpha"]
 
         self.beta = self.beta_samples.mean(dim=(0, 1))
         self.alpha = self.alpha_samples.mean()
 
-    def predict_samples(self, X):
+    # =========================================================
+    # NEG LOG LIKELIHOOD (idéntico concepto que Poisson)
+    # =========================================================
+    def neg_log_likelihood(self, X, y, params):
 
-        z = self.beta_samples @ X.mT
-        return torch.exp(z)
+        beta = params["beta"]
+        alpha = params["alpha"]
 
-    def deviance_samples(self, X, y, eps=1e-8):
+        eta = X @ beta
+        mu = self.inverse_link(eta)
 
-        y_pred = self.predict_samples(X)
-        y = y[None, None, :]
+        probs = alpha / (alpha + mu)
 
-        y_pred = torch.clamp(y_pred, eps)
-        z = torch.clamp(y / y_pred, eps)
+        return -torch.distributions.NegativeBinomial(
+            total_count=alpha,
+            probs=probs
+        ).log_prob(y).sum()
 
-        dev = ((y - y_pred) / y_pred - torch.log(z))
+    # =========================================================
+    # SAMPLE LIKELIHOOD (posterior predictive)
+    # =========================================================
+    def sample_likelihood(self, mu, params):
 
-        return dev.mean(dim=2)
+        alpha = params["alpha"]
 
-    def plot_alpha_traces(self, figsize=(10, 6)):
+        probs = alpha / (alpha + mu)
 
-        n_iter, n_chains = self.alpha_samples.shape
+        return torch.distributions.NegativeBinomial(
+            total_count=alpha,
+            probs=probs
+        ).sample()
 
-        data = {}
+class BayesianGammaRegression(BayesianGLM):
 
-        for c in range(n_chains):
-            data[f'chain_{c}'] = self.alpha_samples[:, c].numpy()
+    def __init__(self, inverse_link=torch.exp, alpha_prior=None, **kwargs):
 
-        df = pd.DataFrame(data)
+        super().__init__(inverse_link=inverse_link, **kwargs)
 
-        df.plot(figsize=figsize, title='Trace alpha')
-        plt.show()
+        self.alpha_prior = alpha_prior if alpha_prior is not None else torch.distributions.HalfNormal(1.0)
 
-    def plot_alpha_density(self, figsize=(6, 4)):
+    # =========================================================
+    # LOG POSTERIOR
+    # =========================================================
+    def log_posterior(self, beta, alpha):
 
-        alpha_flat = self.alpha_samples.reshape(-1).numpy()
+        eta = self.X @ beta.T
+        mu = self.inverse_link(eta)
 
-        df = pd.DataFrame(alpha_flat, columns=['alpha'])
+        # Gamma: concentration=alpha, rate=alpha/mu
+        log_like = torch.distributions.Gamma(
+            concentration=alpha[:, None],
+            rate=alpha[:, None] / mu
+        ).log_prob(self.y[:, None]).sum(0)
 
-        df.plot.density(figsize=figsize, title='Posterior Density of alpha')
-        plt.xlabel('alpha')
-        plt.show()
+        log_prior_beta = self.beta_prior.log_prob(beta)
+        log_prior_alpha = self.alpha_prior.log_prob(alpha)
+
+        return log_like + log_prior_beta + log_prior_alpha
+
+    # =========================================================
+    # INIT PARAMS
+    # =========================================================
+    def init_params(self, n_chains):
+
+        return {
+            "beta": torch.zeros((n_chains, self.d)),
+            "alpha": torch.ones(n_chains)
+        }
+
+    # =========================================================
+    # STORE
+    # =========================================================
+    def _store_samples(self, samples):
+
+        self.beta_samples = samples["beta"]
+        self.alpha_samples = samples["alpha"]
+
+        self.beta = self.beta_samples.mean(dim=(0, 1))
+        self.alpha = self.alpha_samples.mean()
+
+    # =========================================================
+    # NEG LOG LIKELIHOOD
+    # =========================================================
+    def neg_log_likelihood(self, X, y, params):
+
+        beta = params["beta"]
+        alpha = params["alpha"]
+
+        eta = X @ beta
+        mu = self.inverse_link(eta)
+
+        return -torch.distributions.Gamma(
+            concentration=alpha,
+            rate=alpha / mu
+        ).log_prob(y).sum()
+
+    # =========================================================
+    # SAMPLE LIKELIHOOD
+    # =========================================================
+    def sample_likelihood(self, mu, params):
+
+        alpha = params["alpha"]
+
+        return torch.distributions.Gamma(
+            concentration=alpha,
+            rate=alpha / mu
+        ).sample()
 
 class CallOptionPrice:
     """

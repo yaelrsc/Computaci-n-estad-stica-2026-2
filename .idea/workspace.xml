@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
-      <change afterPath="$PROJECT_DIR$/MCMC/glm_numpyro.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/Numpyro.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/glm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/mcmc.py" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/mcmc.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Jupyter Notebook" />
         <option value="Python Script" />
+        <option value="Jupyter Notebook" />
       </list>
     </option>
   </component>
@@ -78,6 +78,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\MCMC\GLM" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -130,7 +135,9 @@
       <workItem from="1776568937541" duration="14241000" />
       <workItem from="1776623099299" duration="23250000" />
       <workItem from="1776739413053" duration="2866000" />
-      <workItem from="1776833604273" duration="5778000" />
+      <workItem from="1776833604273" duration="6386000" />
+      <workItem from="1776904457710" duration="8747000" />
+      <workItem from="1776913845028" duration="12509000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -178,8 +185,8 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MCMC/mcmc.py</url>
-          <line>8</line>
-          <option name="timeStamp" value="10" />
+          <line>848</line>
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
