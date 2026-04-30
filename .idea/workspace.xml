@@ -6,9 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/glm.py" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/mcmc.py" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/mcmc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/mcmc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/riceImage.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,30 +62,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2/MCMC/GLM/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\MCMC\GLM\data" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\MCMC\GLM" />
+      <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\MCMC\GLM\mcmc" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -137,7 +146,13 @@
       <workItem from="1776739413053" duration="2866000" />
       <workItem from="1776833604273" duration="6386000" />
       <workItem from="1776904457710" duration="8747000" />
-      <workItem from="1776913845028" duration="12509000" />
+      <workItem from="1776913845028" duration="13006000" />
+      <workItem from="1777001632261" duration="10072000" />
+      <workItem from="1777151009874" duration="19405000" />
+      <workItem from="1777224300252" duration="4149000" />
+      <workItem from="1777236608635" duration="13667000" />
+      <workItem from="1777430209824" duration="10498000" />
+      <workItem from="1777504803084" duration="6216000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -173,20 +188,15 @@
           <line>55</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
-          <url>file://$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb</url>
-          <line>1</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
           <line>14</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MCMC/mcmc.py</url>
-          <line>848</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/MCMC/GLM/bayesian_glm/mcmc_glm.py</url>
+          <line>800</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

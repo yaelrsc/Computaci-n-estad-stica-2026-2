@@ -1,0 +1,1001 @@
+cust_age;policy_id;coverage_start_date;cust_region;sum_assured_group;ins_deductible;annual_prem;zip_code;insured_sex;edu_lvl;marital_status;claim_incurred_date;claim_type;acc_type;emg_services_notified;incident_city;incident_hour;num_vehicles_involved;property_damage;bodily_injuries;witnesses;police_report_avlbl;total_claim_amount;injury_claim;property_claim;vehicle_claim;car_brand;car_model;production_year
+44;225016;08.09.2007;north;mid;2000;1007.48;342178;F;college;other;17.02.2023;single vehicle collision;front collision;Fire;Riverwood;19;1;NO;0;2;YES;74140;13480;13480;47180;BMW;X5;2022
+56;316183;02.02.2016;north;mid;500;1080.6;506682;F;phd;unmarried;28.02.2023;multi-vehicle collision;front collision;Fire;Columbus;12;3;?;2;3;;56430;0;6270;50160;Honda;CRV;2021
+28;174430;04.02.2020;east;mid;2000;1078.03;330854;M;high school;married;26.02.2023;single vehicle collision;rear collision;Ambulance;Riverwood;1;1;?;0;1;YES;53600;6700;6700;40200;Volkswagen;Jetta;2014
+53;67527;27.01.2013;north;low;1000;1026.55;502272;F;college;other;26.01.2023;single vehicle collision;front collision;Ambulance;Springfield;12;1;?;0;0;NO;80960;14720;7360;58880;Accura;MDX;2007
+47;259758;08.04.2015;east;mid;2000;1484.15;515656;F;associate;other;14.01.2023;multi-vehicle collision;rear collision;Other;Northbrook;1;3;NO;2;3;;64100;12820;6410;44870;Dodge;RAM;2021
+31;90381;19.03.2009;north;mid;2000;1110.15;372177;F;phd;other;13.01.2023;parked car;;None;Arlington;5;1;NO;1;3;NO;4290;780;780;2730;Volkswagen;Passat;2005
+42;467398;26.03.2016;east;mid;500;1335.67;505109;F;college;unmarried;12.01.2023;single vehicle collision;rear collision;Police;Riverwood;18;1;?;1;2;YES;74700;7470;14940;52290;Dodge;RAM;2017
+46;401494;14.07.2014;east;high;1000;1136.53;377646;M;jd;other;16.02.2023;single vehicle collision;side collision;Police;Arlington;18;1;NO;2;3;YES;33550;3050;6100;24400;Volkswagen;Passat;2012
+40;508732;24.11.2011;north;low;500;1531.82;369824;F;jd;other;10.01.2023;multi-vehicle collision;rear collision;Fire;Northbend;18;2;YES;0;2;;66550;6050;12100;48400;Ford;Escape;2015
+60;90902;30.05.2010;north;low;500;1297.02;359472;M;phd;unmarried;06.01.2023;single vehicle collision;front collision;Fire;Springfield;0;1;YES;0;0;;70000;14000;7000;49000;Ford;F150;2022
+41;144199;30.04.2000;west;mid;500;1201.92;513087;M;jd;other;06.02.2023;multi-vehicle collision;rear collision;Police;Springfield;17;3;?;0;2;;95900;13700;20550;61650;Saab;95;2006
+42;308254;05.12.1997;north;mid;500;1070.73;344881;F;masters;married;18.02.2023;multi-vehicle collision;side collision;Other;Springfield;7;4;?;2;1;YES;69100;6910;6910;55280;Toyota;Highlander;2013
+52;379080;05.04.2009;west;high;1000;1051.13;502370;F;associate;other;16.02.2023;single vehicle collision;front collision;Other;Arlington;2;1;?;0;2;NO;47630;12990;4330;30310;Toyota;Corolla;2012
+46;390387;19.05.2017;north;low;2000;896;518830;M;md;married;21.01.2023;single vehicle collision;rear collision;Other;Hillsdale;13;1;?;1;0;YES;79600;15920;15920;47760;Jeep;Wrangler;2018
+29;143733;15.02.2015;north;high;1000;1336.03;341504;F;phd;other;23.02.2023;multi-vehicle collision;side collision;Ambulance;Columbus;4;3;NO;2;2;YES;61380;11160;5580;44640;Subaru;Legacy;2019
+39;184737;21.05.2016;west;low;500;1034.1;365220;F;jd;other;17.01.2023;multi-vehicle collision;front collision;Police;Springfield;3;3;NO;2;0;;64680;11760;11760;41160;Jeep;Wrangler;2017
+42;173743;24.11.2017;east;low;1000;1482.59;513817;M;phd;other;24.02.2023;single vehicle collision;side collision;Police;Riverwood;10;1;NO;2;3;;63030;5730;11460;45840;Saab;92x;2003
+55;347968;28.06.2020;east;mid;2000;1587.65;344702;M;college;married;27.01.2023;multi-vehicle collision;rear collision;Police;Arlington;6;3;?;2;0;YES;85300;17060;8530;59710;Toyota;Highlander;2010
+42;398535;19.05.2012;east;high;500;1210.86;355881;F;college;other;27.01.2023;single vehicle collision;front collision;Fire;Springfield;11;1;?;0;0;YES;55200;9200;13800;32200;Honda;Civic;2005
+38;253771;28.01.2008;west;low;2000;1122.58;516129;F;md;married;14.02.2023;single vehicle collision;side collision;Ambulance;Northbrook;5;1;NO;0;1;;90530;16460;16460;57610;Ford;F150;2010
+37;595578;27.03.1998;west;high;500;1413.79;503349;M;phd;other;12.02.2023;single vehicle collision;side collision;Fire;Hillsdale;17;1;YES;0;1;YES;64800;10800;5400;48600;Audi;A3;2006
+44;266778;19.08.2009;north;high;500;1778.78;365910;M;associate;other;19.02.2023;single vehicle collision;side collision;Ambulance;Springfield;3;1;NO;1;0;NO;70200;7020;7020;56160;Ford;F150;2019
+42;517580;23.06.1999;west;high;1000;1284.55;360532;F;md;married;22.01.2023;single vehicle collision;rear collision;Police;Northbend;14;1;NO;2;1;;75500;7550;15100;52850;Nissan;Ultima;2005
+32;263826;12.12.2012;east;mid;2000;1622.93;354624;M;phd;unmarried;09.02.2023;single vehicle collision;side collision;Ambulance;Northbend;16;1;?;1;1;;78120;17360;8680;52080;BMW;3 Series;2013
+37;592549;24.12.2019;east;mid;2000;1895.02;360863;F;phd;other;24.01.2023;multi-vehicle collision;rear collision;Fire;Columbus;17;3;YES;1;3;NO;54400;5440;10880;38080;Chevrolet;Silverado;2022
+28;359430;19.03.1999;north;mid;500;1507.01;372782;F;jd;other;01.01.2023;multi-vehicle collision;rear collision;Police;Northbend;3;4;NO;0;1;;67800;11300;11300;45200;Ford;F150;2018
+39;393600;07.07.2014;north;mid;2000;1279.18;508339;F;high school;unmarried;18.01.2023;parked car;;Police;Springfield;6;1;NO;0;2;NO;5920;740;740;4440;Chevrolet;Malibu;2022
+40;560783;24.07.2017;west;low;1000;1437.45;344790;F;high school;other;01.01.2023;theft;;Police;Riverwood;9;1;?;0;0;NO;3690;410;410;2870;Ford;Escape;2022
+55;490812;13.09.1998;east;mid;2000;1303.37;355450;M;md;married;08.01.2023;single vehicle collision;rear collision;Fire;Hillsdale;18;1;?;1;3;YES;36740;3340;6680;26720;BMW;X5;2005
+42;284445;17.04.2015;west;low;2000;1385.81;370072;F;high school;other;18.01.2023;single vehicle collision;rear collision;Police;Columbus;19;1;NO;2;1;NO;86130;15660;15660;54810;Chevrolet;Silverado;2002
+31;343110;16.02.2013;east;high;1000;1049.78;379792;F;associate;other;01.03.2023;multi-vehicle collision;side collision;Ambulance;Riverwood;18;3;YES;0;3;NO;34160;0;4270;29890;Audi;A5;2012
+56;346064;12.10.1999;west;mid;1000;1593.39;379288;F;college;other;06.01.2023;multi-vehicle collision;side collision;Ambulance;Springfield;23;3;?;0;0;;38610;3510;3510;31590;Volkswagen;Passat;2014
+39;87665;15.10.1999;north;high;2000;1473.84;377638;F;high school;other;22.02.2023;multi-vehicle collision;side collision;Police;Columbus;8;3;?;2;0;NO;60400;6040;6040;48320;Nissan;Pathfinder;2021
+31;430403;14.06.1998;east;mid;1000;1375.34;340725;F;masters;unmarried;01.03.2023;multi-vehicle collision;side collision;Other;Hillsdale;1;3;?;2;1;;52290;5810;11620;34860;Nissan;Maxima;2004
+39;499809;16.01.2004;north;mid;1000;1149.5;504523;F;masters;married;01.01.2023;parked car;;Police;Springfield;17;1;YES;0;0;;8700;870;1740;6090;Accura;RSX;2010
+37;578836;29.05.2015;north;mid;2000;1240.08;330072;M;high school;other;05.01.2023;parked car;;None;Hillsdale;18;1;NO;1;0;NO;6700;670;670;5360;Jeep;Wrangler;2018
+40;549735;23.04.1997;east;low;2000;1289.81;509805;F;jd;other;08.01.2023;single vehicle collision;side collision;Other;Northbend;21;1;NO;1;0;YES;69840;7760;15520;46560;Dodge;Neon;2016
+44;121778;13.05.2004;east;high;500;1095.68;362804;M;phd;unmarried;28.02.2023;single vehicle collision;side collision;Other;Columbus;12;1;NO;1;0;YES;61700;6170;6170;49360;Saab;93;2012
+30;394266;23.07.2016;east;low;500;801.47;335339;F;high school;married;25.02.2023;multi-vehicle collision;rear collision;Other;Springfield;15;3;?;0;0;YES;57000;0;11400;45600;Audi;A3;2020
+32;159177;20.05.2015;east;low;500;1400.89;369351;F;phd;married;02.02.2023;single vehicle collision;rear collision;Ambulance;Northbrook;2;1;YES;0;1;;56070;6230;12460;37380;Toyota;Camry;2019
+39;536571;10.06.2002;north;high;500;1357.47;350677;M;phd;married;08.02.2023;multi-vehicle collision;front collision;Other;Arlington;9;3;YES;2;2;YES;71610;13020;6510;52080;Toyota;Highlander;2019
+37;554003;11.03.2022;east;high;500;1372.33;372103;F;md;other;19.01.2023;single vehicle collision;side collision;Other;Northbrook;19;1;YES;1;0;NO;72930;6630;13260;53040;Accura;TL;2022
+43;440152;12.03.2018;north;low;1000;1481.36;365068;F;md;other;09.02.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;3;3;NO;1;1;;70680;5890;11780;53010;Ford;Fusion;2016
+36;581935;10.07.2014;east;mid;2000;1386.69;359090;F;md;other;13.02.2023;multi-vehicle collision;side collision;Police;Riverwood;17;3;?;1;3;YES;79560;13260;13260;53040;Ford;Escape;2016
+33;308970;11.04.1997;west;low;2000;692.56;350671;F;jd;other;20.01.2023;multi-vehicle collision;side collision;Police;Northbend;6;3;?;0;1;YES;64350;5850;11700;46800;Nissan;Pathfinder;2018
+31;215236;29.10.2018;north;mid;500;1237.33;376426;F;high school;other;30.01.2023;single vehicle collision;side collision;Fire;Springfield;12;1;YES;0;1;NO;89700;13800;13800;62100;Audi;A5;2016
+50;335131;03.11.1998;east;low;2000;1107.08;331464;F;phd;other;14.01.2023;single vehicle collision;side collision;Other;Springfield;4;1;NO;2;2;YES;108030;16620;16620;74790;Saab;92x;2009
+20;289338;21.05.2010;north;high;1000;1188.09;513295;F;high school;other;01.02.2023;single vehicle collision;side collision;Other;Columbus;22;1;NO;1;3;YES;48360;4030;8060;36270;Audi;A5;2007
+30;213970;30.01.2012;north;low;1000;1340.13;508393;M;md;other;28.02.2023;parked car;;None;Arlington;8;1;YES;0;2;NO;4500;450;450;3600;Saab;93;2006
+28;264572;28.01.2015;east;high;1000;984.64;372688;F;high school;other;16.02.2023;single vehicle collision;rear collision;Ambulance;Columbus;11;1;NO;0;2;YES;101860;18520;18520;64820;Honda;CRV;2014
+30;239016;21.11.2016;north;low;500;1453.76;516674;F;college;married;15.02.2023;multi-vehicle collision;side collision;Fire;Hillsdale;6;3;?;2;3;NO;79800;15960;7980;55860;Honda;Civic;2006
+34;505417;17.12.2006;east;low;1000;1039.47;348404;F;jd;married;26.01.2023;multi-vehicle collision;side collision;Other;Hillsdale;18;4;?;2;3;YES;74360;13520;13520;47320;Toyota;Highlander;2012
+41;395509;15.02.2003;east;mid;1000;893.94;352565;F;associate;married;11.02.2023;single vehicle collision;rear collision;Ambulance;Arlington;10;1;NO;1;2;NO;30100;3010;0;27090;Chevrolet;Malibu;2006
+48;314233;30.12.2021;east;mid;1000;1405.02;366100;M;md;married;25.01.2023;single vehicle collision;side collision;Police;Columbus;5;1;YES;1;2;YES;71610;6510;13020;52080;Saab;92x;2011
+39;201002;25.02.2001;north;low;500;1360.98;358332;F;md;other;22.02.2023;multi-vehicle collision;front collision;Ambulance;Arlington;6;3;YES;2;2;NO;82320;13720;6860;61740;Dodge;Neon;2002
+40;211077;20.08.2001;north;low;500;1925.98;509285;M;md;married;21.01.2023;single vehicle collision;front collision;Fire;Arlington;10;1;YES;0;1;;43280;0;5410;37870;Honda;Civic;2003
+40;267935;10.12.2018;west;mid;2000;780.34;349189;M;college;other;06.02.2023;multi-vehicle collision;front collision;Ambulance;Springfield;0;3;?;0;2;NO;51570;5730;11460;34380;BMW;X5;2017
+48;109287;28.09.2021;west;mid;1000;1385.46;377383;M;jd;other;04.02.2023;single vehicle collision;front collision;Fire;Hillsdale;16;1;NO;2;2;;61320;10220;10220;40880;BMW;M5;2005
+43;311626;26.07.2008;east;low;2000;1350.42;365231;M;college;married;06.02.2023;single vehicle collision;front collision;Fire;Northbend;22;1;YES;0;3;YES;63840;10640;10640;42560;BMW;X5;2013
+32;412074;28.01.2005;east;mid;2000;1104.95;364330;M;phd;married;07.01.2023;theft;;Police;Riverwood;21;1;YES;1;1;YES;5600;1120;560;3920;Subaru;Legacy;2012
+36;527290;23.07.2019;east;low;1000;1116.69;360769;F;high school;married;22.01.2023;multi-vehicle collision;rear collision;Fire;Columbus;5;3;NO;2;1;NO;51700;5170;10340;36190;Saab;95;2010
+44;581910;09.03.2005;west;mid;500;807.22;500176;M;jd;other;27.01.2023;multi-vehicle collision;side collision;Other;Springfield;4;3;?;2;1;YES;51400;5140;10280;35980;Honda;Civic;2003
+57;407035;11.03.2007;north;high;1000;1130.58;334261;M;md;other;08.01.2023;multi-vehicle collision;front collision;Other;Northbend;21;3;?;2;3;;61440;10240;10240;40960;Saab;93;2015
+34;358152;13.03.2019;west;mid;500;1297.29;363239;F;college;married;08.01.2023;single vehicle collision;front collision;Fire;Springfield;7;1;YES;2;1;YES;45540;8280;8280;28980;Honda;Civic;2005
+32;135324;07.04.2009;west;mid;500;893.25;339932;M;jd;other;10.01.2023;single vehicle collision;front collision;Ambulance;Columbus;4;1;?;0;3;YES;43600;8720;4360;30520;Subaru;Legacy;2017
+40;443411;16.04.2003;north;low;1000;881.42;334701;M;college;married;24.02.2023;single vehicle collision;rear collision;Other;Riverwood;6;1;NO;1;3;NO;77880;7080;14160;56640;Ford;Escape;2012
+42;149411;02.12.2006;west;low;1000;967.61;364807;M;college;other;26.01.2023;theft;;None;Northbrook;10;1;NO;0;0;;5600;700;700;4200;Audi;A3;2014
+42;552459;16.12.2007;west;mid;2000;1320.89;353245;M;phd;other;28.02.2023;parked car;;None;Springfield;9;1;NO;0;1;NO;5900;590;590;4720;BMW;X5;2014
+49;79375;07.12.2008;west;mid;2000;1275.23;331821;F;phd;other;19.01.2023;single vehicle collision;rear collision;Ambulance;Hillsdale;18;1;?;0;2;YES;42240;7680;7680;26880;Chevrolet;Malibu;2014
+41;169707;18.07.1998;east;high;2000;1606.45;366686;F;associate;other;16.02.2023;single vehicle collision;side collision;Other;Springfield;19;1;?;1;1;;71060;6460;12920;51680;Saab;92x;2017
+43;452425;29.07.2008;east;mid;500;1482.02;331499;M;college;married;18.01.2023;multi-vehicle collision;rear collision;Ambulance;Arlington;17;3;NO;0;1;;70600;7060;14120;49420;Volkswagen;Passat;2020
+25;142414;14.01.2022;west;mid;2000;1350.94;364927;M;masters;other;22.01.2023;multi-vehicle collision;rear collision;Other;Hillsdale;4;4;YES;1;2;YES;64890;7210;7210;50470;Nissan;Pathfinder;2020
+33;179458;02.04.2004;west;mid;500;1360.98;345872;F;jd;other;24.02.2023;single vehicle collision;side collision;Other;Springfield;6;1;NO;2;0;;95810;14740;14740;66330;BMW;X5;2014
+41;138324;03.07.2011;north;low;1000;1433.2;371487;F;college;other;11.01.2023;single vehicle collision;rear collision;Police;Northbrook;17;1;NO;2;0;;56610;6290;6290;44030;Chevrolet;Tahoe;2002
+61;469990;09.09.2012;east;low;2000;1400.86;349525;M;jd;married;18.02.2023;multi-vehicle collision;rear collision;Police;Columbus;10;3;?;2;1;YES;72100;7210;14420;50470;Jeep;Wrangler;2013
+43;307239;06.10.2002;east;low;1000;1277.24;515194;M;phd;other;06.02.2023;multi-vehicle collision;side collision;Ambulance;Springfield;5;3;?;1;2;YES;81070;7370;14740;58960;Audi;A3;2013
+40;264711;23.02.2019;north;low;1000;1020.53;366129;M;phd;married;17.02.2023;single vehicle collision;front collision;Other;Northbend;13;1;YES;0;2;;71100;7110;14220;49770;Audi;A3;2015
+41;175885;29.07.1997;north;low;500;949.67;355394;F;jd;married;08.02.2023;multi-vehicle collision;side collision;Police;Riverwood;3;3;NO;2;1;;98280;15120;7560;75600;Chevrolet;Tahoe;2014
+52;225643;27.04.2010;north;high;500;1333.24;352615;F;high school;unmarried;07.01.2023;single vehicle collision;rear collision;Police;Northbend;13;1;YES;1;1;;54810;6090;6090;42630;Chevrolet;Silverado;2006
+33;364050;01.05.2002;north;low;2000;1360.75;350300;F;jd;married;21.01.2023;single vehicle collision;side collision;Other;Columbus;11;1;YES;1;3;;81360;6780;13560;61020;Subaru;Legacy;2016
+30;294104;22.09.2014;east;mid;1000;1171.36;342904;F;masters;married;25.02.2023;theft;;None;Arlington;3;1;NO;0;3;YES;4680;520;520;3640;Chevrolet;Malibu;2020
+39;81940;18.02.2014;north;mid;2000;1486.13;500243;F;jd;other;25.02.2023;theft;;Police;Northbrook;9;1;YES;1;3;YES;5500;1100;550;3850;Chevrolet;Tahoe;2017
+35;266959;19.09.2003;east;high;500;1052.94;346756;M;jd;married;25.02.2023;single vehicle collision;front collision;Fire;Northbend;17;1;YES;2;3;NO;88660;8060;16120;64480;Mercedes;C300;2014
+39;297178;13.04.1999;north;mid;1000;768.87;333123;M;masters;married;18.02.2023;single vehicle collision;side collision;Police;Columbus;0;1;NO;0;2;;49800;9960;4980;34860;Mercedes;ML350;2022
+39;392398;21.03.2018;west;low;500;1044.69;334950;M;md;married;24.01.2023;theft;;None;Hillsdale;1;1;?;2;1;NO;4950;450;900;3600;Chevrolet;Silverado;2017
+29;66244;22.10.2009;east;low;500;1445.09;336528;M;md;other;11.02.2023;multi-vehicle collision;front collision;Ambulance;Arlington;11;3;YES;2;0;NO;57970;10540;5270;42160;Saab;93;2013
+43;276579;18.09.2003;north;high;1000;1292.15;502638;F;masters;other;08.01.2023;single vehicle collision;rear collision;Fire;Riverwood;17;1;YES;2;3;YES;79320;13220;6610;59490;Nissan;Ultima;2004
+21;123858;28.01.1999;north;high;1000;1340.83;345606;M;associate;married;10.02.2023;single vehicle collision;front collision;Other;Hillsdale;21;1;?;1;2;;62460;6940;6940;48580;Honda;Accord;2010
+50;73573;02.05.2014;east;low;1000;1273.5;366251;M;associate;other;12.02.2023;single vehicle collision;front collision;Police;Riverwood;16;1;YES;2;3;NO;37280;0;0;37280;Audi;A5;2003
+28;101620;10.04.2001;north;low;2000;1470.88;371334;M;associate;married;17.02.2023;single vehicle collision;front collision;Other;Springfield;0;1;?;2;1;;48290;8780;8780;30730;Nissan;Maxima;2002
+40;72164;25.04.2005;east;low;500;1236.76;368670;F;high school;married;27.01.2023;theft;;Police;Springfield;5;1;YES;1;1;NO;7480;680;680;6120;Saab;95;2005
+39;580743;09.10.2021;north;mid;1000;1300.51;503916;M;jd;unmarried;17.02.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;12;3;NO;2;3;YES;36300;3300;9900;23100;Ford;Escape;2020
+27;553207;11.09.2009;north;low;2000;1116.87;370834;F;college;other;26.02.2023;single vehicle collision;front collision;Fire;Northbrook;23;1;?;1;3;;61560;6840;6840;47880;Ford;Fusion;2015
+36;488497;31.08.2007;west;mid;500;1151.6;332679;M;associate;other;22.02.2023;multi-vehicle collision;side collision;Other;Arlington;16;3;YES;1;0;YES;50500;10100;5050;35350;Accura;TL;2011
+47;439002;12.12.1998;north;low;1000;1214.79;510957;F;masters;other;06.01.2023;theft;;Police;Columbus;8;1;NO;1;1;NO;2700;300;300;2100;Ford;F150;2020
+27;430152;28.09.2011;north;mid;1000;1006.9;366659;F;masters;other;13.01.2023;theft;;Police;Columbus;19;1;NO;2;3;;4400;0;550;3850;Toyota;Camry;2007
+29;474807;25.12.2009;east;mid;500;1302.46;517235;M;jd;other;08.02.2023;multi-vehicle collision;front collision;Ambulance;Columbus;6;3;NO;0;2;;75400;11600;11600;52200;Dodge;Neon;2012
+35;559301;23.11.2009;west;low;2000;1115.53;346126;F;phd;other;14.02.2023;multi-vehicle collision;side collision;Fire;Hillsdale;23;3;NO;2;2;NO;53190;5910;11820;35460;Volkswagen;Jetta;2003
+43;589260;16.08.2016;north;low;500;980.33;504247;F;jd;other;12.02.2023;single vehicle collision;front collision;Fire;Riverwood;18;1;?;1;0;;75400;15080;7540;52780;Honda;CRV;2018
+30;572208;21.09.2009;north;mid;2000;1614.69;347947;M;jd;married;04.02.2023;multi-vehicle collision;rear collision;Other;Hillsdale;13;3;YES;0;3;YES;63600;6360;12720;44520;Dodge;RAM;2017
+62;353102;12.09.2007;west;low;500;1010.03;368136;M;phd;married;15.02.2023;multi-vehicle collision;rear collision;Fire;Riverwood;7;3;YES;0;3;;64350;7150;7150;50050;Chevrolet;Tahoe;2016
+42;106858;29.01.2012;north;low;1000;1021.22;376098;F;md;other;06.02.2023;multi-vehicle collision;rear collision;Other;Northbend;13;3;NO;1;2;YES;58850;10700;10700;37450;Accura;MDX;2006
+39;375471;01.08.2000;west;mid;2000;1468.17;331651;M;phd;married;07.01.2023;single vehicle collision;front collision;Ambulance;Riverwood;22;1;YES;0;1;NO;65790;7310;7310;51170;Saab;93;2014
+37;146219;12.04.2017;west;mid;1000;2045.7;339237;F;md;other;09.01.2023;single vehicle collision;rear collision;Other;Columbus;2;1;?;0;3;NO;79530;14460;7230;57840;Accura;MDX;2007
+55;579538;25.06.1998;east;high;500;1458.1;345824;F;md;married;12.01.2023;single vehicle collision;rear collision;Fire;Northbrook;8;1;YES;1;2;YES;60600;12120;6060;42420;Accura;TL;2018
+55;592251;27.06.2000;west;high;2000;993.67;364633;M;jd;other;07.02.2023;multi-vehicle collision;side collision;Police;Northbend;23;3;YES;1;1;YES;88400;17680;8840;61880;Nissan;Pathfinder;2017
+48;403367;18.10.2006;north;low;500;1514.45;374135;F;jd;unmarried;04.01.2023;multi-vehicle collision;rear collision;Police;Springfield;11;4;YES;0;2;NO;59400;13200;6600;39600;Saab;93;2003
+48;379417;22.02.2013;west;mid;500;1409.54;364842;M;masters;other;16.01.2023;single vehicle collision;front collision;Ambulance;Riverwood;17;1;YES;2;1;NO;59400;5940;11880;41580;Honda;Civic;2021
+53;444950;22.02.2022;north;mid;500;765.25;366169;M;associate;other;14.01.2023;parked car;;Police;Columbus;8;1;NO;0;1;NO;8800;1760;880;6160;Subaru;Legacy;2009
+28;262752;25.09.2020;east;mid;1000;1572.04;361887;M;college;other;07.01.2023;multi-vehicle collision;side collision;Police;Springfield;20;3;YES;0;2;;65040;10840;10840;43360;Subaru;Impreza;2017
+29;447280;17.01.2018;east;high;1000;1876.55;350714;M;high school;married;20.02.2023;single vehicle collision;rear collision;Fire;Riverwood;2;1;NO;0;0;;59070;5370;5370;48330;Chevrolet;Malibu;2010
+42;558865;18.05.2010;north;low;500;1091.94;368422;M;associate;other;21.02.2023;multi-vehicle collision;side collision;Ambulance;Springfield;18;3;?;1;1;NO;53280;4440;8880;39960;Subaru;Impreza;2022
+38;168935;09.01.2021;east;high;500;974.78;371568;F;phd;unmarried;21.01.2023;single vehicle collision;rear collision;Fire;Northbrook;16;1;?;1;2;;72200;14440;7220;50540;BMW;M5;2020
+26;157953;03.06.2004;west;high;2000;930.25;512518;M;md;other;10.01.2023;multi-vehicle collision;rear collision;Fire;Columbus;2;3;NO;2;3;NO;78650;14300;7150;57200;Audi;A3;2003
+39;360700;10.01.1999;north;low;500;1556.4;356749;F;masters;unmarried;16.02.2023;theft;;Police;Springfield;5;1;YES;1;2;;7700;770;1540;5390;Saab;93;2007
+45;486408;19.04.1998;west;high;1000;1357.02;351438;M;masters;unmarried;09.01.2023;theft;;Police;Northbend;4;1;NO;0;2;;7370;670;1340;5360;Subaru;Impreza;2004
+39;213955;01.07.2014;north;mid;1000;1414.19;512514;F;jd;other;27.01.2023;single vehicle collision;rear collision;Ambulance;Northbrook;16;1;YES;0;3;;45180;5020;5020;35140;Honda;CRV;2011
+46;560540;19.11.2012;north;low;1000;1240.13;501929;M;masters;married;08.02.2023;single vehicle collision;front collision;Fire;Hillsdale;17;1;YES;0;2;YES;74900;14980;7490;52430;Jeep;Grand Cherokee;2010
+32;543796;26.09.2004;north;mid;500;1156.14;334215;M;high school;other;08.01.2023;multi-vehicle collision;rear collision;Police;Riverwood;23;3;YES;1;3;YES;63570;9780;9780;44010;Volkswagen;Jetta;2013
+30;410173;05.06.2014;north;high;1000;1345.15;330633;M;high school;other;22.01.2023;parked car;;None;Northbend;6;1;?;1;2;YES;6480;540;1080;4860;Honda;Civic;2003
+36;128229;18.03.2003;west;high;1000;1234.43;516897;F;md;other;10.01.2023;single vehicle collision;side collision;Police;Northbrook;0;1;NO;2;0;NO;61050;5550;11100;44400;Dodge;Neon;2016
+43;531670;25.02.2022;east;low;500;1201.28;355778;F;md;unmarried;06.02.2023;single vehicle collision;rear collision;Fire;Hillsdale;11;1;NO;0;0;;63250;11500;5750;46000;Nissan;Ultima;2004
+36;442788;21.01.2017;north;low;500;1531.18;509304;M;jd;other;20.01.2023;single vehicle collision;rear collision;Police;Springfield;13;1;YES;1;2;YES;58500;0;6500;52000;Ford;Escape;2008
+36;153556;05.10.2016;west;high;500;1623.56;507420;F;md;other;23.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;11;1;NO;2;1;NO;76560;12760;12760;51040;Ford;Fusion;2015
+43;394754;30.08.2013;west;mid;2000;970.58;341949;M;college;married;01.02.2023;multi-vehicle collision;front collision;Police;Hillsdale;15;3;YES;2;2;YES;77100;7710;15420;53970;Audi;A3;2017
+63;512483;11.09.2016;west;mid;1000;1290.41;379692;M;high school;other;21.02.2023;parked car;;None;Northbend;5;1;YES;1;3;NO;4700;940;470;3290;Dodge;Neon;2014
+31;430239;07.02.2002;west;low;2000;1016.84;369614;M;associate;other;27.01.2023;multi-vehicle collision;side collision;Police;Riverwood;21;3;YES;1;2;;93730;14420;21630;57680;Honda;CRV;2008
+36;386389;11.06.2002;east;mid;500;1863.94;336141;M;college;unmarried;11.02.2023;single vehicle collision;rear collision;Police;Hillsdale;17;1;?;2;1;YES;47300;4300;8600;34400;Volkswagen;Jetta;2013
+42;327448;08.08.2009;east;low;500;1251.23;362251;F;masters;other;06.01.2023;single vehicle collision;front collision;Police;Northbend;22;1;YES;2;2;;87010;7910;15820;63280;Ford;F150;2009
+57;110752;05.09.2007;east;high;2000;1421.06;508950;M;jd;married;17.01.2023;multi-vehicle collision;rear collision;Other;Columbus;15;3;NO;1;3;NO;66240;11040;11040;44160;Nissan;Maxima;2010
+55;318237;06.03.2020;north;high;2000;1387.24;356171;M;jd;married;17.02.2023;theft;;None;Northbrook;6;1;?;0;2;;9000;900;1800;6300;Mercedes;ML350;2022
+36;408904;27.10.2006;west;high;2000;1316.35;501716;F;college;other;30.01.2023;parked car;;None;Arlington;9;1;NO;0;1;YES;4700;940;470;3290;Dodge;Neon;2009
+25;546451;02.05.2007;west;mid;1000;952.27;373296;M;masters;married;18.01.2023;multi-vehicle collision;side collision;Ambulance;Columbus;22;4;NO;0;0;;75600;12600;12600;50400;Toyota;Corolla;2012
+24;290724;30.08.2018;north;high;2000;1548.64;335600;F;md;other;01.02.2023;parked car;;None;Hillsdale;20;1;YES;0;1;;3960;660;660;2640;Audi;A3;2005
+38;215343;24.05.2017;west;low;500;1004.88;378140;F;college;other;06.02.2023;multi-vehicle collision;side collision;Police;Northbend;15;3;YES;2;1;YES;70900;14180;7090;49630;BMW;X6;2004
+29;233139;09.08.2009;west;mid;500;1379.99;333121;M;high school;other;21.02.2023;theft;;Police;Hillsdale;4;1;NO;0;2;;4200;840;420;2940;Jeep;Wrangler;2015
+26;217744;04.12.2012;north;low;500;1283.14;357910;F;high school;unmarried;03.02.2023;single vehicle collision;rear collision;Fire;Riverwood;0;1;NO;1;3;;52200;5220;10440;36540;Honda;CRV;2018
+28;568004;05.10.1999;east;high;1000;1072.58;365169;M;md;married;13.02.2023;parked car;;Police;Riverwood;4;1;?;2;0;;3200;400;400;2400;Jeep;Grand Cherokee;2019
+42;170115;28.09.2005;west;high;1000;761.78;373357;M;associate;other;04.02.2023;single vehicle collision;side collision;Police;Northbrook;12;1;YES;1;3;YES;70830;7870;7870;55090;Jeep;Grand Cherokee;2012
+29;287385;22.10.1997;west;mid;1000;1725.02;356538;M;high school;other;28.01.2023;theft;;None;Hillsdale;14;1;?;0;0;;7200;720;1440;5040;Audi;A5;2006
+39;320266;04.07.2008;east;mid;500;962.9;360643;F;associate;married;20.02.2023;multi-vehicle collision;rear collision;Police;Arlington;7;3;?;0;1;;72820;13240;6620;52960;BMW;3 Series;2017
+34;373327;04.07.2017;east;mid;500;1255.47;374739;F;phd;married;27.02.2023;multi-vehicle collision;side collision;Fire;Arlington;20;3;YES;1;1;;51370;9340;4670;37360;BMW;M5;2007
+35;564462;12.11.2000;west;low;500;1425.57;344890;M;high school;married;30.01.2023;multi-vehicle collision;side collision;Police;Springfield;3;3;?;0;0;;87900;17580;8790;61530;Dodge;Neon;2002
+30;599034;11.02.2009;north;high;500;949.57;367195;M;jd;other;31.01.2023;multi-vehicle collision;front collision;Other;Riverwood;8;3;NO;0;3;;59670;6630;6630;46410;Volkswagen;Passat;2011
+34;580076;03.05.2004;north;mid;2000;1275.36;505137;F;college;other;19.01.2023;single vehicle collision;rear collision;Police;Springfield;14;1;NO;1;2;;69200;13840;6920;48440;Volkswagen;Passat;2003
+46;293695;12.11.2007;west;high;2000;1311.44;355300;F;phd;married;09.01.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;3;3;?;1;3;NO;77660;7060;14120;56480;Nissan;Maxima;2011
+49;524970;26.08.1999;west;low;500;1139.73;351640;M;college;married;01.01.2023;theft;;None;Columbus;4;1;YES;1;3;YES;4320;480;480;3360;Mercedes;E400;2009
+29;134052;05.11.2001;east;high;500;912.96;514835;M;associate;other;12.02.2023;parked car;;Police;Columbus;5;1;NO;2;3;NO;7110;790;1580;4740;Accura;MDX;2012
+27;186876;13.05.1999;east;high;500;1058.99;513899;M;jd;other;03.02.2023;parked car;;Police;Northbend;4;1;NO;0;3;NO;6050;550;1100;4400;Volkswagen;Passat;2016
+25;440583;18.01.2008;east;high;500;1861.15;362666;F;associate;other;13.02.2023;single vehicle collision;front collision;Fire;Northbend;0;1;NO;2;1;;67800;13560;6780;47460;Mercedes;C300;2002
+48;499719;25.04.2000;north;low;1000;1536.71;518423;F;md;married;11.01.2023;single vehicle collision;side collision;Fire;Northbend;12;1;?;0;0;;60600;6060;12120;42420;Ford;Fusion;2011
+40;325373;10.04.1998;west;low;500;1254.31;348278;F;jd;other;07.01.2023;multi-vehicle collision;side collision;Other;Northbend;10;3;YES;1;2;YES;41700;8340;8340;25020;Saab;95;2020
+37;572662;15.10.2016;east;high;1000;1438.01;375359;F;associate;married;29.01.2023;multi-vehicle collision;rear collision;Other;Springfield;2;2;NO;1;2;NO;53680;9760;4880;39040;Accura;MDX;2011
+34;159147;10.08.2010;east;mid;1000;1574.52;514909;M;associate;other;25.02.2023;single vehicle collision;side collision;Other;Hillsdale;18;1;YES;1;1;YES;95000;9500;9500;76000;Ford;F150;2008
+29;167364;09.02.2000;west;low;500;993.81;515414;F;jd;unmarried;02.02.2023;parked car;;Police;Springfield;3;1;?;2;1;;5000;500;1000;3500;Mercedes;E400;2015
+38;238872;21.01.2017;east;low;500;1353.19;514913;F;md;other;19.01.2023;single vehicle collision;front collision;Fire;Northbrook;21;1;?;1;1;;47300;4730;4730;37840;Nissan;Pathfinder;2021
+43;443772;28.04.2003;west;mid;500;1519.66;377824;F;associate;other;02.01.2023;single vehicle collision;rear collision;Fire;Hillsdale;18;1;?;1;3;YES;68200;13640;6820;47740;Dodge;RAM;2010
+56;438097;30.04.1997;north;low;500;1933.96;370794;M;masters;other;12.01.2023;single vehicle collision;rear collision;Ambulance;Hillsdale;7;1;?;2;3;;92730;16860;8430;67440;Mercedes;E400;2011
+55;151379;16.09.2006;west;mid;500;876.3;341501;M;phd;unmarried;01.03.2023;multi-vehicle collision;rear collision;Fire;Northbend;2;4;YES;0;2;NO;38640;4830;4830;28980;Chevrolet;Tahoe;2004
+31;414982;11.04.2010;west;mid;2000;1365.01;359290;F;high school;married;28.01.2023;multi-vehicle collision;rear collision;Fire;Northbend;14;3;?;1;0;NO;52700;10540;10540;31620;BMW;X6;2021
+40;257307;22.12.2016;west;mid;500;1153.64;365126;M;jd;married;24.01.2023;parked car;;Police;Columbus;5;1;?;0;2;NO;5670;1260;630;3780;Ford;F150;2004
+48;483813;06.09.2005;east;mid;1000;1623.76;366466;M;college;married;26.02.2023;single vehicle collision;side collision;Ambulance;Springfield;10;1;YES;1;3;;59500;11900;5950;41650;Dodge;Neon;2013
+44;599392;20.05.2002;east;low;1000;1395.11;514489;M;high school;other;03.01.2023;single vehicle collision;rear collision;Other;Arlington;6;1;NO;1;0;NO;61740;6860;6860;48020;Accura;MDX;2004
+38;71323;12.04.2017;east;mid;500;1189.61;342834;M;high school;married;31.01.2023;single vehicle collision;rear collision;Police;Arlington;8;1;NO;2;0;;80100;8900;8900;62300;Audi;A3;2022
+54;292680;07.02.2010;north;high;2000;1153.66;515869;F;md;unmarried;21.01.2023;multi-vehicle collision;rear collision;Police;Hillsdale;4;3;?;2;0;;62300;12460;6230;43610;Jeep;Wrangler;2014
+38;292667;07.11.1997;east;mid;1000;1274.84;510214;F;masters;other;19.02.2023;multi-vehicle collision;front collision;Police;Northbrook;12;3;NO;1;3;;61920;6880;6880;48160;Saab;93;2010
+40;447180;22.06.2008;east;high;2000;1215.8;340074;F;md;married;26.01.2023;multi-vehicle collision;side collision;Other;Springfield;6;3;?;1;0;;53460;9720;9720;34020;Dodge;Neon;2011
+26;268866;26.01.2006;west;mid;1000;986.4;376470;M;college;other;02.02.2023;single vehicle collision;rear collision;Police;Northbend;8;1;?;2;2;YES;57860;0;10520;47340;Subaru;Impreza;2015
+50;595656;25.04.2001;north;mid;1000;1567.44;513082;M;phd;other;29.01.2023;multi-vehicle collision;side collision;Other;Springfield;2;3;NO;2;1;YES;84500;13000;13000;58500;Volkswagen;Passat;2018
+57;238625;11.06.2006;west;mid;500;1399.31;519860;F;high school;other;25.01.2023;theft;;Police;Hillsdale;9;1;NO;1;0;NO;6890;1060;1060;4770;Audi;A5;2006
+28;369217;03.11.1998;north;low;2000;1593.18;339272;M;phd;unmarried;23.02.2023;single vehicle collision;side collision;Police;Hillsdale;19;1;YES;0;2;YES;70920;11820;11820;47280;Jeep;Wrangler;2009
+41;234825;19.08.2008;west;mid;500;1495.46;360710;F;jd;married;29.01.2023;multi-vehicle collision;front collision;Fire;Northbrook;16;3;?;2;3;NO;28800;0;3600;25200;Ford;Fusion;2020
+43;380221;26.09.2004;north;low;2000;1160.02;357690;F;associate;other;17.01.2023;parked car;;None;Northbrook;9;1;?;0;3;NO;5850;1300;650;3900;BMW;M5;2013
+39;147217;24.03.2019;west;mid;1000;1230.83;358205;M;high school;other;09.02.2023;multi-vehicle collision;front collision;Fire;Springfield;21;3;?;1;0;NO;87960;14660;14660;58640;Jeep;Wrangler;2006
+60;140994;19.09.2004;west;low;2000;1302.94;373606;F;college;married;09.01.2023;single vehicle collision;rear collision;Ambulance;Arlington;18;1;NO;0;0;NO;60600;5050;10100;45450;Honda;Civic;2008
+36;71999;26.09.2007;east;high;2000;977.37;336332;F;jd;other;01.03.2023;multi-vehicle collision;front collision;Fire;Riverwood;2;4;YES;0;2;YES;72800;14560;14560;43680;Honda;Accord;2005
+36;281545;20.12.2002;east;low;2000;1207.52;376153;M;jd;married;16.02.2023;multi-vehicle collision;side collision;Other;Columbus;15;3;YES;0;1;;62810;11420;11420;39970;Nissan;Ultima;2006
+61;321646;31.08.2005;north;mid;2000;1616.76;375375;F;associate;unmarried;04.02.2023;multi-vehicle collision;rear collision;Ambulance;Columbus;3;3;YES;2;1;YES;78100;15620;7810;54670;Chevrolet;Tahoe;2004
+41;573796;02.05.2017;east;high;1000;1402.01;349761;F;phd;other;31.01.2023;multi-vehicle collision;side collision;Police;Riverwood;16;2;?;1;2;YES;44110;4010;8020;32080;Honda;Accord;2022
+28;202750;04.10.2009;east;mid;2000;1586.07;501585;F;associate;unmarried;14.02.2023;single vehicle collision;rear collision;Fire;Riverwood;18;1;?;2;1;YES;71280;12960;12960;45360;Audi;A5;2019
+43;540393;03.08.2007;east;mid;1000;952.29;337438;F;college;other;17.02.2023;multi-vehicle collision;side collision;Other;Northbrook;17;3;?;2;3;YES;42500;8500;4250;29750;Nissan;Pathfinder;2007
+46;457702;07.02.2014;west;mid;500;1300.45;331500;F;jd;other;12.01.2023;multi-vehicle collision;front collision;Fire;Northbrook;2;3;NO;1;0;NO;57860;5260;10520;42080;Volkswagen;Jetta;2018
+24;296172;31.01.2002;west;high;1000;1142.06;364321;F;phd;other;04.02.2023;multi-vehicle collision;rear collision;Police;Riverwood;13;3;NO;2;1;;53370;5930;5930;41510;Nissan;Ultima;2018
+30;199984;07.06.2002;west;mid;2000;1369.03;342174;M;college;unmarried;14.02.2023;single vehicle collision;rear collision;Police;Arlington;22;1;YES;0;3;;34800;3480;6960;24360;Accura;MDX;2006
+43;479863;01.08.1999;north;low;1000;972.95;368952;F;jd;other;26.02.2023;single vehicle collision;rear collision;Police;Northbend;0;1;NO;0;1;YES;85320;21330;7110;56880;Nissan;Pathfinder;2013
+44;221755;19.08.2021;west;high;1000;1582.02;510674;M;associate;unmarried;17.02.2023;theft;;None;Arlington;20;1;NO;0;1;NO;6500;1300;650;4550;Accura;RSX;2016
+30;245222;08.12.2008;east;low;500;1397.38;348881;M;college;married;24.02.2023;single vehicle collision;side collision;Fire;Arlington;22;1;?;0;0;YES;53440;0;6680;46760;Ford;Escape;2011
+48;436133;29.07.2015;west;high;500;956.41;364614;F;phd;married;22.01.2023;multi-vehicle collision;side collision;Fire;Columbus;19;3;?;0;0;;46860;8520;8520;29820;Volkswagen;Passat;2005
+57;246057;01.10.1998;west;mid;500;1061.78;363324;M;masters;married;03.02.2023;single vehicle collision;front collision;Police;Springfield;14;1;NO;2;0;YES;59400;6600;6600;46200;Dodge;Neon;2002
+38;355131;27.07.2013;north;low;1000;1195.82;370085;M;masters;other;14.02.2023;multi-vehicle collision;front collision;Ambulance;Springfield;17;3;?;2;0;;78240;13040;13040;52160;Subaru;Legacy;2020
+44;125282;18.07.2000;west;mid;1000;972.27;338296;F;masters;other;07.02.2023;multi-vehicle collision;front collision;Other;Springfield;12;3;?;1;0;YES;26730;4860;4860;17010;Volkswagen;Jetta;2013
+57;309936;24.12.1999;north;low;1000;1364.5;338148;M;high school;other;30.01.2023;multi-vehicle collision;front collision;Other;Columbus;22;3;YES;2;1;NO;52560;11680;5840;35040;Saab;93;2002
+25;201017;06.01.2015;north;mid;1000;1192.11;513551;F;jd;married;13.02.2023;single vehicle collision;rear collision;Ambulance;Northbrook;6;1;YES;1;2;YES;66780;7420;7420;51940;Ford;Escape;2020
+37;65406;10.11.2005;west;high;1000;892.51;346403;M;associate;married;07.01.2023;single vehicle collision;rear collision;Police;Springfield;13;1;YES;2;0;NO;70290;7810;7810;54670;Dodge;RAM;2006
+44;500283;23.06.2003;east;mid;2000;1653.9;354497;F;masters;married;15.01.2023;single vehicle collision;front collision;Other;Northbend;8;1;YES;0;0;YES;105820;16280;16280;73260;Audi;A3;2009
+40;480982;11.03.1999;east;mid;2000;1313.67;371774;F;phd;other;18.02.2023;theft;;Police;Northbrook;14;1;YES;0;0;YES;6820;1240;1240;4340;Jeep;Grand Cherokee;2010
+35;373795;12.07.1997;north;high;2000;1122;368281;M;md;unmarried;21.01.2023;multi-vehicle collision;front collision;Fire;Columbus;0;3;?;1;3;;50380;4580;4580;41220;Subaru;Forrestor;2003
+30;414702;24.03.2009;east;high;500;1091.18;363259;F;phd;married;06.01.2023;single vehicle collision;front collision;Other;Hillsdale;0;1;?;2;2;NO;83160;6930;13860;62370;Volkswagen;Jetta;2018
+30;301602;26.04.2001;east;low;1000;1059.44;378543;M;md;other;10.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;8;1;NO;0;3;NO;68530;12460;6230;49840;Audi;A5;2004
+45;299690;04.11.2010;east;high;500;1185.64;515351;F;phd;other;24.02.2023;multi-vehicle collision;side collision;Other;Columbus;23;3;?;0;0;YES;54340;9880;0;44460;Saab;92x;2012
+54;363461;28.10.2010;east;mid;2000;1283.2;344526;M;jd;other;28.02.2023;single vehicle collision;rear collision;Other;Springfield;19;1;NO;0;2;YES;67770;7530;15060;45180;Mercedes;ML350;2020
+41;202131;11.10.2003;east;low;2000;1420.32;520475;F;associate;unmarried;16.01.2023;single vehicle collision;side collision;Ambulance;Riverwood;21;1;YES;2;1;NO;85900;17180;17180;51540;Subaru;Forrestor;2012
+36;476886;25.06.2020;east;high;2000;1232.07;506145;F;masters;other;05.02.2023;multi-vehicle collision;side collision;Police;Hillsdale;16;3;NO;1;1;NO;55900;5590;5590;44720;Nissan;Ultima;2022
+45;132699;29.09.1998;east;low;1000;1309.41;351518;F;associate;married;10.01.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;23;3;YES;0;0;YES;52650;5850;5850;40950;Ford;F150;2008
+32;140211;19.11.2006;west;low;2000;1261.59;342916;F;jd;married;07.02.2023;single vehicle collision;side collision;Fire;Hillsdale;10;1;?;2;0;;63600;5300;10600;47700;Audi;A5;2004
+30;88965;14.05.2009;north;mid;2000;1023.65;342600;F;high school;other;20.02.2023;single vehicle collision;rear collision;Fire;Arlington;19;1;?;1;3;YES;64100;6410;6410;51280;Chevrolet;Malibu;2008
+27;87636;22.02.2001;east;low;1000;1139.21;368483;M;jd;other;28.02.2023;multi-vehicle collision;side collision;Police;Hillsdale;15;2;?;0;1;YES;71640;5970;11940;53730;Toyota;Highlander;2015
+50;220500;11.03.2010;west;high;1000;976.57;331089;F;high school;married;04.02.2023;single vehicle collision;side collision;Fire;Hillsdale;19;1;YES;0;0;NO;49060;8920;8920;31220;Chevrolet;Silverado;2002
+40;106388;28.06.2011;west;low;1000;1404.1;372863;F;associate;married;01.03.2023;multi-vehicle collision;side collision;Ambulance;Springfield;18;3;YES;1;0;YES;42930;9540;4770;28620;BMW;X6;2012
+37;540426;20.10.1999;north;high;1000;1726.67;517915;F;masters;other;08.02.2023;single vehicle collision;front collision;Fire;Northbrook;0;1;YES;1;1;;38830;3530;3530;31770;Subaru;Legacy;2006
+40;235510;10.04.2014;east;high;2000;963.32;510322;F;jd;other;02.02.2023;parked car;;None;Hillsdale;10;1;?;2;1;YES;6300;630;630;5040;Nissan;Ultima;2008
+43;574854;02.04.2021;west;high;2000;1351.44;347426;M;associate;other;12.02.2023;multi-vehicle collision;front collision;Police;Springfield;9;3;YES;2;0;NO;95150;17300;17300;60550;Ford;Escape;2014
+48;139958;10.11.2002;west;high;500;1171.48;361712;F;phd;other;09.01.2023;single vehicle collision;front collision;Other;Springfield;1;1;?;1;0;;42900;8580;0;34320;Accura;TL;2006
+43;318921;29.08.2000;east;low;1000;1513.29;343159;M;college;other;09.01.2023;multi-vehicle collision;side collision;Fire;Northbrook;21;3;NO;1;0;NO;60190;9260;9260;41670;BMW;X6;2006
+34;592543;21.10.2010;west;mid;500;1493.17;352217;F;masters;unmarried;07.01.2023;multi-vehicle collision;rear collision;Fire;Columbus;18;3;NO;2;0;YES;99990;18180;18180;63630;Mercedes;E400;2018
+53;198314;19.07.2021;west;low;1000;1494.55;516852;F;high school;unmarried;16.02.2023;parked car;;Police;Springfield;9;1;YES;2;2;NO;6930;630;1260;5040;Honda;CRV;2020
+27;499914;18.10.1999;north;mid;1000;1200.86;502257;M;high school;other;21.01.2023;multi-vehicle collision;front collision;Police;Northbrook;23;3;NO;0;2;YES;79560;6630;13260;59670;Volkswagen;Passat;2010
+44;543204;17.03.2011;east;high;2000;813.07;335235;F;phd;other;05.02.2023;parked car;;Police;Hillsdale;7;1;?;2;2;NO;6400;640;1280;4480;Mercedes;ML350;2012
+42;383212;06.10.2018;west;low;500;1313.79;500951;M;phd;married;05.01.2023;single vehicle collision;rear collision;Other;Hillsdale;14;1;NO;2;1;;42300;4700;4700;32900;Saab;92x;2003
+32;180329;19.07.2009;east;low;500;1170.93;340648;M;associate;other;24.02.2023;theft;;Police;Arlington;8;1;?;1;3;NO;3900;780;390;2730;Ford;F150;2017
+40;259299;03.11.2013;west;mid;1000;1452.54;359375;F;md;married;21.02.2023;multi-vehicle collision;rear collision;Other;Arlington;17;3;NO;2;3;;55120;6890;0;48230;Accura;MDX;2009
+49;478284;29.05.2005;east;mid;500;861.03;348777;M;md;married;17.01.2023;multi-vehicle collision;side collision;Other;Northbrook;16;3;NO;0;2;NO;69480;11580;11580;46320;Saab;95;2014
+49;535479;05.11.2016;west;low;2000;1346.03;330821;F;high school;other;17.02.2023;multi-vehicle collision;front collision;Fire;Hillsdale;21;3;YES;0;2;;66550;12100;6050;48400;Volkswagen;Jetta;2010
+47;370310;02.02.2010;north;mid;500;1385.04;357098;M;high school;married;17.01.2023;multi-vehicle collision;rear collision;Other;Springfield;15;3;YES;0;0;NO;65800;13160;6580;46060;Accura;TL;2008
+33;339584;13.03.2010;west;low;1000;1607.78;370096;M;college;married;20.01.2023;single vehicle collision;side collision;Ambulance;Springfield;22;1;?;1;3;;82800;20700;13800;48300;Jeep;Grand Cherokee;2011
+31;256866;25.04.2010;north;mid;500;1227.27;504772;F;md;married;23.02.2023;multi-vehicle collision;front collision;Fire;Hillsdale;2;3;?;0;2;YES;48100;11100;7400;29600;Volkswagen;Jetta;2021
+53;505212;15.11.2003;west;low;500;1691.74;352424;F;md;unmarried;17.02.2023;multi-vehicle collision;front collision;Fire;Hillsdale;10;3;YES;1;3;NO;59040;6560;6560;45920;Saab;93;2022
+36;478885;30.10.2014;east;mid;1000;1272.74;341266;M;college;unmarried;08.02.2023;single vehicle collision;rear collision;Fire;Springfield;22;1;YES;2;3;NO;52030;9460;9460;33110;Accura;MDX;2002
+33;332955;15.11.1998;west;high;1000;1311.75;338585;F;college;unmarried;10.02.2023;parked car;;None;Hillsdale;3;1;YES;1;0;NO;4290;780;390;3120;Audi;A3;2004
+52;478120;06.05.2022;north;mid;1000;971.61;368602;M;phd;other;02.02.2023;multi-vehicle collision;rear collision;Police;Arlington;15;2;YES;1;3;YES;51090;7860;7860;35370;Toyota;Highlander;2010
+39;253254;19.02.2001;west;low;500;804.42;502145;F;college;married;25.02.2023;parked car;;Police;Northbend;3;1;?;2;3;;3300;600;0;2700;Dodge;RAM;2010
+42;238883;16.05.2014;north;mid;1000;1586.33;505337;M;jd;other;15.01.2023;multi-vehicle collision;rear collision;Other;Riverwood;15;3;YES;1;1;NO;84600;16920;8460;59220;Chevrolet;Malibu;2014
+36;585995;10.04.2007;north;mid;1000;1501.32;348158;M;md;married;28.02.2023;single vehicle collision;side collision;Ambulance;Springfield;1;1;YES;2;1;NO;51390;5710;11420;34260;Toyota;Corolla;2020
+31;286635;04.12.2003;west;low;2000;1132.19;346863;M;phd;married;07.02.2023;single vehicle collision;front collision;Police;Arlington;3;1;?;2;0;;59000;5900;5900;47200;Ford;Fusion;2020
+43;519223;03.12.1997;north;low;2000;1320.21;336952;M;high school;other;28.01.2023;parked car;;Police;Arlington;4;1;YES;1;3;YES;9020;1640;820;6560;Toyota;Camry;2012
+48;408591;06.05.1999;east;high;1000;1330.18;509377;F;md;unmarried;28.01.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;20;2;NO;2;1;YES;86060;13240;13240;59580;Volkswagen;Passat;2009
+26;215718;22.07.2015;west;mid;2000;783.93;520175;M;jd;other;07.01.2023;multi-vehicle collision;rear collision;Police;Hillsdale;12;3;YES;2;0;;69080;12560;6280;50240;Audi;A5;2016
+27;279518;18.10.1999;east;mid;500;1073.82;504296;F;high school;unmarried;17.02.2023;theft;;Police;Columbus;7;1;?;0;1;YES;3190;580;290;2320;Saab;95;2022
+36;588853;28.02.2011;west;mid;2000;1311.62;500872;F;masters;other;03.02.2023;theft;;None;Northbrook;9;1;?;2;0;;2800;280;280;2240;Volkswagen;Passat;2022
+39;314785;28.05.1999;west;high;2000;1397.96;505458;F;masters;other;10.01.2023;multi-vehicle collision;front collision;Fire;Columbus;16;3;NO;0;2;;64920;10820;10820;43280;Ford;Fusion;2004
+29;556359;12.11.2021;west;low;2000;1407.17;510270;M;high school;married;30.01.2023;single vehicle collision;front collision;Police;Northbrook;0;1;NO;2;2;YES;62920;9680;14520;38720;Accura;MDX;2012
+44;316799;31.12.2007;east;mid;2000;1186.62;347437;M;college;unmarried;08.01.2023;multi-vehicle collision;front collision;Police;Northbend;15;3;?;1;2;NO;61100;6110;12220;42770;Dodge;Neon;2015
+30;151431;09.02.1999;north;low;500;1390.5;336467;F;high school;unmarried;12.01.2023;single vehicle collision;rear collision;Fire;Riverwood;16;1;NO;2;0;YES;54300;10860;5430;38010;Toyota;Highlander;2017
+34;176208;15.10.2013;east;high;500;1318.08;504649;F;associate;other;06.01.2023;theft;;None;Arlington;8;1;YES;1;3;;4700;470;940;3290;Saab;92x;2005
+34;255897;05.08.2010;east;high;500;1281.04;516094;F;college;other;12.02.2023;multi-vehicle collision;side collision;Police;Northbrook;0;4;?;0;0;;66880;6080;12160;48640;Chevrolet;Silverado;2003
+43;304471;12.09.2009;north;low;2000;1219.25;373362;M;md;married;07.01.2023;single vehicle collision;side collision;Ambulance;Hillsdale;13;1;?;0;2;;75460;13720;13720;48020;Audi;A5;2009
+32;370140;16.03.1998;west;high;500;1610.54;356730;F;md;other;08.01.2023;single vehicle collision;side collision;Fire;Springfield;2;1;?;2;1;YES;64240;11680;11680;40880;BMW;3 Series;2022
+33;332853;06.04.2000;north;low;1000;967.99;514353;M;md;other;21.01.2023;single vehicle collision;rear collision;Ambulance;Columbus;21;1;NO;1;0;YES;76920;12820;6410;57690;Chevrolet;Malibu;2009
+28;116416;26.04.2017;east;low;1000;828.42;343822;M;jd;married;13.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;22;1;?;1;0;;45270;10060;10060;25150;Jeep;Wrangler;2013
+28;126261;16.01.1998;east;mid;1000;772.1;358695;M;associate;other;01.01.2023;theft;;None;Springfield;3;1;YES;1;2;NO;3200;640;320;2240;Mercedes;E400;2021
+40;225520;08.03.2020;west;low;1000;1224.89;368401;M;jd;unmarried;22.01.2023;multi-vehicle collision;rear collision;Other;Springfield;17;2;YES;2;0;;81500;16300;8150;57050;BMW;3 Series;2020
+45;101040;27.03.2017;east;high;1000;1036.2;376946;F;college;married;14.01.2023;multi-vehicle collision;front collision;Fire;Springfield;18;3;NO;1;1;YES;89400;14900;7450;67050;Subaru;Legacy;2005
+40;410934;21.12.2002;west;high;500;1397.05;513367;M;college;married;24.01.2023;single vehicle collision;side collision;Ambulance;Riverwood;11;1;NO;1;2;NO;68300;6830;13660;47810;Subaru;Forrestor;2010
+40;279390;05.07.2002;west;mid;500;1389;353687;M;college;married;28.02.2023;single vehicle collision;front collision;Other;Riverwood;23;1;?;2;2;;53460;9720;4860;38880;Volkswagen;Jetta;2016
+37;227409;22.09.1998;west;low;1000;1404.63;519116;M;md;unmarried;28.01.2023;single vehicle collision;side collision;Ambulance;Arlington;12;1;NO;0;2;NO;44200;4420;4420;35360;Jeep;Wrangler;2009
+44;134394;16.12.2001;east;mid;2000;1179.75;354520;M;college;married;08.02.2023;single vehicle collision;rear collision;Fire;Northbend;22;1;?;1;1;YES;55400;5540;11080;38780;Jeep;Grand Cherokee;2009
+32;310556;02.03.2004;north;mid;1000;987.04;514155;F;high school;unmarried;23.01.2023;single vehicle collision;front collision;Other;Columbus;11;1;?;2;3;YES;84590;15380;15380;53830;Dodge;Neon;2006
+57;177558;29.06.2006;east;mid;2000;1438.79;342363;M;associate;other;09.02.2023;parked car;;None;Riverwood;8;1;YES;0;1;YES;5390;980;980;3430;Volkswagen;Passat;2015
+63;319978;26.03.2019;west;mid;500;1005.1;358904;F;masters;other;05.02.2023;single vehicle collision;side collision;Other;Columbus;7;1;NO;0;3;;43560;4840;4840;33880;Subaru;Legacy;2022
+34;550171;10.12.1997;north;low;500;1704.9;362447;M;masters;other;07.01.2023;single vehicle collision;front collision;Ambulance;Hillsdale;1;1;NO;1;1;YES;77040;8560;8560;59920;Honda;Civic;2005
+48;97003;19.04.2020;west;low;2000;1099.96;357843;F;college;married;27.02.2023;single vehicle collision;side collision;Police;Springfield;9;1;NO;1;2;YES;33480;3720;3720;26040;Nissan;Pathfinder;2019
+46;218988;22.10.2011;east;mid;2000;1109.28;369406;M;md;unmarried;03.02.2023;parked car;;None;Arlington;3;1;YES;2;3;YES;4950;900;450;3600;Toyota;Camry;2002
+30;507686;28.09.2002;north;high;2000;1825.49;333561;M;associate;other;15.01.2023;theft;;Police;Springfield;9;1;YES;1;3;;4620;420;840;3360;Audi;A5;2005
+54;304290;11.03.2009;west;low;500;1249.27;347718;F;associate;other;15.02.2023;single vehicle collision;front collision;Ambulance;Riverwood;14;1;?;0;1;NO;75960;6330;6330;63300;Jeep;Grand Cherokee;2017
+37;76636;21.10.2020;north;high;1000;1410.17;350915;F;masters;other;16.01.2023;single vehicle collision;side collision;Ambulance;Riverwood;21;1;?;0;3;;57700;5770;5770;46160;Nissan;Maxima;2007
+40;279224;23.04.2007;north;low;2000;1304.11;510349;M;associate;married;21.02.2023;multi-vehicle collision;front collision;Ambulance;Columbus;3;3;YES;2;1;;50050;7700;3850;38500;Ford;Fusion;2015
+29;93850;13.04.2000;west;mid;1000;1445.89;367915;M;college;married;10.01.2023;multi-vehicle collision;rear collision;Other;Arlington;15;3;YES;1;0;;44910;4990;4990;34930;Dodge;Neon;2008
+33;215910;09.01.2015;east;high;1000;1139.82;335963;F;jd;other;04.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;21;1;YES;1;2;;54160;6770;6770;40620;Subaru;Legacy;2016
+35;507759;03.12.1997;east;mid;500;869.57;377906;M;md;married;22.01.2023;single vehicle collision;side collision;Fire;Northbrook;13;1;YES;2;0;YES;74140;13480;6740;53920;Ford;Escape;2014
+41;113442;20.03.2021;west;low;1000;1434.9;508145;F;phd;married;24.01.2023;single vehicle collision;rear collision;Fire;Northbend;23;1;YES;2;3;;108480;18080;18080;72320;Volkswagen;Passat;2022
+35;577690;03.11.2001;north;mid;2000;1316.17;518466;M;high school;married;19.01.2023;theft;;None;Hillsdale;13;1;NO;0;3;YES;6490;1180;1180;4130;Volkswagen;Jetta;2009
+34;547501;03.03.2009;north;mid;1000;826.53;367730;F;college;other;22.01.2023;single vehicle collision;front collision;Police;Arlington;10;1;?;2;2;NO;56000;5600;5600;44800;Chevrolet;Malibu;2016
+31;557694;28.11.1997;north;low;500;1457.61;375859;M;md;other;17.02.2023;parked car;;None;Springfield;6;1;?;1;3;;6000;1000;1000;4000;Subaru;Impreza;2007
+52;445585;25.12.2004;west;mid;1000;1241.07;349768;F;high school;other;22.02.2023;multi-vehicle collision;rear collision;Other;Riverwood;2;2;YES;2;0;;88920;6840;13680;68400;Accura;RSX;2017
+41;478693;06.01.2012;west;high;500;1396.62;372182;M;masters;other;01.02.2023;multi-vehicle collision;side collision;Fire;Northbend;13;3;?;2;0;NO;64000;12800;6400;44800;BMW;X6;2003
+42;352944;28.05.2010;north;mid;2000;1217.38;366938;M;associate;married;16.02.2023;multi-vehicle collision;side collision;Ambulance;Columbus;9;3;YES;1;2;NO;64080;7120;7120;49840;Saab;93;2019
+37;591004;09.10.2004;north;mid;500;1260.19;374583;M;jd;married;08.01.2023;single vehicle collision;front collision;Ambulance;Columbus;4;1;?;0;3;NO;60170;10940;10940;38290;Nissan;Pathfinder;2018
+37;527310;15.01.1999;west;low;2000;1601.53;516605;F;high school;married;06.02.2023;single vehicle collision;front collision;Fire;Columbus;17;1;YES;0;2;YES;80520;13420;6710;60390;Toyota;Corolla;2012
+28;83887;15.02.2020;west;low;2000;1834.13;370527;M;masters;other;01.01.2023;single vehicle collision;side collision;Ambulance;Riverwood;5;1;?;2;1;YES;79800;13300;6650;59850;Volkswagen;Passat;2018
+33;109005;20.06.2021;north;mid;2000;1122.54;377314;F;college;other;16.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbrook;14;3;YES;0;1;YES;44200;8840;4420;30940;Saab;93;2002
+43;347997;29.11.1997;east;low;2000;1146.69;375492;F;md;other;16.02.2023;multi-vehicle collision;rear collision;Fire;Arlington;4;3;YES;2;1;YES;57100;5710;5710;45680;Honda;CRV;2021
+29;413901;19.11.2007;east;low;2000;1411.25;330600;F;phd;other;22.02.2023;multi-vehicle collision;rear collision;Police;Columbus;7;3;NO;2;3;NO;34650;7700;3850;23100;Dodge;RAM;2014
+37;176423;19.01.2021;west;high;1000;1113.92;518894;F;masters;married;12.02.2023;multi-vehicle collision;side collision;Ambulance;Columbus;20;3;YES;1;3;;48780;5420;10840;32520;Dodge;Neon;2015
+24;160297;22.04.2003;north;low;500;920.78;373579;F;college;other;12.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;15;3;YES;2;1;;65520;9360;9360;46800;Toyota;Highlander;2018
+58;473141;28.01.2005;north;low;2000;1143.96;371752;M;jd;other;10.01.2023;multi-vehicle collision;rear collision;Other;Columbus;19;3;?;1;1;YES;41490;9220;4610;27660;Mercedes;E400;2011
+41;309018;15.12.1997;east;mid;2000;1151.65;519625;M;masters;unmarried;12.02.2023;multi-vehicle collision;rear collision;Fire;Northbrook;3;3;NO;0;1;;68090;12380;12380;43330;Toyota;Corolla;2016
+53;300587;17.07.2007;east;low;500;1203.97;344551;M;associate;married;01.02.2023;single vehicle collision;rear collision;Fire;Arlington;8;1;YES;0;1;NO;86400;14400;7200;64800;Accura;RSX;2008
+31;91185;04.12.1997;east;low;1000;1455.76;506187;F;college;other;03.02.2023;multi-vehicle collision;rear collision;Ambulance;Riverwood;0;3;NO;1;3;;52380;5820;5820;40740;Toyota;Highlander;2017
+45;567337;09.01.2007;east;mid;2000;1219.52;366257;F;masters;married;27.02.2023;theft;;Police;Riverwood;9;1;NO;2;1;NO;2700;300;300;2100;Honda;Accord;2013
+25;576596;29.03.1999;north;low;1000;1224.94;507731;F;college;other;07.01.2023;multi-vehicle collision;side collision;Other;Columbus;12;3;YES;2;0;;45120;0;5640;39480;Accura;MDX;2018
+45;354738;08.08.2010;north;mid;1000;1351.64;351435;F;jd;unmarried;14.01.2023;single vehicle collision;side collision;Ambulance;Columbus;13;1;YES;0;0;NO;58500;11700;0;46800;Accura;MDX;2002
+37;224263;25.12.1998;east;high;1000;1084.59;344871;M;associate;unmarried;16.01.2023;multi-vehicle collision;rear collision;Other;Northbrook;17;3;?;1;1;YES;77440;14080;7040;56320;Subaru;Legacy;2006
+43;476137;31.08.2004;north;mid;2000;1583.65;363121;M;high school;other;26.02.2023;theft;;None;Hillsdale;3;1;NO;1;0;YES;4620;420;840;3360;Volkswagen;Jetta;2019
+48;159814;10.10.2021;west;high;1000;1241.79;363299;M;masters;married;20.02.2023;multi-vehicle collision;front collision;Other;Springfield;18;3;?;0;2;;54960;6870;0;48090;Toyota;Corolla;2009
+39;484132;24.11.2004;east;mid;2000;836.13;350670;F;college;other;13.02.2023;multi-vehicle collision;rear collision;Police;Northbrook;7;3;?;2;0;YES;64400;6440;6440;51520;Dodge;Neon;2004
+31;370351;22.01.2016;north;mid;500;1192.94;503701;F;md;married;20.01.2023;single vehicle collision;side collision;Police;Riverwood;23;1;NO;0;0;NO;44200;4420;8840;30940;Subaru;Forrestor;2004
+21;348077;26.01.2010;north;mid;500;913.52;512284;F;high school;other;11.02.2023;single vehicle collision;side collision;Police;Northbrook;23;1;YES;0;0;NO;40500;4050;4050;32400;Nissan;Pathfinder;2005
+46;562448;21.09.2020;west;high;500;1346.94;374328;F;high school;married;01.02.2023;multi-vehicle collision;rear collision;Fire;Springfield;21;3;?;1;2;YES;76120;13840;6920;55360;Toyota;Camry;2006
+41;157789;24.01.2006;east;low;2000;1053.64;341960;F;md;other;08.02.2023;single vehicle collision;front collision;Other;Northbrook;7;1;NO;0;2;NO;61290;6810;6810;47670;Honda;Civic;2002
+43;569841;02.09.2009;north;low;1000;1112.4;365104;F;high school;other;08.01.2023;single vehicle collision;side collision;Ambulance;Northbrook;1;1;?;2;2;YES;66660;6060;6060;54540;Toyota;Highlander;2013
+29;294360;14.12.2013;east;low;2000;1005.39;357695;F;high school;married;21.02.2023;multi-vehicle collision;side collision;Police;Riverwood;17;3;NO;1;3;YES;91080;16560;16560;57960;Jeep;Wrangler;2002
+28;171330;11.03.1999;north;high;2000;1205.47;332864;F;high school;other;01.03.2023;multi-vehicle collision;front collision;Ambulance;Columbus;22;2;NO;1;0;;74200;7420;14840;51940;Volkswagen;Passat;2004
+44;565847;23.09.2008;east;mid;2000;1647.29;513615;M;college;other;22.02.2023;single vehicle collision;front collision;Other;Hillsdale;18;1;YES;1;2;YES;61380;11160;5580;44640;Honda;Civic;2016
+34;93261;05.06.2016;east;low;500;988.22;342634;M;masters;other;10.01.2023;parked car;;None;Riverwood;8;1;?;1;3;YES;5830;1060;1060;3710;Dodge;RAM;2022
+41;256199;29.12.2009;east;low;500;1409.41;374769;M;phd;unmarried;08.02.2023;single vehicle collision;rear collision;Other;Northbrook;4;1;NO;1;0;;60390;10980;5490;43920;BMW;M5;2011
+34;495751;18.07.2005;west;mid;2000;1685.64;365642;F;jd;other;23.01.2023;single vehicle collision;side collision;Fire;Northbend;7;1;?;1;2;NO;78200;15640;7820;54740;Audi;A3;2016
+41;384698;03.09.2001;west;mid;1000;815.39;360231;M;high school;unmarried;03.01.2023;multi-vehicle collision;rear collision;Ambulance;Columbus;17;3;?;1;1;NO;60190;4630;9260;46300;Mercedes;ML350;2021
+33;456526;17.10.2004;west;high;1000;1094.9;346866;F;associate;unmarried;07.01.2023;single vehicle collision;rear collision;Police;Springfield;16;1;?;2;1;;81400;8140;8140;65120;BMW;M5;2005
+27;87105;30.11.2021;east;high;500;793.42;341891;M;jd;married;12.02.2023;multi-vehicle collision;rear collision;Police;Arlington;16;3;YES;1;3;;40810;3710;7420;29680;Ford;F150;2007
+51;207334;31.12.2003;east;high;500;1478.9;332367;F;md;unmarried;07.01.2023;single vehicle collision;side collision;Other;Hillsdale;15;1;YES;0;2;;103560;8630;17260;77670;Jeep;Wrangler;2004
+41;162013;08.11.2020;north;high;2000;1210.11;520441;M;masters;unmarried;28.01.2023;single vehicle collision;front collision;Ambulance;Springfield;4;1;YES;0;1;YES;73500;7350;14700;51450;Jeep;Wrangler;2006
+47;483258;31.08.2000;north;low;1000;1722.2;515680;M;phd;other;12.01.2023;multi-vehicle collision;rear collision;Police;Arlington;23;3;YES;0;0;;65780;5980;11960;47840;Chevrolet;Tahoe;2021
+48;262957;16.01.2017;north;mid;500;1449.65;373380;M;jd;married;08.01.2023;multi-vehicle collision;side collision;Police;Riverwood;13;4;NO;2;3;NO;65070;7230;14460;43380;Mercedes;C300;2010
+37;205650;14.08.2004;west;mid;2000;1210.23;346512;F;md;other;29.01.2023;multi-vehicle collision;side collision;Other;Columbus;14;3;YES;1;1;YES;68760;11460;5730;51570;Ford;Fusion;2002
+56;292770;20.06.2017;north;mid;1000;1359.27;337912;F;masters;other;15.01.2023;single vehicle collision;front collision;Ambulance;Hillsdale;23;1;NO;2;0;YES;53100;5310;5310;42480;Accura;MDX;2012
+38;453085;02.02.2013;west;low;2000;1251.55;508493;F;masters;other;07.02.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;19;3;NO;2;0;NO;56320;10240;5120;40960;Volkswagen;Jetta;2014
+45;381307;29.11.2010;west;mid;500;1081.75;514340;M;jd;married;27.02.2023;multi-vehicle collision;rear collision;Police;Columbus;19;3;YES;0;0;;79680;13280;13280;53120;BMW;3 Series;2011
+39;270467;10.06.2008;north;high;1000;1246.36;505660;F;college;other;01.02.2023;parked car;;Police;Northbrook;8;1;NO;0;2;;8760;1460;1460;5840;BMW;3 Series;2020
+37;391162;29.05.2021;east;high;1000;1005.11;366206;F;phd;unmarried;27.01.2023;single vehicle collision;rear collision;Police;Arlington;9;1;NO;0;2;;80080;12320;12320;55440;Chevrolet;Silverado;2020
+55;507719;07.08.1997;east;mid;500;860.3;506826;M;high school;unmarried;23.02.2023;theft;;Police;Northbend;7;1;?;2;3;;6600;600;1200;4800;Accura;MDX;2019
+39;411798;02.09.2019;west;high;1000;1126.82;501365;F;jd;other;04.02.2023;multi-vehicle collision;rear collision;Fire;Riverwood;21;3;YES;2;1;;61800;12360;6180;43260;Subaru;Impreza;2014
+39;373294;03.09.2004;east;high;1000;982.56;374966;M;associate;unmarried;02.01.2023;theft;;None;Riverwood;4;1;YES;1;2;;7800;780;780;6240;Dodge;RAM;2004
+41;158071;23.06.2020;east;low;2000;1310.86;371421;F;phd;other;01.01.2023;multi-vehicle collision;rear collision;Other;Springfield;10;3;NO;2;2;YES;80740;7340;14680;58720;Toyota;Camry;2021
+27;106614;08.07.2009;east;high;500;1586.37;334338;F;high school;married;24.01.2023;multi-vehicle collision;side collision;Other;Riverwood;22;3;YES;2;1;YES;75690;8410;8410;58870;Saab;95;2021
+29;280321;07.03.2014;north;mid;1000;1272.81;518461;M;college;other;11.01.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;15;3;YES;2;3;YES;55400;5540;11080;38780;Chevrolet;Silverado;2011
+30;549360;05.04.2016;north;high;2000;1339.35;501669;F;md;married;19.01.2023;multi-vehicle collision;rear collision;Ambulance;Riverwood;18;3;NO;0;1;NO;32670;5940;2970;23760;Honda;Accord;2010
+35;172183;18.01.2016;north;mid;500;1482.83;332667;F;high school;married;02.02.2023;parked car;;None;Riverwood;4;1;NO;0;1;NO;3840;640;320;2880;Saab;92x;2005
+44;113947;15.12.2022;east;high;500;1295.86;351248;F;jd;other;01.02.2023;multi-vehicle collision;rear collision;Ambulance;Columbus;15;3;?;0;1;;138138;21252;21252;95634;Chevrolet;Tahoe;2017
+61;128886;14.11.1999;east;mid;500;1048.87;367910;M;phd;married;26.01.2023;single vehicle collision;side collision;Fire;Riverwood;21;1;?;2;3;NO;53640;5960;5960;41720;Nissan;Maxima;2011
+46;554582;08.05.2000;east;low;1000;1139.46;376424;M;masters;other;06.01.2023;single vehicle collision;front collision;Ambulance;Northbend;18;1;?;0;2;NO;54900;5490;5490;43920;Mercedes;C300;2020
+34;436480;03.10.2003;north;low;500;1467.86;358100;F;jd;other;16.01.2023;single vehicle collision;rear collision;Fire;Arlington;0;1;?;0;0;YES;38700;7740;3870;27090;Volkswagen;Passat;2019
+38;387730;11.03.2006;east;mid;2000;1299.24;376653;F;college;other;15.01.2023;single vehicle collision;rear collision;Police;Springfield;12;1;NO;0;2;YES;46200;4200;8400;33600;Dodge;Neon;2010
+31;514974;21.09.2009;east;high;500;1253.13;362218;M;associate;other;13.01.2023;parked car;;None;Riverwood;10;1;YES;1;0;NO;6160;560;1120;4480;Nissan;Ultima;2003
+38;94716;05.05.2005;west;mid;500;1392.54;506320;F;masters;other;31.01.2023;single vehicle collision;front collision;Ambulance;Columbus;7;1;?;0;1;YES;55440;0;6160;49280;Nissan;Maxima;2006
+47;548881;10.08.2021;west;low;2000;1131.38;332186;F;high school;married;01.03.2023;multi-vehicle collision;side collision;Other;Northbrook;20;2;?;0;2;YES;60500;11000;5500;44000;Ford;F150;2006
+33;99960;09.12.2017;east;mid;500;1292.52;376283;M;high school;married;23.02.2023;theft;;None;Arlington;8;1;YES;0;0;;8970;1380;1380;6210;Dodge;Neon;2018
+43;311457;14.07.2017;west;low;500;1506.23;333243;M;phd;married;20.01.2023;multi-vehicle collision;rear collision;Other;Columbus;0;3;?;2;1;NO;60750;13500;6750;40500;Jeep;Wrangler;2022
+43;267703;24.07.2003;east;mid;1000;1522.56;507426;M;high school;married;16.02.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;21;4;NO;0;0;NO;42700;4270;4270;34160;Saab;92x;2002
+45;243524;17.02.1999;north;high;2000;1445.88;505724;F;associate;married;18.01.2023;multi-vehicle collision;side collision;Ambulance;Northbend;8;3;YES;1;1;;64320;5360;10720;48240;Accura;MDX;2005
+33;260926;22.12.1997;west;low;2000;1079.28;345088;M;md;married;28.01.2023;parked car;;Police;Northbend;3;1;?;0;1;NO;4900;490;490;3920;Toyota;Camry;2017
+26;437547;05.05.2008;north;high;2000;1080.21;377236;M;jd;other;05.02.2023;multi-vehicle collision;front collision;Police;Northbend;13;2;?;0;1;YES;65430;14540;7270;43620;Jeep;Wrangler;2008
+36;453115;15.07.1998;north;mid;500;1361.7;368271;F;jd;other;08.02.2023;multi-vehicle collision;rear collision;Other;Riverwood;10;3;?;2;0;YES;79500;7950;7950;63600;Chevrolet;Tahoe;2007
+34;132147;14.03.2011;west;high;500;1159.42;517495;F;phd;other;07.01.2023;single vehicle collision;front collision;Police;Springfield;23;1;YES;1;3;;62920;11440;5720;45760;Chevrolet;Malibu;2019
+37;489075;19.05.2011;north;mid;500;1177.06;341338;F;jd;other;16.01.2023;single vehicle collision;rear collision;Fire;Springfield;20;1;YES;2;3;YES;49400;4940;9880;34580;Jeep;Wrangler;2012
+32;85868;31.10.2013;north;low;1000;1308.82;369843;F;masters;married;25.02.2023;single vehicle collision;side collision;Ambulance;Columbus;23;1;YES;0;1;NO;57700;5770;5770;46160;Toyota;Camry;2010
+21;595881;31.12.2013;north;low;1000;1554.42;363777;M;associate;other;19.01.2023;multi-vehicle collision;side collision;Police;Hillsdale;19;3;YES;2;0;YES;94930;8630;8630;77670;Accura;RSX;2021
+33;98484;01.12.2002;west;mid;500;901.43;351152;F;high school;other;19.01.2023;multi-vehicle collision;rear collision;Police;Northbend;1;3;?;1;0;;31700;6340;3170;22190;Toyota;Highlander;2013
+41;190306;15.01.2018;east;low;2000;996.3;511524;F;md;married;23.01.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;23;3;NO;1;3;;78600;13100;19650;45850;Dodge;RAM;2011
+33;275595;14.06.2001;west;mid;1000;1338.35;347242;M;high school;other;08.02.2023;multi-vehicle collision;rear collision;Police;Hillsdale;8;3;YES;1;0;;76010;13820;6910;55280;Dodge;RAM;2002
+41;260407;09.02.2013;west;high;2000;873.26;342447;F;associate;other;10.02.2023;multi-vehicle collision;side collision;Police;Arlington;15;3;?;1;2;;37840;0;4730;33110;Accura;RSX;2003
+35;587427;15.03.2020;west;mid;500;898.13;348434;M;college;other;24.02.2023;single vehicle collision;front collision;Other;Springfield;8;1;NO;1;3;YES;69700;6970;6970;55760;BMW;3 Series;2015
+32;454914;19.08.1999;west;mid;1000;1196.26;347893;F;md;other;21.02.2023;multi-vehicle collision;front collision;Other;Springfield;19;3;NO;0;2;YES;73560;12260;12260;49040;BMW;X5;2002
+50;482080;20.09.1997;north;high;1000;1559.52;362735;F;high school;married;04.01.2023;multi-vehicle collision;rear collision;Police;Arlington;5;3;YES;1;3;NO;70290;12780;12780;44730;Mercedes;C300;2019
+44;587269;13.05.2017;west;low;500;1045.17;343370;M;college;married;13.02.2023;multi-vehicle collision;rear collision;Fire;Springfield;20;3;NO;0;2;NO;69850;12700;6350;50800;Ford;Fusion;2006
+38;524922;01.08.1997;north;low;2000;1001.34;370453;F;associate;other;17.01.2023;multi-vehicle collision;side collision;Fire;Arlington;23;3;?;0;3;YES;77880;12980;12980;51920;Accura;MDX;2015
+28;202910;03.07.2010;east;mid;500;1262.88;347268;F;associate;unmarried;05.02.2023;multi-vehicle collision;rear collision;Fire;Springfield;13;2;YES;0;1;;55440;5040;10080;40320;Subaru;Forrestor;2016
+31;317059;16.10.2000;west;low;500;1043.23;515279;F;high school;other;19.01.2023;multi-vehicle collision;side collision;Ambulance;Springfield;2;3;NO;0;2;;69930;0;15540;54390;Ford;Escape;2020
+46;210570;07.12.1999;west;high;1000;1243.72;378671;M;md;other;12.02.2023;single vehicle collision;front collision;Fire;Columbus;11;1;YES;1;0;;59670;9180;9180;41310;Ford;Escape;2015
+46;207970;03.05.1997;east;low;2000;1480.68;507101;M;md;married;20.02.2023;single vehicle collision;front collision;Fire;Columbus;7;1;NO;0;1;NO;64080;10680;10680;42720;Toyota;Camry;2012
+46;85810;11.06.2012;west;mid;500;1446.95;330955;F;masters;married;21.02.2023;parked car;;Police;Hillsdale;7;1;?;0;1;NO;5940;660;660;4620;Toyota;Highlander;2022
+38;525597;27.12.1999;east;mid;1000;800.35;512565;F;college;other;23.02.2023;single vehicle collision;side collision;Ambulance;Northbrook;16;1;NO;0;1;;66840;16710;5570;44560;Mercedes;E400;2021
+36;439866;26.03.2017;north;low;2000;1221.5;352186;F;md;married;12.01.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;17;3;?;1;3;;65440;8180;8180;49080;Jeep;Wrangler;2021
+26;589008;04.07.2021;west;low;500;1352.94;375141;M;md;married;18.01.2023;multi-vehicle collision;front collision;Police;Arlington;14;2;NO;2;2;;40600;4060;4060;32480;Volkswagen;Passat;2017
+59;384175;16.10.2001;west;mid;1000;977.84;501816;F;jd;other;12.02.2023;multi-vehicle collision;front collision;Other;Columbus;14;2;?;1;2;NO;72400;7240;14480;50680;Chevrolet;Tahoe;2006
+44;66917;24.09.2013;east;low;1000;1278.99;333949;M;md;other;06.02.2023;single vehicle collision;rear collision;Other;Riverwood;21;1;NO;0;1;NO;46980;0;5220;41760;Accura;TL;2009
+45;194847;16.09.2014;east;high;1000;1228.8;340688;M;masters;other;10.01.2023;single vehicle collision;front collision;Fire;Springfield;19;1;NO;0;2;NO;53800;5380;5380;43040;Accura;MDX;2013
+26;130449;05.01.2015;north;low;500;720.77;333664;M;md;married;23.01.2023;multi-vehicle collision;front collision;Fire;Springfield;6;3;YES;1;2;YES;36700;3670;7340;25690;Nissan;Pathfinder;2017
+28;492330;08.05.1997;east;high;1000;1376.05;342508;M;masters;other;21.02.2023;single vehicle collision;side collision;Fire;Springfield;23;1;?;2;3;;44640;9920;4960;29760;Toyota;Camry;2012
+48;445293;30.08.2016;east;mid;1000;1146.84;339755;F;college;married;22.02.2023;parked car;;None;Columbus;6;1;?;1;2;YES;5400;900;900;3600;Saab;95;2006
+34;85205;14.08.2013;north;mid;1000;1218.82;503607;M;phd;other;27.02.2023;parked car;;None;Northbend;5;1;?;2;1;YES;8190;1890;1260;5040;Chevrolet;Silverado;2020
+41;305809;19.02.2006;west;mid;1000;1296.96;335935;F;high school;other;04.01.2023;multi-vehicle collision;front collision;Ambulance;Columbus;16;3;?;1;3;YES;54450;6050;12100;36300;Saab;92x;2014
+57;353781;28.12.2003;west;high;500;1349.83;512070;M;high school;married;05.02.2023;parked car;;None;Springfield;3;1;YES;1;3;;2640;480;480;1680;Volkswagen;Passat;2007
+31;166441;28.01.2012;north;high;500;706.75;370578;M;high school;unmarried;06.01.2023;single vehicle collision;side collision;Police;Northbend;9;1;NO;0;2;YES;77880;14160;7080;56640;Subaru;Legacy;2022
+35;203250;13.10.2010;west;high;1000;1086.45;514748;F;associate;other;24.02.2023;multi-vehicle collision;front collision;Police;Arlington;16;3;YES;2;3;NO;29790;3310;3310;23170;BMW;3 Series;2015
+43;104034;20.01.2002;east;low;2000;1510.69;352464;F;college;other;13.01.2023;theft;;Police;Arlington;7;1;?;1;1;;2520;280;280;1960;BMW;3 Series;2004
+54;103970;11.11.2017;west;low;2000;712.14;365947;M;md;other;16.02.2023;single vehicle collision;side collision;Ambulance;Northbend;0;1;YES;0;2;NO;59520;9920;9920;39680;Honda;Accord;2008
+38;193432;08.04.2016;west;low;2000;1130.85;516088;F;associate;married;04.02.2023;single vehicle collision;side collision;Other;Hillsdale;12;1;YES;1;1;NO;77440;7040;14080;56320;Nissan;Ultima;2012
+31;215967;14.04.2018;north;high;500;1112.79;374726;F;associate;married;26.01.2023;theft;;Police;Springfield;5;1;YES;1;0;NO;4320;480;480;3360;Mercedes;E400;2009
+31;375101;23.05.2014;west;high;1000;1060.09;340805;F;jd;unmarried;01.02.2023;single vehicle collision;rear collision;Police;Hillsdale;16;1;NO;0;1;YES;65250;7250;7250;50750;BMW;3 Series;2009
+29;216051;06.08.2013;east;high;500;852.69;512794;F;jd;other;01.01.2023;single vehicle collision;side collision;Police;Northbrook;15;1;?;2;3;YES;86790;7890;23670;55230;Honda;CRV;2010
+56;503045;24.07.2004;east;low;500;1279.01;504257;M;high school;other;30.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;9;1;NO;2;0;;50000;15000;5000;30000;Jeep;Wrangler;2016
+57;260052;13.06.2012;west;low;2000;1374.27;366523;F;phd;other;04.02.2023;multi-vehicle collision;front collision;Police;Arlington;10;3;NO;2;1;;47760;5970;5970;35820;Subaru;Impreza;2020
+31;264886;01.10.1998;north;low;1000;1139.02;378356;M;associate;other;15.02.2023;multi-vehicle collision;side collision;Fire;Northbend;15;3;NO;1;2;;64300;6430;6430;51440;Chevrolet;Silverado;2009
+29;418079;29.04.2018;west;mid;1000;1232.31;357735;M;masters;other;29.01.2023;theft;;Police;Northbrook;3;1;YES;2;2;NO;7500;750;1500;5250;Nissan;Maxima;2009
+45;450877;04.06.2007;west;high;500;946.21;330589;F;high school;married;06.01.2023;multi-vehicle collision;front collision;Fire;Columbus;11;3;?;0;2;;69300;13860;6930;48510;Ford;Escape;2017
+37;560257;31.12.2019;north;mid;500;1364.53;376166;F;associate;unmarried;15.02.2023;multi-vehicle collision;rear collision;Fire;Arlington;14;3;NO;1;2;YES;59100;5910;5910;47280;Nissan;Maxima;2005
+38;124884;08.12.1998;west;mid;1000;1279.36;367748;F;high school;other;04.02.2023;single vehicle collision;front collision;Police;Columbus;6;1;?;0;2;NO;44440;8080;4040;32320;BMW;X6;2014
+47;260169;16.06.2020;north;mid;1000;1554.28;363803;M;college;married;07.02.2023;single vehicle collision;front collision;Ambulance;Hillsdale;20;1;YES;1;3;NO;40260;3660;7320;29280;Accura;MDX;2003
+40;525150;18.02.2003;west;low;1000;1249.76;333651;F;associate;married;19.02.2023;parked car;;None;Hillsdale;6;1;NO;0;0;NO;3080;560;280;2240;Audi;A3;2019
+41;443344;25.02.1999;north;low;1000;1462.14;344765;M;jd;other;08.02.2023;multi-vehicle collision;side collision;Ambulance;Springfield;19;3;?;2;0;;53040;4420;4420;44200;Audi;A3;2013
+45;351183;16.04.2005;west;low;500;1083.14;376271;F;jd;married;01.03.2023;multi-vehicle collision;side collision;Police;Arlington;23;3;YES;2;2;NO;64800;12960;6480;45360;Audi;A3;2021
+27;309721;19.03.2016;north;mid;500;1361.88;504345;F;masters;married;17.01.2023;single vehicle collision;side collision;Police;Springfield;12;1;YES;2;3;NO;90970;16540;16540;57890;Accura;RSX;2016
+36;500169;17.08.2007;west;low;2000;985.53;361386;F;associate;other;31.01.2023;multi-vehicle collision;front collision;Ambulance;Springfield;17;3;NO;0;3;;47080;4280;8560;34240;Saab;93;2013
+38;90962;24.05.2021;east;high;1000;1599.58;365732;M;phd;other;15.02.2023;multi-vehicle collision;front collision;Other;Columbus;1;3;YES;2;2;;61650;6850;6850;47950;Nissan;Ultima;2013
+64;208883;02.11.1997;east;mid;500;833.13;502401;F;associate;unmarried;02.02.2023;multi-vehicle collision;side collision;Fire;Hillsdale;17;3;NO;1;1;NO;33930;0;3770;30160;BMW;X6;2005
+36;314394;01.05.2008;north;mid;1000;1094.5;503816;M;high school;other;26.01.2023;multi-vehicle collision;rear collision;Fire;Springfield;11;3;?;1;3;YES;49410;5490;5490;38430;Audi;A3;2022
+51;108130;02.10.1997;north;mid;1000;974.48;502810;F;md;married;18.02.2023;multi-vehicle collision;rear collision;Other;Riverwood;14;3;?;1;3;;67600;13520;6760;47320;Subaru;Legacy;2014
+35;260232;28.07.2007;west;high;2000;1122.8;346939;F;masters;married;20.02.2023;single vehicle collision;side collision;Police;Arlington;14;1;YES;0;3;YES;54340;9880;4940;39520;Toyota;Camry;2008
+47;413865;20.05.2012;north;mid;2000;1179.57;501085;F;jd;other;12.02.2023;multi-vehicle collision;front collision;Ambulance;Arlington;16;4;YES;1;2;YES;62370;5670;5670;51030;Dodge;Neon;2008
+31;74145;15.10.1997;north;high;500;1255.94;358590;M;high school;other;14.02.2023;multi-vehicle collision;rear collision;Other;Arlington;2;4;NO;2;2;NO;47700;4770;9540;33390;Accura;TL;2018
+39;158425;12.05.2011;west;high;500;1310.33;509917;M;high school;other;21.02.2023;multi-vehicle collision;front collision;Other;Riverwood;15;3;?;0;3;NO;59400;11880;5940;41580;Jeep;Grand Cherokee;2017
+24;257772;23.03.2001;east;mid;2000;1619;369589;F;high school;other;03.02.2023;theft;;Police;Hillsdale;7;1;NO;2;0;NO;6120;1020;1020;4080;Toyota;Corolla;2022
+28;406024;20.02.2009;east;mid;1000;1233.25;343535;M;md;married;17.02.2023;multi-vehicle collision;side collision;Other;Hillsdale;20;3;?;0;1;;60200;6020;6020;48160;Volkswagen;Passat;2019
+31;249993;08.04.2006;north;mid;1000;1552.75;357503;M;phd;other;03.02.2023;single vehicle collision;front collision;Other;Springfield;21;1;NO;1;0;NO;55660;5060;10120;40480;Honda;CRV;2016
+47;222711;17.08.2018;west;high;500;1526.06;511290;M;phd;other;21.02.2023;multi-vehicle collision;rear collision;Other;Northbend;15;4;YES;0;1;;77800;15560;15560;46680;Dodge;RAM;2009
+27;197075;24.04.2014;west;mid;1000;431.44;503237;M;masters;other;02.01.2023;parked car;;None;Hillsdale;7;1;?;0;3;NO;5900;1180;590;4130;Mercedes;E400;2016
+35;94829;03.06.2015;east;low;1000;1518.89;370506;F;high school;married;21.01.2023;parked car;;None;Columbus;5;1;?;0;2;YES;2860;520;260;2080;Chevrolet;Tahoe;2004
+43;229322;19.09.2020;east;high;1000;1241.95;374816;F;jd;other;30.01.2023;single vehicle collision;side collision;Other;Columbus;22;1;YES;1;3;NO;64900;12980;12980;38940;Volkswagen;Jetta;2018
+38;433275;20.06.2001;west;mid;2000;564.22;353132;M;associate;unmarried;21.01.2023;parked car;;Police;Springfield;22;1;YES;0;0;NO;2640;440;440;1760;Honda;CRV;2022
+49;360839;08.12.2008;north;low;1000;1523.97;363152;F;phd;other;21.01.2023;single vehicle collision;side collision;Other;Northbend;2;1;YES;1;1;YES;73370;13340;6670;53360;Saab;95;2020
+35;372491;17.05.2007;north;high;2000;1419.7;342663;M;college;other;31.01.2023;theft;;Police;Arlington;8;1;?;2;3;YES;4950;900;450;3600;Ford;F150;2018
+37;234997;22.09.2019;east;high;500;1465.87;501393;F;md;other;22.02.2023;single vehicle collision;front collision;Ambulance;Northbend;8;1;?;1;3;YES;63300;6330;6330;50640;Toyota;Highlander;2007
+34;137080;07.04.2020;west;low;2000;1055.88;377350;F;jd;unmarried;16.02.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;22;3;?;1;1;NO;18000;2250;2250;13500;Audi;A3;2016
+45;443633;31.01.2001;east;high;2000;1213.47;517707;M;associate;other;31.01.2023;multi-vehicle collision;side collision;Fire;Northbend;22;3;?;0;1;NO;66200;6620;6620;52960;Subaru;Impreza;2019
+29;171637;02.02.1999;east;mid;1000;1628.05;520072;F;masters;other;02.02.2023;parked car;;None;Riverwood;17;1;?;0;1;NO;3850;350;350;3150;Dodge;Neon;2021
+26;294440;21.07.2008;west;low;1000;1341.11;343593;M;masters;other;03.01.2023;single vehicle collision;front collision;Other;Arlington;12;1;?;0;0;NO;90400;9040;9040;72320;BMW;3 Series;2002
+37;235435;07.02.2017;north;high;1000;1198.44;377599;F;high school;other;06.02.2023;theft;;Police;Springfield;7;1;?;2;1;YES;3900;390;780;2730;Volkswagen;Jetta;2015
+59;322809;18.05.2016;north;low;1000;1683.8;372204;F;high school;married;17.02.2023;single vehicle collision;front collision;Police;Hillsdale;23;1;?;2;2;YES;71800;14360;14360;43080;Jeep;Grand Cherokee;2002
+55;117210;24.05.2003;east;low;1000;1248.19;374566;F;phd;married;08.02.2023;multi-vehicle collision;side collision;Police;Arlington;0;3;?;2;3;YES;68160;11360;11360;45440;Ford;Escape;2017
+31;256660;17.09.2021;west;mid;500;1161.94;504842;M;associate;married;21.02.2023;multi-vehicle collision;side collision;Other;Arlington;21;4;YES;2;0;;76120;6920;13840;55360;Audi;A5;2006
+36;506853;19.01.2009;north;low;2000;1344.29;511820;F;associate;married;25.02.2023;multi-vehicle collision;front collision;Fire;Hillsdale;14;3;YES;2;3;YES;68970;12540;6270;50160;Chevrolet;Tahoe;2014
+33;333343;15.08.1998;west;mid;500;1234.61;519588;M;phd;married;12.02.2023;parked car;;None;Hillsdale;1;1;NO;0;1;NO;5060;460;920;3680;Nissan;Ultima;2010
+54;296929;18.04.2011;north;low;2000;1504.32;353375;M;masters;unmarried;22.01.2023;multi-vehicle collision;side collision;Fire;Riverwood;16;3;NO;1;0;;76560;12760;6380;57420;Nissan;Ultima;2016
+31;291802;25.12.2001;east;mid;2000;1338.54;341143;M;high school;married;19.02.2023;multi-vehicle collision;side collision;Ambulance;Arlington;6;3;NO;1;2;NO;50800;10160;10160;30480;Accura;MDX;2012
+38;568254;18.02.2003;east;mid;1000;1539.02;508775;M;college;married;24.02.2023;theft;;None;Northbend;0;1;NO;1;1;YES;4320;480;960;2880;Toyota;Corolla;2002
+37;480429;02.03.2019;north;mid;1000;1112.34;332502;M;college;married;01.01.2023;single vehicle collision;side collision;Fire;Arlington;1;1;YES;0;1;YES;52200;10440;5220;36540;Nissan;Pathfinder;2012
+49;455404;09.04.2003;north;high;500;1133.54;342572;M;masters;other;04.02.2023;multi-vehicle collision;side collision;Police;Columbus;23;3;YES;1;1;YES;42900;3900;3900;35100;Chevrolet;Malibu;2017
+64;548139;07.11.2019;north;mid;500;987.35;515789;M;masters;other;21.02.2023;single vehicle collision;front collision;Fire;Northbrook;13;1;NO;2;3;NO;70900;14180;7090;49630;Mercedes;ML350;2009
+49;210207;07.05.2001;north;high;1000;1277.19;349686;M;md;other;27.02.2023;parked car;;None;Riverwood;13;1;NO;0;1;;4300;860;860;2580;Ford;F150;2011
+28;67368;20.07.1997;east;low;2000;1607.22;501145;M;high school;other;18.01.2023;theft;;Police;Hillsdale;8;1;YES;2;1;YES;5490;0;1220;4270;Saab;95;2006
+33;352476;09.05.2015;east;high;2000;1549.72;370638;M;high school;unmarried;21.02.2023;theft;;None;Arlington;3;1;YES;1;1;NO;2250;250;250;1750;Toyota;Corolla;2012
+35;535297;29.07.2015;west;low;500;1088.14;330200;F;jd;unmarried;30.01.2023;single vehicle collision;rear collision;Ambulance;Arlington;1;1;YES;0;2;NO;48400;9680;4840;33880;Saab;92x;2012
+43;571607;10.07.2016;east;mid;500;909.64;349947;F;phd;married;25.02.2023;single vehicle collision;rear collision;Police;Northbrook;23;1;NO;0;1;NO;59200;0;11840;47360;Chevrolet;Malibu;2005
+29;360156;03.12.2000;east;high;500;1299.83;341694;M;masters;married;25.02.2023;multi-vehicle collision;side collision;Police;Springfield;14;3;?;0;3;YES;72000;7200;7200;57600;Audi;A3;2012
+40;366105;12.03.2012;west;low;500;1153.49;504920;F;phd;other;28.01.2023;single vehicle collision;side collision;Fire;Columbus;6;1;NO;0;0;YES;63900;6390;6390;51120;Accura;TL;2008
+38;249197;15.12.2004;north;high;2000;1452.03;507573;F;phd;other;21.02.2023;single vehicle collision;side collision;Ambulance;Hillsdale;13;1;YES;2;3;;79500;15900;7950;55650;Accura;MDX;2002
+30;543553;06.11.2007;east;high;500;1755.32;377663;M;high school;married;02.02.2023;multi-vehicle collision;front collision;Fire;Northbend;12;3;NO;1;0;YES;49140;5460;5460;38220;Ford;F150;2014
+36;292505;11.05.2012;east;mid;2000;868.74;331693;F;md;other;06.01.2023;multi-vehicle collision;side collision;Police;Hillsdale;12;3;NO;1;1;NO;62920;11440;5720;45760;Ford;Escape;2007
+34;484930;15.04.2018;west;high;1000;1273.92;372625;M;high school;married;21.01.2023;single vehicle collision;side collision;Fire;Columbus;13;1;YES;2;2;;101010;15540;15540;69930;Mercedes;ML350;2005
+31;139416;19.11.2015;west;high;500;1967.74;515186;F;md;other;13.02.2023;multi-vehicle collision;side collision;Fire;Northbend;21;3;NO;1;1;YES;76450;6950;13900;55600;Dodge;RAM;2002
+35;279822;29.09.2012;west;high;1000;1250.59;332116;M;md;married;10.02.2023;theft;;None;Springfield;17;1;?;1;3;NO;5100;1020;510;3570;Chevrolet;Malibu;2007
+31;248055;29.11.2004;east;mid;2000;1080.83;378629;F;phd;other;15.01.2023;theft;;None;Northbend;3;1;YES;2;0;NO;5220;580;580;4060;Accura;MDX;2022
+38;361789;19.03.2019;west;low;2000;1538.3;363810;F;college;other;01.02.2023;single vehicle collision;front collision;Other;Columbus;20;1;YES;2;0;NO;73700;7370;7370;58960;Chevrolet;Silverado;2008
+35;287436;02.12.2011;west;low;2000;1217.15;356570;M;md;other;11.01.2023;multi-vehicle collision;rear collision;Police;Hillsdale;19;3;?;2;0;NO;79750;14500;14500;50750;Nissan;Pathfinder;2006
+47;541659;20.04.2013;north;high;1000;1688.38;338798;F;associate;other;14.01.2023;single vehicle collision;side collision;Fire;Springfield;11;1;YES;0;3;NO;72930;6630;6630;59670;Dodge;RAM;2013
+31;455157;18.10.2012;north;mid;500;1324.11;338514;F;associate;married;17.02.2023;single vehicle collision;side collision;Fire;Northbrook;13;1;?;1;2;NO;72120;12020;12020;48080;Mercedes;ML350;2016
+33;65590;26.01.2007;north;mid;500;940.62;378949;F;phd;married;30.01.2023;single vehicle collision;side collision;Fire;Hillsdale;16;1;YES;0;0;;70400;6400;19200;44800;Subaru;Legacy;2008
+43;221839;18.04.2013;north;high;500;1305.85;366105;F;associate;other;28.01.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;10;3;?;0;1;NO;37530;4170;4170;29190;Jeep;Wrangler;2015
+50;462967;08.11.2011;east;high;2000;1366.68;374828;F;md;other;03.01.2023;multi-vehicle collision;side collision;Police;Northbend;18;3;NO;2;2;YES;51800;5180;10360;36260;Accura;MDX;2010
+40;439062;11.07.2001;north;low;500;1199.52;337786;F;jd;married;27.01.2023;multi-vehicle collision;side collision;Police;Columbus;7;3;YES;1;0;;70510;12820;12820;44870;Subaru;Forrestor;2006
+53;223150;06.08.2018;west;mid;2000;1164.73;502468;M;associate;married;24.02.2023;parked car;;Police;Northbend;23;1;NO;0;3;NO;5700;570;570;4560;Saab;93;2008
+39;539416;17.08.2003;west;mid;2000;1040.37;364075;M;jd;married;31.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;21;3;NO;1;2;;19080;4240;2120;12720;Saab;93;2002
+53;522100;06.09.1997;east;mid;2000;910.4;364776;F;high school;married;31.01.2023;multi-vehicle collision;front collision;Fire;Northbend;17;3;?;1;2;;97080;16180;16180;64720;Saab;92x;2012
+42;468775;23.12.2000;west;high;1000;1228.87;370456;M;high school;unmarried;03.01.2023;single vehicle collision;rear collision;Fire;Hillsdale;2;1;?;1;1;NO;78980;7180;14360;57440;Saab;92x;2004
+31;449260;25.04.2004;north;mid;500;1053.03;368200;F;phd;other;16.01.2023;single vehicle collision;front collision;Other;Northbrook;4;1;?;0;0;;68240;8530;0;59710;Toyota;Corolla;2020
+44;422194;16.09.2010;west;high;2000;1029.06;335953;F;associate;other;03.02.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;20;3;?;1;0;NO;35900;7180;3590;25130;Audi;A3;2014
+58;268455;07.07.2019;west;mid;500;1235.99;362651;M;md;other;13.01.2023;single vehicle collision;front collision;Police;Arlington;11;1;?;0;0;;63580;5780;5780;52020;Mercedes;ML350;2004
+42;394495;19.09.2003;west;mid;500;1337.5;371754;F;associate;other;25.02.2023;single vehicle collision;rear collision;Other;Columbus;13;1;?;1;2;YES;61490;11180;11180;39130;BMW;X5;2005
+41;132045;17.12.2022;east;high;500;845.14;338523;F;jd;other;08.02.2023;single vehicle collision;side collision;Other;Springfield;1;1;?;0;0;YES;151632;23328;23328;104976;Subaru;Impreza;2018
+35;166337;27.05.2019;west;high;500;1414.35;341627;F;md;other;26.02.2023;parked car;;None;Northbend;7;1;YES;1;0;;5940;1080;540;4320;Nissan;Pathfinder;2010
+43;405973;28.03.2006;east;high;1000;669.12;379623;F;associate;other;08.01.2023;single vehicle collision;rear collision;Fire;Springfield;20;1;?;2;0;;60210;6690;6690;46830;Nissan;Maxima;2020
+41;301512;02.03.2021;west;mid;2000;1239.15;331329;F;masters;other;04.01.2023;single vehicle collision;front collision;Police;Riverwood;16;1;NO;2;2;YES;100210;18220;18220;63770;Audi;A5;2021
+31;534684;31.10.2003;east;mid;1000;1326.37;513889;M;masters;other;02.01.2023;single vehicle collision;front collision;Police;Hillsdale;17;1;NO;1;1;NO;60840;13520;6760;40560;Subaru;Forrestor;2018
+48;265651;18.11.2002;west;high;2000;1016.08;341639;F;md;married;19.02.2023;multi-vehicle collision;front collision;Police;Columbus;21;3;NO;0;0;YES;35860;3260;6520;26080;BMW;X5;2012
+37;472944;07.12.2001;east;low;500;1455.32;371753;F;jd;other;17.01.2023;single vehicle collision;rear collision;Ambulance;Columbus;6;1;?;2;0;YES;45000;5000;5000;35000;Subaru;Forrestor;2010
+30;352197;17.06.1999;west;low;1000;1556.4;372216;M;high school;married;09.01.2023;multi-vehicle collision;front collision;Ambulance;Hillsdale;1;3;NO;1;2;;77110;14020;14020;49070;Subaru;Impreza;2022
+58;594025;13.07.2009;east;mid;2000;1405.12;375673;M;phd;other;10.01.2023;single vehicle collision;rear collision;Police;Riverwood;10;1;?;0;2;;59900;11980;5990;41930;BMW;X5;2004
+30;150362;19.12.2019;west;mid;2000;1169.86;372131;F;associate;other;31.01.2023;single vehicle collision;side collision;Other;Northbend;23;1;?;2;3;NO;48730;4430;4430;39870;Chevrolet;Malibu;2018
+38;399645;09.04.2018;north;low;2000;1229.36;504301;F;phd;other;08.01.2023;multi-vehicle collision;rear collision;Ambulance;Arlington;15;3;?;1;0;;53680;4880;9760;39040;Toyota;Camry;2018
+25;315820;08.05.2021;north;low;500;918.41;361926;F;high school;other;21.02.2023;multi-vehicle collision;rear collision;Other;Hillsdale;11;3;?;1;0;;73920;13440;6720;53760;Honda;Civic;2010
+50;340620;21.04.2014;east;low;1000;1536.37;515314;M;high school;other;24.01.2023;multi-vehicle collision;side collision;Ambulance;Riverwood;12;3;YES;2;3;YES;34320;8580;4290;21450;Volkswagen;Passat;2016
+26;357316;06.06.2013;west;low;2000;922.83;337656;F;high school;unmarried;07.01.2023;single vehicle collision;front collision;Fire;Columbus;14;1;NO;2;2;NO;63120;5260;10520;47340;Audi;A5;2015
+38;140187;29.11.2016;west;low;500;1366.1;362493;M;high school;other;17.02.2023;multi-vehicle collision;front collision;Fire;Northbend;23;3;?;0;3;;55200;11040;5520;38640;Saab;92x;2005
+61;130053;10.08.2006;east;low;2000;1135.27;515529;F;high school;other;15.02.2023;multi-vehicle collision;front collision;Fire;Springfield;21;3;YES;1;2;YES;114920;17680;17680;79560;Audi;A3;2013
+47;498616;02.01.2001;east;low;2000;1365.79;513215;F;md;unmarried;11.01.2023;single vehicle collision;front collision;Police;Arlington;13;1;NO;0;3;NO;55500;5550;11100;38850;Mercedes;C300;2019
+33;109453;23.04.2016;west;high;1000;1420.89;516551;F;high school;married;20.01.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;17;3;?;2;3;YES;52800;5280;5280;42240;Nissan;Pathfinder;2013
+43;413935;10.06.1997;west;high;2000;1537.17;334118;M;masters;other;20.01.2023;single vehicle collision;front collision;Fire;Hillsdale;2;1;NO;0;3;;64200;10700;10700;42800;Ford;F150;2009
+28;112245;03.08.2006;west;mid;1000;1338.67;333152;F;jd;other;17.01.2023;single vehicle collision;side collision;Fire;Northbend;19;1;YES;0;2;YES;58140;6460;6460;45220;Saab;92x;2015
+47;164680;11.02.2017;north;mid;500;1614.76;356331;M;md;unmarried;16.01.2023;multi-vehicle collision;side collision;Fire;Columbus;0;3;?;0;3;YES;44400;5550;5550;33300;Jeep;Grand Cherokee;2006
+33;234451;17.02.2003;east;mid;2000;1389.74;366358;M;associate;married;26.02.2023;single vehicle collision;side collision;Other;Columbus;23;1;YES;0;3;NO;69400;6940;6940;55520;Mercedes;C300;2007
+32;261480;05.03.2004;north;high;2000;1354.75;349320;M;masters;other;23.02.2023;multi-vehicle collision;side collision;Police;Springfield;21;3;YES;0;3;YES;83160;15120;15120;52920;Toyota;Camry;2010
+42;293287;27.10.2018;east;low;500;1103.6;363149;F;associate;other;20.02.2023;multi-vehicle collision;side collision;Other;Hillsdale;12;2;?;2;3;;68310;12420;6210;49680;Audi;A3;2010
+44;400121;11.10.2010;west;high;2000;1395;518095;F;college;other;04.02.2023;multi-vehicle collision;front collision;Other;Springfield;15;3;NO;1;2;YES;66900;6690;13380;46830;Subaru;Forrestor;2006
+38;571810;02.03.2006;north;mid;500;997.63;515197;M;jd;other;13.01.2023;theft;;Police;Springfield;6;1;?;1;2;NO;8640;1440;720;6480;Accura;TL;2015
+34;226009;10.11.2012;north;mid;500;662.97;508931;F;phd;married;04.02.2023;single vehicle collision;rear collision;Fire;Columbus;3;1;?;0;1;NO;105040;16160;16160;72720;Dodge;RAM;2006
+47;362904;09.12.2018;east;high;1000;1187.15;357811;F;associate;other;24.01.2023;multi-vehicle collision;side collision;Police;Northbrook;0;3;NO;1;3;;39800;7960;3980;27860;Jeep;Wrangler;2021
+27;323809;02.11.2001;west;low;2000;1071.94;509898;F;jd;married;17.01.2023;theft;;None;Arlington;4;1;?;1;2;;7260;1320;660;5280;BMW;M5;2015
+55;240492;12.07.2014;north;mid;500;1605.47;344594;M;md;other;19.01.2023;multi-vehicle collision;rear collision;Other;Arlington;21;4;?;0;2;NO;60600;6060;12120;42420;Dodge;RAM;2014
+34;371084;12.11.2019;north;mid;500;1735.77;370545;M;associate;unmarried;01.01.2023;single vehicle collision;side collision;Police;Northbrook;1;1;?;1;1;;97080;16180;16180;64720;BMW;X5;2008
+23;260523;21.05.2014;west;low;500;1109.83;348825;M;jd;other;25.02.2023;single vehicle collision;side collision;Fire;Riverwood;6;1;?;1;2;;41850;4650;4650;32550;Subaru;Legacy;2004
+29;142803;05.04.2018;west;mid;500;1237.66;364704;F;phd;other;09.01.2023;single vehicle collision;side collision;Fire;Riverwood;1;1;?;1;1;YES;52800;4800;9600;38400;Mercedes;ML350;2003
+28;261986;21.04.2016;west;mid;1000;1279.38;347410;F;phd;other;07.01.2023;multi-vehicle collision;rear collision;Fire;Springfield;9;3;NO;0;3;;65500;6550;6550;52400;BMW;X5;2017
+48;579490;18.03.2010;east;high;1000;1472.77;346723;F;jd;married;17.02.2023;parked car;;Police;Hillsdale;9;1;?;2;3;NO;6560;820;820;4920;Volkswagen;Jetta;2010
+34;378284;26.01.2015;north;low;2000;1076.33;353242;F;masters;married;23.02.2023;multi-vehicle collision;side collision;Fire;Northbend;2;3;NO;0;1;YES;58410;10620;5310;42480;Chevrolet;Tahoe;2014
+26;373035;10.06.2013;west;low;1000;1381.24;518373;F;jd;other;28.02.2023;theft;;Police;Riverwood;12;1;YES;1;1;;6890;530;1060;5300;Jeep;Grand Cherokee;2004
+33;305753;30.06.2012;east;mid;500;1122.7;359396;M;college;other;26.02.2023;single vehicle collision;rear collision;Other;Columbus;4;1;NO;1;2;NO;40800;6800;6800;27200;BMW;X5;2011
+31;513298;08.09.2016;north;high;1000;1072.18;351280;F;masters;married;27.01.2023;multi-vehicle collision;rear collision;Fire;Springfield;16;3;NO;0;3;YES;60940;5540;11080;44320;Nissan;Ultima;2013
+34;537594;12.05.2001;west;mid;500;989.5;349228;M;high school;other;27.02.2023;multi-vehicle collision;side collision;Other;Springfield;0;3;?;1;0;NO;77770;14140;14140;49490;Nissan;Pathfinder;2007
+37;316416;15.12.1999;north;mid;1000;1304.89;366786;M;md;other;14.01.2023;single vehicle collision;front collision;Ambulance;Northbend;22;1;?;1;0;NO;81120;13520;20280;47320;Toyota;Camry;2002
+33;318749;23.03.1997;north;low;500;1238.58;372541;F;associate;married;18.02.2023;multi-vehicle collision;rear collision;Fire;Northbend;11;3;YES;1;1;;77110;0;14020;63090;Honda;Civic;2021
+39;300537;18.11.2003;west;low;1000;1325.09;350336;F;high school;unmarried;13.01.2023;multi-vehicle collision;front collision;Ambulance;Northbend;14;3;YES;1;3;;54120;4510;9020;40590;Jeep;Grand Cherokee;2014
+55;70521;22.04.1998;north;low;2000;1266.9;353116;M;md;other;19.01.2023;single vehicle collision;front collision;Ambulance;Northbend;15;1;?;2;2;;98160;8180;16360;73620;Dodge;RAM;2018
+37;100621;05.05.2016;east;mid;2000;1626.11;506455;F;jd;unmarried;28.01.2023;single vehicle collision;rear collision;Ambulance;Hillsdale;22;1;YES;1;2;YES;55600;11120;5560;38920;Jeep;Grand Cherokee;2016
+41;301665;09.09.2003;east;high;1000;1322.89;378608;F;phd;other;10.01.2023;single vehicle collision;front collision;Police;Northbrook;6;1;NO;2;2;YES;76400;15280;7640;53480;Volkswagen;Jetta;2004
+43;467802;04.03.2010;east;high;1000;1385.62;509358;F;associate;other;11.01.2023;multi-vehicle collision;side collision;Fire;Riverwood;19;3;YES;1;3;;68580;7620;7620;53340;Jeep;Wrangler;2017
+35;67332;09.02.1998;west;mid;1000;1356.14;512628;M;jd;other;17.02.2023;single vehicle collision;rear collision;Other;Hillsdale;0;1;NO;2;1;;55000;10000;10000;35000;Volkswagen;Jetta;2015
+39;238267;15.08.2009;north;low;1000;1528.63;503961;M;college;other;22.02.2023;theft;;None;Northbend;8;1;?;2;1;YES;4300;430;430;3440;Toyota;Corolla;2007
+35;350488;23.05.2004;west;low;1000;1244;335449;F;masters;married;01.01.2023;single vehicle collision;rear collision;Other;Springfield;19;1;NO;0;0;;76600;15320;7660;53620;Mercedes;C300;2007
+54;252988;24.01.2002;east;low;1000;1370.38;336515;F;masters;other;08.01.2023;multi-vehicle collision;rear collision;Fire;Columbus;13;3;NO;2;3;;63240;10540;10540;42160;Subaru;Forrestor;2004
+34;521440;21.03.2015;north;high;1000;1121.98;346294;F;phd;other;26.02.2023;theft;;Police;Arlington;5;1;?;2;0;YES;7290;810;810;5670;Volkswagen;Passat;2002
+39;522252;21.04.2013;north;mid;1000;1084.32;355308;M;jd;unmarried;13.02.2023;single vehicle collision;side collision;Police;Springfield;18;1;?;1;2;;50490;5610;5610;39270;Nissan;Maxima;2008
+29;492182;06.11.2018;north;high;2000;651.77;375451;F;jd;unmarried;24.02.2023;multi-vehicle collision;rear collision;Fire;Springfield;22;3;NO;0;0;;78300;15660;7830;54810;BMW;X5;2016
+30;91390;18.07.2014;west;high;2000;925.34;350698;F;phd;married;13.01.2023;single vehicle collision;front collision;Other;Hillsdale;7;1;NO;1;3;;74360;13520;6760;54080;Subaru;Forrestor;2016
+46;240372;20.01.2000;west;mid;2000;1175.68;369188;F;associate;married;24.01.2023;theft;;Police;Arlington;4;1;?;2;3;NO;3870;430;860;2580;Jeep;Wrangler;2017
+53;275628;12.04.2005;west;high;2000;734.18;345307;M;college;unmarried;04.02.2023;multi-vehicle collision;side collision;Police;Northbend;17;4;?;0;0;YES;62280;5190;10380;46710;Subaru;Forrestor;2019
+49;304863;20.06.2005;east;mid;500;1721.06;372602;M;phd;other;28.02.2023;single vehicle collision;rear collision;Fire;Hillsdale;3;1;?;2;0;YES;76700;7670;7670;61360;Subaru;Legacy;2013
+45;359061;05.11.2003;north;high;500;1328.57;335520;F;high school;married;18.01.2023;multi-vehicle collision;side collision;Police;Hillsdale;5;3;?;0;0;NO;24200;2200;4400;17600;Subaru;Forrestor;2015
+37;132492;18.10.2013;north;high;2000;1046.57;366644;M;high school;other;05.01.2023;theft;;None;Columbus;9;1;?;1;2;;7080;1180;590;5310;Dodge;RAM;2006
+47;99178;24.01.2006;west;high;2000;1336.61;518897;F;phd;other;02.02.2023;single vehicle collision;front collision;Fire;Northbrook;1;1;?;0;0;;70590;10860;10860;48870;Saab;93;2007
+25;496006;26.05.2015;east;mid;2000;1051.35;503495;F;college;other;05.01.2023;multi-vehicle collision;front collision;Other;Arlington;0;4;YES;1;0;NO;77130;8570;17140;51420;Accura;MDX;2002
+33;535140;12.02.2001;east;high;1000;1198.2;354159;F;associate;unmarried;26.01.2023;multi-vehicle collision;side collision;Fire;Arlington;17;3;?;2;2;;70400;14080;7040;49280;Accura;RSX;2009
+61;554392;19.02.2000;north;low;1000;1326.29;517667;F;high school;other;25.02.2023;single vehicle collision;front collision;Fire;Columbus;18;1;NO;2;1;NO;56340;6260;6260;43820;Volkswagen;Passat;2010
+43;318313;20.01.2005;west;high;500;1318.5;504829;F;associate;other;19.01.2023;single vehicle collision;rear collision;Ambulance;Arlington;16;1;?;2;1;;79970;7270;21810;50890;Honda;CRV;2003
+46;500662;29.03.2012;north;low;1000;707.25;350152;M;masters;married;12.02.2023;multi-vehicle collision;rear collision;Fire;Northbrook;3;3;NO;1;0;NO;54890;9980;4990;39920;Toyota;Corolla;2013
+48;84972;05.10.2006;north;high;2000;1140.73;375556;F;md;other;16.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;12;1;?;2;0;;76050;11700;11700;52650;Chevrolet;Silverado;2004
+34;360414;29.04.1997;north;low;500;793.34;509184;M;phd;other;10.01.2023;multi-vehicle collision;rear collision;Police;Springfield;15;3;YES;2;1;;69480;15440;0;54040;Nissan;Maxima;2021
+37;291135;20.03.2018;east;mid;2000;1293.74;330846;F;phd;other;30.01.2023;multi-vehicle collision;front collision;Police;Northbend;22;3;YES;1;0;;53460;5940;5940;41580;Honda;CRV;2016
+29;474383;13.11.2021;east;mid;500;1379;520165;M;phd;other;28.02.2023;multi-vehicle collision;rear collision;Ambulance;Arlington;0;3;?;2;1;;67210;12220;12220;42770;BMW;X6;2003
+28;160544;23.12.2010;west;mid;1000;1317.92;513555;M;high school;married;28.01.2023;multi-vehicle collision;side collision;Police;Arlington;14;4;NO;1;0;YES;31680;3520;3520;24640;Toyota;Camry;2013
+38;437748;13.09.2020;east;low;500;920.96;371116;M;high school;married;25.02.2023;theft;;None;Hillsdale;7;1;?;1;1;YES;3600;400;400;2800;Honda;Civic;2006
+50;71269;12.09.2011;east;low;2000;1253.73;503850;M;md;unmarried;02.02.2023;multi-vehicle collision;side collision;Other;Northbrook;18;3;YES;2;1;YES;69000;13800;6900;48300;Ford;F150;2002
+27;310701;18.10.2004;north;mid;2000;1095.75;514780;M;high school;other;06.02.2023;multi-vehicle collision;rear collision;Other;Northbend;16;2;NO;1;0;;63720;7080;21240;35400;Accura;TL;2013
+32;123630;22.08.2008;east;low;1000;998.17;340929;F;phd;married;09.01.2023;single vehicle collision;side collision;Other;Columbus;17;1;?;1;0;;82720;7520;15040;60160;Audi;A3;2021
+28;583646;09.06.2002;east;mid;1000;1017.55;337355;M;masters;other;10.02.2023;theft;;None;Springfield;17;1;?;2;1;NO;7200;1440;720;5040;BMW;X5;2011
+26;125010;20.07.2002;west;low;500;1449.73;356414;M;associate;other;03.01.2023;single vehicle collision;rear collision;Ambulance;Columbus;19;1;NO;2;2;;40000;8000;4000;28000;BMW;M5;2017
+26;248904;27.01.2022;east;low;2000;1258.43;360728;M;jd;other;28.02.2023;single vehicle collision;side collision;Fire;Northbrook;16;1;?;1;2;;45500;9100;4550;31850;Toyota;Corolla;2016
+34;509556;01.06.2021;west;low;500;1440.38;335068;M;college;married;17.02.2023;single vehicle collision;front collision;Other;Columbus;10;1;?;2;3;YES;58500;11700;5850;40950;Dodge;RAM;2006
+38;566392;27.09.1998;east;high;1000;1308.91;331257;F;masters;unmarried;22.02.2023;single vehicle collision;front collision;Fire;Northbrook;20;1;YES;0;1;;87200;17440;8720;61040;Honda;Accord;2013
+26;552548;16.06.2010;west;mid;2000;1189.3;368781;M;md;other;12.02.2023;multi-vehicle collision;rear collision;Other;Northbrook;9;3;?;0;1;YES;40160;5020;0;35140;Chevrolet;Tahoe;2010
+35;71302;17.04.2008;east;low;1000;1423.65;375815;F;high school;other;15.01.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;22;3;NO;2;0;NO;51210;11380;5690;34140;Ford;Fusion;2017
+30;225029;18.10.1999;north;low;1000;1435.99;514351;F;college;married;25.02.2023;single vehicle collision;side collision;Fire;Northbrook;3;1;NO;2;0;YES;56000;14000;0;42000;Chevrolet;Malibu;2010
+34;244602;16.12.2021;east;low;1000;1081.83;517742;F;high school;married;09.02.2023;single vehicle collision;side collision;Other;Columbus;18;1;NO;0;2;YES;53680;4880;4880;43920;Honda;CRV;2012
+37;225442;13.02.2008;east;low;1000;1215.95;343430;F;high school;other;07.02.2023;multi-vehicle collision;front collision;Fire;Northbrook;19;3;?;2;2;NO;57600;9600;9600;38400;Volkswagen;Passat;2022
+41;300607;08.01.2004;east;low;2000;1512.83;517938;M;high school;other;02.02.2023;multi-vehicle collision;front collision;Fire;Northbrook;13;3;YES;0;1;;58300;5830;11660;40810;Subaru;Legacy;2014
+46;302862;29.10.1998;east;low;2000;1556.97;350768;M;md;married;17.02.2023;single vehicle collision;front collision;Police;Springfield;2;1;?;2;2;NO;69400;13880;6940;48580;BMW;M5;2019
+46;137628;12.02.2004;north;high;2000;1064.81;373338;F;jd;other;30.01.2023;multi-vehicle collision;front collision;Other;Northbend;22;3;NO;0;2;NO;89520;14920;14920;59680;Audi;A3;2021
+57;390593;27.05.2014;west;low;1000;993.66;504916;M;college;married;02.02.2023;multi-vehicle collision;rear collision;Police;Arlington;19;3;YES;0;3;;68200;12400;12400;43400;Jeep;Wrangler;2014
+30;553614;04.12.2012;north;high;1000;1229.12;359530;M;college;married;01.02.2023;multi-vehicle collision;front collision;Fire;Riverwood;19;3;NO;1;2;;28440;3160;3160;22120;Dodge;Neon;2014
+62;111340;07.09.2009;north;mid;1000;1186.07;518813;M;jd;other;01.01.2023;multi-vehicle collision;rear collision;Police;Columbus;20;3;NO;1;0;;47160;0;5240;41920;Subaru;Impreza;2018
+34;365894;15.05.2014;east;high;2000;1268.32;376381;F;college;married;14.01.2023;multi-vehicle collision;side collision;Fire;Columbus;13;3;NO;1;1;;55260;6140;0;49120;Nissan;Ultima;2007
+35;283261;04.10.2011;north;high;500;1364.71;520461;F;md;other;01.01.2023;multi-vehicle collision;front collision;Fire;Columbus;10;3;?;2;1;NO;88220;16040;16040;56140;Chevrolet;Malibu;2015
+42;111054;13.07.2020;north;low;500;942.14;340121;M;college;other;19.02.2023;single vehicle collision;rear collision;Other;Riverwood;11;1;YES;2;3;;77000;15400;7700;53900;Toyota;Highlander;2022
+33;468727;12.05.2017;north;low;1000;1346.43;369397;F;associate;married;14.01.2023;theft;;Police;Arlington;3;1;NO;2;1;;4730;860;860;3010;Chevrolet;Malibu;2020
+28;442775;09.11.2002;north;low;2000;1369.89;351528;M;jd;other;04.02.2023;multi-vehicle collision;front collision;Other;Riverwood;10;3;?;0;2;YES;53600;5360;10720;37520;Audi;A5;2022
+41;374335;04.07.2004;north;low;1000;1127.34;370158;F;college;other;23.02.2023;single vehicle collision;front collision;Fire;Hillsdale;1;1;?;1;0;YES;50300;10060;5030;35210;Subaru;Legacy;2006
+43;329963;16.11.2020;west;mid;1000;1516.57;506206;F;md;other;26.01.2023;single vehicle collision;front collision;Fire;Riverwood;16;1;?;0;0;YES;53500;5350;5350;42800;Saab;92x;2022
+46;516118;13.08.2011;west;mid;2000;1207.18;504106;M;jd;unmarried;28.02.2023;single vehicle collision;rear collision;Ambulance;Arlington;18;1;YES;0;1;YES;56430;6270;6270;43890;BMW;3 Series;2002
+45;142340;11.07.1999;west;low;1000;1117.34;347528;F;md;unmarried;18.02.2023;multi-vehicle collision;front collision;Fire;Northbend;13;3;NO;1;1;NO;51210;11380;5690;34140;Jeep;Wrangler;2022
+21;214333;22.12.2019;north;high;500;1020.01;364205;M;high school;married;05.02.2023;single vehicle collision;front collision;Other;Columbus;21;1;?;0;0;;91260;14040;14040;63180;Toyota;Corolla;2019
+39;200239;10.02.2007;west;low;1000;902.81;354498;F;md;unmarried;17.02.2023;single vehicle collision;front collision;Fire;Riverwood;0;1;?;1;3;NO;74200;14840;14840;44520;Accura;TL;2009
+24;196990;07.08.2009;west;low;2000;1302.57;373317;F;phd;other;31.01.2023;theft;;None;Arlington;6;1;NO;0;3;YES;5940;540;1080;4320;Audi;A5;2008
+33;418352;23.08.2008;north;low;1000;1032.38;517689;F;jd;married;06.02.2023;single vehicle collision;front collision;Fire;Hillsdale;18;1;NO;1;0;NO;63900;7100;7100;49700;Accura;TL;2021
+40;387217;20.06.1999;east;mid;1000;1691.94;347944;M;high school;other;09.01.2023;single vehicle collision;front collision;Police;Northbrook;6;1;?;1;0;;53400;5340;5340;42720;Honda;CRV;2010
+40;188352;10.05.2012;east;low;500;1231.96;357431;F;college;married;28.02.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;23;3;?;2;1;YES;64260;0;14280;49980;Ford;Escape;2006
+37;401082;01.09.2015;west;low;2000;1335.39;510361;M;jd;married;28.02.2023;multi-vehicle collision;side collision;Police;Riverwood;10;3;NO;2;2;;67140;7460;7460;52220;Ford;F150;2013
+55;229211;20.01.2020;west;mid;500;1273.73;502226;F;associate;other;23.01.2023;multi-vehicle collision;side collision;Police;Riverwood;18;3;YES;2;1;NO;61400;6140;6140;49120;Nissan;Ultima;2002
+26;555873;09.10.2021;west;mid;2000;1135.13;368840;F;phd;other;25.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;22;1;YES;1;3;;88110;16020;16020;56070;Audi;A5;2010
+32;210072;03.01.2017;east;low;2000;615.22;336679;M;college;other;02.01.2023;multi-vehicle collision;front collision;Other;Columbus;14;3;?;1;2;NO;50800;10160;5080;35560;Mercedes;E400;2020
+38;448016;09.05.2018;north;high;1000;1279.54;332373;F;masters;other;30.01.2023;multi-vehicle collision;rear collision;Other;Northbend;10;3;?;0;2;NO;30700;3070;6140;21490;Jeep;Wrangler;2017
+51;232841;11.07.1999;west;low;500;1266.46;378870;M;masters;married;10.01.2023;single vehicle collision;rear collision;Other;Northbrook;16;1;YES;2;1;NO;77330;14060;14060;49210;Volkswagen;Jetta;2021
+26;572400;10.01.2005;east;mid;1000;1268.66;378500;M;masters;unmarried;20.01.2023;multi-vehicle collision;side collision;Other;Riverwood;10;3;YES;2;3;NO;84920;7720;15440;61760;Jeep;Wrangler;2013
+57;429889;17.12.1998;east;high;500;1117.4;516132;F;md;married;15.01.2023;single vehicle collision;side collision;Police;Hillsdale;14;1;?;0;0;NO;40700;4070;4070;32560;Volkswagen;Passat;2007
+38;265188;24.08.2021;west;mid;500;1541.79;506956;F;masters;other;24.01.2023;single vehicle collision;side collision;Police;Hillsdale;17;1;NO;0;1;YES;51920;9440;4720;37760;Audi;A3;2008
+39;218726;18.02.2004;north;low;500;1263.1;514137;M;phd;married;01.01.2023;single vehicle collision;side collision;Fire;Northbrook;22;1;?;1;1;NO;37800;8400;4200;25200;Chevrolet;Silverado;2002
+33;475417;19.03.1998;east;mid;500;963.03;501549;F;associate;other;09.02.2023;multi-vehicle collision;rear collision;Fire;Hillsdale;17;4;NO;2;1;NO;35300;3530;3530;28240;Mercedes;E400;2003
+33;194850;28.06.2002;north;mid;1000;1181.59;342357;M;associate;married;26.01.2023;single vehicle collision;rear collision;Ambulance;Northbend;19;1;?;2;3;NO;55200;13800;9200;32200;Saab;93;2022
+45;69391;26.12.1997;west;high;500;1190.38;500152;M;high school;other;04.01.2023;single vehicle collision;front collision;Other;Riverwood;16;1;NO;2;0;YES;67320;12240;12240;42840;Ford;Fusion;2013
+30;314237;28.08.2021;west;low;500;1352.31;338743;F;college;married;10.02.2023;multi-vehicle collision;side collision;Other;Columbus;4;4;?;0;0;;60170;5470;10940;43760;Nissan;Pathfinder;2013
+38;171113;22.03.2012;west;low;1000;1554.05;359846;M;phd;other;25.01.2023;multi-vehicle collision;front collision;Other;Riverwood;12;3;NO;1;3;YES;79080;6590;13180;59310;Mercedes;C300;2019
+47;358115;12.10.2006;east;high;2000;1100.4;350857;F;associate;other;31.01.2023;single vehicle collision;front collision;Ambulance;Northbend;15;1;NO;1;0;YES;54000;6000;6000;42000;Toyota;Highlander;2003
+30;566784;28.08.2010;west;high;2000;1033.9;357519;F;md;married;30.01.2023;single vehicle collision;side collision;Police;Northbend;9;1;NO;1;0;YES;57640;5240;10480;41920;Volkswagen;Passat;2017
+44;557281;18.04.1999;east;mid;2000;1099.62;519076;F;college;other;11.02.2023;multi-vehicle collision;front collision;Fire;Riverwood;22;3;NO;2;2;NO;69480;11580;11580;46320;Chevrolet;Tahoe;2015
+25;545550;03.04.2003;west;high;2000;1141.17;369331;F;masters;other;16.01.2023;multi-vehicle collision;front collision;Ambulance;Riverwood;0;3;NO;0;1;YES;72900;14580;14580;43740;Nissan;Maxima;2017
+30;327817;16.10.2017;east;low;500;1050.96;507665;F;md;other;09.02.2023;theft;;Police;Riverwood;8;1;NO;0;0;YES;4800;960;480;3360;BMW;3 Series;2013
+23;270658;13.07.2013;west;high;500;1474.04;341616;F;college;married;16.01.2023;multi-vehicle collision;side collision;Other;Springfield;17;3;YES;1;0;NO;51660;5740;5740;40180;Dodge;RAM;2017
+27;320680;05.12.2009;east;mid;500;1458.08;341751;M;md;other;27.02.2023;multi-vehicle collision;side collision;Police;Northbend;2;3;NO;1;2;NO;80850;7350;14700;58800;Ford;F150;2018
+39;503091;14.07.2020;west;high;2000;1451.72;519538;M;jd;other;13.01.2023;single vehicle collision;side collision;Other;Hillsdale;10;1;?;0;3;;60320;9280;9280;41760;Chevrolet;Tahoe;2019
+48;322271;20.06.2010;west;high;2000;1524.22;369618;F;masters;unmarried;03.01.2023;single vehicle collision;front collision;Police;Columbus;12;1;?;2;3;YES;90240;15040;15040;60160;Chevrolet;Malibu;2002
+39;520402;01.01.2009;east;low;2000;1138.26;508897;M;high school;married;19.01.2023;multi-vehicle collision;rear collision;Police;Riverwood;9;3;YES;0;3;NO;46200;4200;8400;33600;Subaru;Legacy;2022
+28;269617;30.10.2001;east;high;500;1121.06;373621;M;masters;other;23.02.2023;multi-vehicle collision;side collision;Ambulance;Northbrook;4;3;NO;0;3;YES;74880;12480;12480;49920;Accura;TL;2007
+41;278459;09.03.2021;west;low;500;912.33;344123;M;jd;married;22.01.2023;multi-vehicle collision;side collision;Police;Springfield;14;3;NO;2;0;NO;84590;15380;7690;61520;Saab;93;2020
+32;197995;09.11.2021;east;low;500;1006.49;372771;F;phd;other;01.02.2023;single vehicle collision;front collision;Ambulance;Arlington;11;1;NO;1;0;;61500;12300;6150;43050;Dodge;Neon;2020
+30;465864;26.06.2009;east;low;500;1469.35;501542;F;masters;other;15.01.2023;multi-vehicle collision;side collision;Police;Riverwood;4;3;NO;2;2;NO;32480;4060;4060;24360;Dodge;Neon;2004
+32;403167;18.06.2009;east;low;1000;1720.61;353681;M;high school;married;13.01.2023;single vehicle collision;side collision;Other;Columbus;22;1;?;0;2;;76900;7690;7690;61520;Jeep;Wrangler;2002
+60;334930;24.01.2004;east;mid;1000;764.3;512228;F;associate;married;26.02.2023;parked car;;Police;Columbus;6;1;?;0;3;;5060;460;920;3680;Mercedes;E400;2014
+40;83194;14.05.2004;north;low;500;1449.09;378577;M;associate;married;18.01.2023;parked car;;Police;Northbend;20;1;?;0;2;NO;6050;1100;1100;3850;Toyota;Camry;2017
+31;360786;28.03.2015;west;low;2000;1015.29;331322;F;md;married;17.02.2023;multi-vehicle collision;rear collision;Police;Arlington;21;3;YES;1;3;NO;48070;8740;8740;30590;Saab;92x;2021
+58;537006;01.01.2000;north;low;2000;1129.51;358701;F;md;other;29.01.2023;multi-vehicle collision;side collision;Other;Hillsdale;12;4;YES;0;0;NO;63120;10520;10520;42080;Accura;MDX;2006
+25;596569;14.05.2019;west;low;2000;1073.29;501080;F;phd;married;21.02.2023;theft;;None;Northbrook;5;1;NO;2;0;YES;6930;1260;630;5040;Toyota;Highlander;2008
+48;265078;23.09.2009;east;low;1000;843.27;334310;F;masters;other;25.02.2023;single vehicle collision;front collision;Police;Northbend;21;1;YES;1;0;NO;55170;6130;6130;42910;Audi;A5;2012
+39;459052;02.12.2019;north;high;500;1386.73;514242;F;jd;married;19.01.2023;single vehicle collision;side collision;Other;Riverwood;10;1;YES;1;0;YES;59490;6610;6610;46270;Mercedes;ML350;2002
+48;473692;11.07.2020;west;mid;2000;1728.6;343310;M;college;other;24.01.2023;multi-vehicle collision;front collision;Fire;Northbrook;13;3;NO;2;0;NO;56160;4680;9360;42120;Saab;95;2002
+41;447137;24.01.2021;east;mid;1000;1323.55;374866;F;jd;other;18.02.2023;parked car;;Police;Arlington;22;1;?;0;2;YES;10790;1660;830;8300;Mercedes;E400;2020
+51;415222;11.07.1999;north;low;2000;1396.57;355640;M;associate;other;02.02.2023;single vehicle collision;side collision;Ambulance;Northbend;14;1;?;0;2;NO;82830;7530;15060;60240;Audi;A5;2011
+34;480188;17.05.2013;west;high;1000;871.75;332902;F;associate;married;30.01.2023;multi-vehicle collision;front collision;Other;Columbus;9;3;NO;2;1;;68400;11400;11400;45600;Ford;F150;2014
+43;295590;23.04.2014;north;high;2000;1099.94;351497;M;high school;other;01.01.2023;multi-vehicle collision;front collision;Police;Arlington;0;3;?;0;3;YES;51900;5190;10380;36330;BMW;M5;2018
+34;281986;24.12.2001;north;high;500;1072.18;340801;F;jd;married;28.01.2023;parked car;;None;Northbend;8;1;NO;2;0;YES;4200;420;840;2940;Jeep;Wrangler;2020
+35;199353;28.08.2011;west;high;1000;1123.51;506112;M;masters;married;15.01.2023;theft;;None;Columbus;6;1;?;2;1;NO;2640;220;440;1980;Jeep;Wrangler;2008
+40;388437;16.09.2004;east;high;2000;1265.92;503091;F;masters;married;03.01.2023;theft;;None;Northbrook;10;1;?;2;1;;6600;660;1320;4620;Accura;TL;2012
+40;358125;29.08.2013;west;low;500;1340.91;339470;F;md;married;02.02.2023;theft;;Police;Springfield;2;1;YES;1;3;YES;5940;660;660;4620;Toyota;Camry;2021
+35;93098;24.05.2017;north;mid;500;1665.94;360554;M;jd;married;04.02.2023;parked car;;Police;Northbrook;4;1;YES;1;1;NO;6600;1200;1200;4200;Jeep;Grand Cherokee;2012
+51;291874;23.09.2003;west;mid;1000;1150.23;334637;M;phd;other;05.02.2023;multi-vehicle collision;side collision;Ambulance;Riverwood;15;3;NO;2;0;YES;90480;15080;15080;60320;BMW;X6;2007
+54;549284;24.04.2015;east;high;500;910.41;361351;M;college;married;10.01.2023;multi-vehicle collision;front collision;Other;Northbend;23;3;NO;2;1;;68750;12500;12500;43750;Audi;A5;2014
+45;340376;19.12.2009;west;low;1000;1044.82;516682;M;masters;married;27.02.2023;multi-vehicle collision;rear collision;Fire;Hillsdale;4;3;?;2;1;;48060;10680;5340;32040;Mercedes;C300;2016
+44;183674;13.12.2000;west;high;1000;1166.31;352755;M;jd;married;11.02.2023;multi-vehicle collision;side collision;Other;Springfield;23;3;NO;0;3;NO;44280;7380;3690;33210;Honda;Accord;2004
+49;561258;18.04.2000;west;high;2000;1220.59;520725;F;jd;unmarried;18.01.2023;parked car;;None;Arlington;16;1;NO;1;1;YES;5330;1230;820;3280;Subaru;Legacy;2008
+36;379233;27.12.2012;west;low;2000;1276.86;361296;F;college;other;06.02.2023;multi-vehicle collision;rear collision;Ambulance;Riverwood;21;3;?;2;2;NO;65400;10900;10900;43600;Dodge;RAM;2019
+49;478790;28.02.2003;west;low;1000;1439.32;509290;F;phd;married;04.01.2023;theft;;None;Columbus;3;1;NO;1;0;NO;7080;1180;1180;4720;Nissan;Maxima;2008
+54;240143;06.01.2005;west;high;2000;1095.82;505226;F;masters;other;12.01.2023;single vehicle collision;side collision;Police;Springfield;13;1;YES;2;3;;100800;16800;16800;67200;Dodge;Neon;2004
+38;254446;16.08.2021;north;low;1000;1382.75;500722;F;associate;unmarried;09.01.2023;single vehicle collision;rear collision;Police;Columbus;16;1;?;2;3;NO;66600;16650;11100;38850;Jeep;Grand Cherokee;2019
+33;390731;02.04.2003;west;high;1000;1920.95;331245;F;high school;married;24.01.2023;single vehicle collision;side collision;Police;Northbend;0;1;?;2;1;NO;46800;4680;9360;32760;Jeep;Wrangler;2009
+33;346282;05.09.2019;east;low;1000;1051.15;519508;F;masters;other;24.02.2023;multi-vehicle collision;rear collision;Ambulance;Northbrook;20;3;NO;1;3;;54240;9040;9040;36160;Saab;93;2020
+29;398635;25.01.2003;west;mid;1000;1859.54;361482;M;high school;married;15.01.2023;single vehicle collision;rear collision;Other;Columbus;16;1;NO;0;3;YES;63800;6380;6380;51040;Saab;92x;2005
+34;366390;30.09.2009;north;low;500;846.18;507698;M;jd;other;07.01.2023;theft;;None;Northbrook;5;1;YES;2;1;;5720;1040;520;4160;Subaru;Forrestor;2010
+32;258220;17.08.2019;north;high;500;1397.37;511554;F;high school;other;08.02.2023;parked car;;Police;Northbrook;9;1;?;2;0;;3960;330;660;2970;BMW;M5;2005
+42;230718;06.04.2003;east;low;2000;1168.64;365635;F;phd;married;12.01.2023;multi-vehicle collision;rear collision;Fire;Northbend;17;3;NO;1;2;YES;62590;5690;11380;45520;Nissan;Pathfinder;2013
+30;96828;01.12.1998;west;mid;2000;1679.12;346142;M;jd;other;07.02.2023;parked car;;None;Riverwood;16;1;NO;2;1;NO;4900;490;1470;2940;Jeep;Wrangler;2022
+61;366066;25.10.2011;west;high;500;1263.83;512474;F;masters;married;18.02.2023;single vehicle collision;front collision;Fire;Columbus;23;1;YES;0;2;;64350;9900;9900;44550;Mercedes;E400;2005
+34;246726;01.06.1999;east;high;500;1293.98;338497;F;phd;married;13.01.2023;multi-vehicle collision;side collision;Ambulance;Columbus;4;3;?;1;0;NO;50800;5080;5080;40640;Audi;A3;2004
+27;335613;05.02.2005;west;high;500;980.81;340833;F;college;unmarried;13.01.2023;parked car;;None;Arlington;9;1;NO;1;0;NO;5170;940;470;3760;Toyota;Camry;2008
+48;496119;07.07.2020;west;mid;500;1159.14;369710;M;associate;other;13.02.2023;multi-vehicle collision;side collision;Fire;Northbrook;20;2;?;1;1;;41520;5190;5190;31140;Nissan;Ultima;2021
+30;591955;05.09.2010;north;high;500;482.78;508277;F;college;married;24.01.2023;multi-vehicle collision;front collision;Fire;Arlington;2;3;?;0;2;YES;65560;11920;11920;41720;Volkswagen;Passat;2022
+47;565060;31.05.1997;east;high;2000;1271.81;333441;M;college;married;10.01.2023;multi-vehicle collision;front collision;Fire;Arlington;19;3;NO;2;1;NO;62800;6280;6280;50240;Audi;A3;2010
+59;93174;03.11.2017;east;high;1000;1336.66;330348;M;phd;other;12.01.2023;multi-vehicle collision;side collision;Police;Hillsdale;10;3;?;2;2;NO;68000;13600;6800;47600;Toyota;Corolla;2021
+26;136801;16.01.1999;west;mid;1000;1250.19;365424;M;college;other;08.02.2023;multi-vehicle collision;rear collision;Other;Springfield;4;2;YES;2;2;NO;50400;10080;5040;35280;Honda;CRV;2007
+28;521365;24.02.2003;east;mid;500;1080.47;352184;F;associate;other;24.01.2023;multi-vehicle collision;rear collision;Fire;Riverwood;12;3;NO;2;2;NO;60500;12100;6050;42350;Audi;A5;2002
+31;149551;15.08.2019;west;mid;2000;1151.46;330682;M;phd;other;02.02.2023;theft;;Police;Hillsdale;9;1;NO;2;1;YES;5760;960;960;3840;Subaru;Impreza;2018
+26;520785;14.10.1998;west;high;1000;1369.99;362388;F;md;married;04.02.2023;parked car;;None;Arlington;4;1;?;2;2;;3190;580;580;2030;Subaru;Legacy;2002
+32;413195;11.03.2008;north;low;500;1167.73;358111;F;jd;other;04.02.2023;single vehicle collision;side collision;Police;Arlington;6;1;YES;0;0;NO;55000;10000;10000;35000;Toyota;Camry;2015
+38;452784;28.07.2004;north;mid;1000;1053.2;333218;F;masters;other;27.01.2023;single vehicle collision;front collision;Fire;Columbus;12;1;?;0;3;YES;91520;8320;16640;66560;BMW;X6;2012
+27;117347;18.10.2003;west;low;1000;1472.28;340295;F;college;unmarried;19.02.2023;single vehicle collision;side collision;Police;Northbend;13;1;YES;1;0;YES;52800;10560;5280;36960;Saab;95;2011
+29;448402;19.10.2001;east;high;500;971.91;379881;F;associate;other;16.01.2023;single vehicle collision;rear collision;Ambulance;Arlington;9;1;?;1;0;NO;66200;6620;6620;52960;Dodge;Neon;2020
+37;258698;18.04.1997;west;low;1000;1135.14;503163;M;associate;unmarried;27.02.2023;multi-vehicle collision;front collision;Police;Columbus;23;3;?;2;2;YES;51590;9380;9380;32830;Audi;A5;2022
+36;94644;16.05.1999;east;high;500;1183.55;337548;M;masters;other;30.01.2023;multi-vehicle collision;rear collision;Police;Northbend;15;3;YES;2;1;YES;42680;3880;7760;31040;Accura;RSX;2013
+46;149305;27.05.1997;east;mid;500;1268.13;356568;F;associate;other;08.01.2023;parked car;;Police;Northbrook;5;1;NO;1;2;;2160;480;240;1440;Toyota;Corolla;2011
+40;250230;29.09.2019;north;mid;500;1378.04;508196;M;md;married;01.02.2023;multi-vehicle collision;side collision;Other;Columbus;6;3;?;0;2;YES;51810;9420;4710;37680;Audi;A3;2009
+43;587464;02.07.2009;east;mid;500;1732.2;351368;F;md;other;12.01.2023;parked car;;None;Arlington;6;1;YES;0;3;;5200;650;650;3900;Accura;MDX;2013
+56;584085;17.01.2012;east;low;1000;1568.97;354653;M;md;other;05.01.2023;single vehicle collision;side collision;Police;Northbend;10;1;?;0;1;YES;58160;7270;7270;43620;Saab;95;2003
+42;81023;06.07.2014;east;mid;2000;1639.84;350117;M;phd;other;20.01.2023;multi-vehicle collision;rear collision;Fire;Riverwood;16;3;NO;0;0;NO;59130;6570;6570;45990;Ford;Escape;2013
+34;377367;08.01.2020;east;low;1000;934.72;364620;F;md;married;08.01.2023;parked car;;None;Springfield;5;1;NO;1;1;NO;7280;1120;1120;5040;Toyota;Highlander;2017
+26;62134;31.12.2006;west;mid;1000;1020.57;344864;F;associate;other;23.02.2023;multi-vehicle collision;front collision;Other;Arlington;15;3;?;0;2;;74200;7420;7420;59360;Jeep;Wrangler;2003
+45;360267;11.04.1999;north;mid;2000;1332.08;520787;F;md;unmarried;12.01.2023;multi-vehicle collision;rear collision;Other;Arlington;21;3;?;1;0;;61050;11100;11100;38850;Dodge;RAM;2018
+38;116796;16.03.2011;west;low;2000;1131.96;339838;M;phd;other;03.01.2023;multi-vehicle collision;front collision;Police;Springfield;0;3;YES;2;2;YES;60480;5040;15120;40320;Volkswagen;Jetta;2010
+39;170599;30.10.2021;east;mid;1000;1391.68;378391;M;phd;other;27.02.2023;parked car;;Police;Northbend;5;1;NO;0;1;YES;2640;480;480;1680;Ford;F150;2016
+36;365692;23.02.2006;north;mid;500;1614.37;517772;M;high school;unmarried;09.02.2023;multi-vehicle collision;front collision;Ambulance;Springfield;0;3;NO;2;3;;77440;14080;7040;56320;Dodge;Neon;2011
+57;67355;15.06.2009;north;mid;2000;1204.37;359923;F;associate;other;31.01.2023;multi-vehicle collision;front collision;Police;Arlington;22;3;YES;0;0;NO;78500;15700;7850;54950;Audi;A3;2022
+36;257601;14.12.2017;west;mid;2000;1245.98;364304;M;masters;married;14.01.2023;multi-vehicle collision;side collision;Fire;Northbend;20;3;NO;2;2;NO;45700;4570;4570;36560;BMW;3 Series;2015
+41;222112;23.03.2020;west;high;2000;1165.41;518091;M;high school;other;22.02.2023;single vehicle collision;side collision;Fire;Hillsdale;22;1;NO;2;0;;69300;13860;13860;41580;Volkswagen;Passat;2007
+41;364342;30.04.2008;west;low;500;1040.36;501174;M;masters;unmarried;08.02.2023;multi-vehicle collision;rear collision;Fire;Riverwood;0;3;NO;2;3;NO;81240;6770;20310;54160;Mercedes;C300;2015
+40;137317;23.10.2006;north;high;2000;1302.78;505376;M;masters;other;10.01.2023;multi-vehicle collision;side collision;Police;Hillsdale;5;3;?;1;1;;61490;5590;11180;44720;Dodge;RAM;2008
+33;292681;20.04.2004;west;low;500;1441.1;501702;F;phd;other;30.01.2023;single vehicle collision;front collision;Police;Arlington;21;1;NO;1;1;YES;27700;2770;2770;22160;Toyota;Camry;2019
+34;240996;12.01.2005;west;low;1000;1827.74;352172;M;jd;other;03.02.2023;multi-vehicle collision;side collision;Other;Arlington;21;3;YES;1;0;;67650;12300;6150;49200;Audi;A5;2016
+51;309141;28.12.2012;north;high;1000;1530.58;352555;F;associate;other;19.01.2023;single vehicle collision;rear collision;Fire;Arlington;7;1;YES;0;3;YES;75400;7540;15080;52780;Dodge;RAM;2019
+38;361907;01.12.2014;east;mid;500;1244.14;342887;M;jd;unmarried;28.01.2023;single vehicle collision;side collision;Other;Riverwood;14;1;YES;0;0;NO;45100;9020;4510;31570;Nissan;Maxima;2020
+60;541932;03.04.2005;east;high;1000;1267.75;502910;F;college;unmarried;14.02.2023;single vehicle collision;front collision;Other;Riverwood;10;1;NO;1;3;NO;84480;7680;15360;61440;Chevrolet;Silverado;2019
+37;212554;23.02.2002;north;mid;500;1516.65;370478;F;md;other;25.01.2023;single vehicle collision;rear collision;Ambulance;Riverwood;10;1;YES;1;1;NO;58300;10600;10600;37100;Ford;F150;2008
+31;233296;06.05.2013;north;low;1000;1048.35;356757;F;masters;married;26.02.2023;parked car;;None;Arlington;7;1;?;0;0;NO;3600;360;720;2520;BMW;X5;2020
+31;315811;06.09.1997;east;mid;2000;949.38;507099;F;phd;other;06.01.2023;single vehicle collision;rear collision;Other;Hillsdale;2;1;YES;1;0;YES;75790;13780;6890;55120;Accura;RSX;2014
+43;555044;23.02.2000;north;mid;1000;933.88;337390;M;associate;other;20.02.2023;theft;;Police;Northbend;21;1;NO;1;0;YES;7150;1300;650;5200;Volkswagen;Jetta;2010
+34;464023;10.08.2002;east;low;500;913.4;507861;F;jd;married;23.02.2023;single vehicle collision;front collision;Other;Arlington;14;1;?;2;1;YES;36720;4080;4080;28560;Honda;Accord;2016
+41;275244;11.06.2011;west;high;2000;966.85;377487;M;masters;married;19.01.2023;theft;;None;Northbrook;9;1;?;2;3;;5170;470;940;3760;Subaru;Forrestor;2008
+59;415995;24.03.2011;east;mid;2000;1324.73;377278;M;md;other;03.01.2023;multi-vehicle collision;front collision;Fire;Riverwood;19;3;?;0;3;YES;81800;16360;8180;57260;Nissan;Pathfinder;2005
+30;507218;10.12.2014;east;mid;2000;1441.43;513255;F;phd;unmarried;07.01.2023;multi-vehicle collision;rear collision;Fire;Northbend;19;3;?;0;2;YES;47790;5310;5310;37170;Subaru;Impreza;2002
+53;430125;03.06.2005;west;high;2000;789.58;377228;M;masters;unmarried;01.01.2023;theft;;Police;Riverwood;6;1;NO;1;2;NO;6300;630;1260;4410;Mercedes;C300;2008
+30;209446;26.11.2022;east;high;1000;1164.65;379820;M;masters;other;21.01.2023;single vehicle collision;front collision;Fire;Arlington;3;1;YES;1;0;NO;140270;14027;28054;98189;Mercedes;E400;2017
+40;153085;01.02.1999;east;mid;2000;1188.71;334174;M;masters;unmarried;06.01.2023;single vehicle collision;rear collision;Fire;Riverwood;17;1;?;1;3;YES;43230;7860;7860;27510;Chevrolet;Silverado;2008
+23;562639;13.07.2006;east;high;1000;1709.83;363646;F;jd;married;13.01.2023;multi-vehicle collision;rear collision;Fire;Northbrook;21;3;NO;2;2;NO;63250;5750;11500;46000;Chevrolet;Tahoe;2009
+46;163407;22.10.2011;east;low;2000;1544.12;516244;F;md;married;06.01.2023;multi-vehicle collision;front collision;Police;Riverwood;4;4;NO;2;1;;77100;15420;7710;53970;Volkswagen;Jetta;2003
+29;213745;21.08.2001;north;mid;2000;1236.73;363961;M;md;other;14.02.2023;single vehicle collision;rear collision;Ambulance;Springfield;14;1;?;2;3;;70800;7080;14160;49560;Accura;MDX;2019
+57;596170;21.02.2000;north;low;2000;1371.32;378454;M;college;unmarried;14.02.2023;multi-vehicle collision;front collision;Police;Northbrook;10;3;NO;0;0;NO;62800;6280;12560;43960;Jeep;Wrangler;2019
+40;294516;11.02.2012;north;low;500;1462.06;330535;F;jd;other;11.02.2023;multi-vehicle collision;rear collision;Police;Springfield;20;3;?;0;0;YES;69740;6340;6340;57060;Dodge;Neon;2010
+26;351066;24.08.2015;north;low;2000;763.75;366159;M;md;other;16.02.2023;multi-vehicle collision;front collision;Ambulance;Northbrook;3;3;?;0;3;;31350;2850;5700;22800;Honda;Accord;2008
+29;379881;21.06.2010;east;mid;1000;1115.28;373613;F;high school;other;12.02.2023;parked car;;Police;Arlington;6;1;YES;2;0;YES;6820;620;1240;4960;BMW;3 Series;2012
+42;82522;04.04.2021;north;high;500;988.08;362487;M;masters;other;20.01.2023;single vehicle collision;rear collision;Ambulance;Hillsdale;10;1;NO;0;1;NO;48000;4800;9600;33600;Saab;95;2020
+41;381981;08.11.2007;west;mid;1000;997.54;377915;M;college;married;01.01.2023;theft;;Police;Northbend;3;1;YES;2;0;;4100;820;410;2870;Chevrolet;Malibu;2016
+44;149962;31.05.2015;east;mid;500;1338.82;500121;F;high school;other;14.02.2023;single vehicle collision;rear collision;Other;Riverwood;16;1;NO;2;2;NO;76230;6930;13860;55440;Volkswagen;Passat;2004
+35;431717;02.11.2003;west;low;500;1038.86;345569;F;jd;other;03.02.2023;single vehicle collision;rear collision;Ambulance;Northbend;1;1;YES;1;1;;42000;7000;7000;28000;BMW;X5;2018
+46;566366;06.09.2018;east;low;500;1218.05;331936;F;masters;married;27.02.2023;single vehicle collision;side collision;Ambulance;Arlington;13;1;?;0;1;YES;63100;6310;12620;44170;Accura;TL;2007
+37;377773;23.01.2013;north;high;500;1008.88;338183;M;high school;unmarried;16.01.2023;multi-vehicle collision;side collision;Ambulance;Arlington;5;3;?;0;3;NO;42500;4250;4250;34000;Volkswagen;Jetta;2006
+45;150711;30.08.2012;west;mid;1000;1252.29;357523;F;phd;other;11.01.2023;single vehicle collision;rear collision;Fire;Columbus;16;1;YES;0;1;;62590;11380;11380;39830;Volkswagen;Jetta;2010
+26;437957;01.08.2021;east;low;500;972.7;366806;F;jd;married;18.01.2023;multi-vehicle collision;rear collision;Ambulance;Arlington;14;3;?;1;0;NO;59700;11940;11940;35820;Nissan;Ultima;2009
+36;514393;13.01.2001;north;high;2000;1253.79;366271;F;associate;other;18.02.2023;parked car;;None;Arlington;7;1;NO;0;0;;7400;740;1480;5180;Dodge;Neon;2021
+31;296616;21.02.2013;north;high;2000;1173.81;508735;M;masters;other;19.02.2023;single vehicle collision;rear collision;Fire;Columbus;14;1;NO;0;2;NO;57330;6370;6370;44590;Dodge;Neon;2013
+25;64993;13.02.2019;west;high;1000;1387.97;372443;F;associate;married;18.01.2023;multi-vehicle collision;side collision;Other;Springfield;23;2;?;2;3;YES;65100;6510;6510;52080;Saab;93;2018
+32;104666;18.02.2001;east;low;2000;1274.54;331246;M;associate;other;09.02.2023;single vehicle collision;rear collision;Fire;Riverwood;12;1;?;0;3;;59940;6660;6660;46620;Honda;CRV;2002
+30;475547;25.06.2010;east;mid;500;536.28;333750;F;phd;other;10.02.2023;single vehicle collision;rear collision;Other;Arlington;23;1;NO;2;2;NO;51120;5680;5680;39760;Mercedes;E400;2012
+42;328585;01.06.1998;north;low;500;1387.24;352910;M;associate;other;23.01.2023;single vehicle collision;side collision;Fire;Hillsdale;13;1;NO;0;3;;52700;5270;10540;36890;Toyota;Corolla;2012
+29;513694;12.07.2017;east;low;500;1201.35;500670;F;jd;other;05.02.2023;theft;;Police;Columbus;9;1;?;2;0;;6200;1240;620;4340;Honda;Accord;2006
+44;507752;02.11.1998;east;mid;2000;1142.41;509426;M;md;other;04.02.2023;theft;;Police;Northbrook;3;1;YES;1;0;;5500;500;500;4500;Honda;Civic;2017
+50;70185;16.03.2013;west;mid;500;1196.45;519703;M;associate;married;07.01.2023;multi-vehicle collision;side collision;Fire;Columbus;17;3;?;1;1;NO;57060;6340;6340;44380;Mercedes;E400;2002
+22;415951;12.04.2000;north;high;500;1171.32;331170;M;jd;other;14.02.2023;single vehicle collision;rear collision;Police;Northbend;14;1;YES;0;1;YES;86130;15660;7830;62640;Subaru;Legacy;2016
+41;203577;20.06.1998;east;mid;2000;943.84;335631;M;md;married;04.02.2023;single vehicle collision;front collision;Fire;Arlington;23;1;NO;0;0;NO;84100;16820;8410;58870;Ford;Escape;2016
+42;132355;28.09.2009;west;high;1000;1573.85;514233;M;jd;other;20.02.2023;parked car;;Police;Springfield;19;1;?;2;2;;6490;590;1180;4720;Toyota;Camry;2018
+25;455868;13.04.2005;north;low;2000;986.17;360547;F;masters;other;05.02.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;1;3;YES;1;0;NO;32320;4040;4040;24240;Dodge;RAM;2007
+38;501274;14.05.2017;north;mid;500;1403.82;365344;F;phd;unmarried;01.02.2023;single vehicle collision;rear collision;Police;Arlington;10;1;?;0;1;NO;70700;7070;14140;49490;Volkswagen;Passat;2015
+29;487907;16.09.2020;north;mid;1000;976.38;379789;F;associate;other;03.02.2023;single vehicle collision;front collision;Fire;Hillsdale;5;1;?;1;3;NO;76400;15280;7640;53480;Subaru;Forrestor;2010
+29;413371;18.02.2007;east;mid;2000;1324.55;336941;F;high school;other;24.02.2023;multi-vehicle collision;front collision;Fire;Arlington;12;2;YES;1;1;;66950;10300;10300;46350;Saab;93;2002
+41;479850;01.01.1998;north;low;500;1461.93;348952;F;college;other;24.01.2023;single vehicle collision;rear collision;Police;Northbend;23;1;YES;0;0;;79300;15860;15860;47580;Saab;92x;2014
+41;376926;12.12.2004;north;mid;2000;1722.57;332459;F;associate;other;13.01.2023;multi-vehicle collision;side collision;Police;Northbend;18;3;?;1;3;;44200;4420;4420;35360;Audi;A5;2021
+43;590889;01.10.2013;east;mid;500;1450.38;511964;M;md;other;08.01.2023;single vehicle collision;side collision;Ambulance;Northbend;19;1;NO;1;2;NO;46800;4680;9360;32760;Audi;A5;2014
+31;124362;14.02.2020;north;high;500;1218.97;336752;M;jd;married;24.01.2023;parked car;;None;Arlington;4;1;YES;1;2;;4320;0;960;3360;Saab;93;2010
+58;385566;14.10.2017;north;high;2000;1190.15;519438;M;associate;other;19.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;23;1;YES;0;0;NO;55800;11160;11160;33480;Dodge;RAM;2011
+39;190660;21.06.2006;north;high;2000;1230.09;512876;F;associate;other;08.01.2023;single vehicle collision;rear collision;Police;Hillsdale;10;1;YES;0;0;;44240;5530;5530;33180;Dodge;RAM;2004
+40;72223;28.10.2007;east;low;1000;1646.11;508373;M;jd;other;04.02.2023;single vehicle collision;rear collision;Other;Northbrook;17;1;NO;1;0;YES;44220;8040;4020;32160;Accura;MDX;2007
+24;432579;05.05.2006;east;mid;2000;1566.58;354448;F;high school;unmarried;02.02.2023;single vehicle collision;side collision;Fire;Northbrook;7;1;NO;2;0;;56600;11320;5660;39620;Toyota;Camry;2006
+46;519531;17.02.2017;north;mid;500;1263.95;505711;F;jd;other;16.01.2023;theft;;None;Arlington;10;1;YES;1;3;YES;4560;760;380;3420;Nissan;Pathfinder;2014
+36;282937;27.09.1997;east;mid;1000;1495.52;513810;M;phd;married;25.01.2023;multi-vehicle collision;side collision;Ambulance;Northbrook;17;3;NO;2;0;YES;77200;9650;9650;57900;Ford;Escape;2003
+46;442466;15.08.2017;west;low;500;1530.91;373903;M;college;other;23.02.2023;single vehicle collision;side collision;Other;Northbend;8;1;NO;0;3;YES;65780;11960;11960;41860;Mercedes;ML350;2020
+46;149785;02.07.2013;west;low;500;1356.31;377604;F;md;married;14.02.2023;multi-vehicle collision;front collision;Ambulance;Columbus;11;3;YES;0;0;NO;64570;5870;11740;46960;Jeep;Wrangler;2008
+50;235884;13.09.2012;east;high;500;887.24;359397;F;masters;other;26.02.2023;multi-vehicle collision;rear collision;Police;Northbend;14;3;NO;0;2;NO;44190;9820;4910;29460;Audi;A3;2022
+28;283206;29.11.2018;west;mid;1000;1137.11;517826;F;masters;married;14.01.2023;multi-vehicle collision;front collision;Fire;Northbend;0;3;?;1;2;;44730;4970;4970;34790;Saab;92x;2007
+48;102238;13.05.1998;east;mid;1000;1166.91;344200;F;jd;other;28.02.2023;single vehicle collision;side collision;Other;Northbrook;11;1;?;0;3;YES;35750;6500;3250;26000;Mercedes;E400;2008
+27;324655;12.12.2008;north;low;1000;1163.08;377663;F;college;married;17.01.2023;single vehicle collision;front collision;Ambulance;Arlington;17;1;?;1;2;YES;42840;3570;7140;32130;Chevrolet;Silverado;2011
+24;485703;01.09.1999;north;high;500;1416.61;514916;F;high school;other;04.02.2023;multi-vehicle collision;rear collision;Police;Springfield;23;3;?;0;0;NO;63300;12660;6330;44310;Dodge;RAM;2019
+55;172579;09.08.2001;west;low;2000;970.29;343888;M;high school;other;11.01.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;20;3;NO;0;0;YES;71520;17880;5960;47680;Subaru;Forrestor;2007
+57;324361;10.10.2002;north;low;1000;1189.91;335267;M;high school;unmarried;06.01.2023;single vehicle collision;side collision;Other;Riverwood;19;1;NO;1;0;;73320;6110;12220;54990;Ford;Fusion;2019
+34;386442;09.03.2021;east;high;500;1428.91;361232;M;phd;unmarried;12.02.2023;single vehicle collision;side collision;Fire;Springfield;23;1;?;2;3;NO;64200;6420;19260;38520;Honda;Civic;2014
+33;499530;20.09.2003;west;high;500;1308.87;376705;F;high school;other;17.02.2023;single vehicle collision;front collision;Other;Northbrook;8;1;YES;0;1;;70290;12780;6390;51120;Accura;MDX;2015
+40;566545;12.11.2000;east;mid;2000;1765.13;353161;M;jd;married;27.02.2023;single vehicle collision;rear collision;Ambulance;Arlington;7;1;YES;1;1;NO;46200;4200;8400;33600;Audi;A5;2004
+30;310412;31.08.2017;west;mid;2000;1314.74;513146;F;masters;unmarried;08.01.2023;multi-vehicle collision;side collision;Other;Northbend;13;3;YES;2;0;;84500;13000;13000;58500;BMW;X6;2016
+29;579253;21.02.2014;north;low;1000;1423.9;504115;F;md;other;04.01.2023;single vehicle collision;front collision;Ambulance;Riverwood;12;1;NO;0;3;;69360;11560;11560;46240;Dodge;RAM;2016
+46;200292;27.04.2016;east;low;2000;1576.65;368126;M;associate;married;21.01.2023;single vehicle collision;front collision;Fire;Hillsdale;18;1;NO;1;3;YES;83490;7590;15180;60720;Nissan;Pathfinder;2003
+41;410589;01.03.2002;east;high;2000;1138.42;373211;M;md;married;28.02.2023;multi-vehicle collision;rear collision;Police;Arlington;10;3;?;0;3;YES;53020;9640;9640;33740;Toyota;Corolla;2006
+32;589956;17.07.2007;north;low;1000;1057.63;352716;M;md;other;01.03.2023;multi-vehicle collision;side collision;Other;Hillsdale;13;2;?;1;1;;57720;14430;9620;33670;Saab;93;2014
+36;76476;25.11.2010;east;high;2000;1710.79;514201;M;associate;other;18.02.2023;multi-vehicle collision;side collision;Fire;Riverwood;17;3;?;2;0;YES;51100;10220;5110;35770;Audi;A3;2013
+32;429185;05.01.2004;west;mid;1000;984.08;357761;F;college;other;01.02.2023;single vehicle collision;side collision;Fire;Northbrook;13;1;?;2;3;;82170;14940;7470;59760;Chevrolet;Silverado;2002
+29;109714;26.05.2002;north;mid;1000;1113.38;513784;M;jd;unmarried;01.01.2023;parked car;;None;Hillsdale;10;1;YES;2;1;YES;5900;590;590;4720;Nissan;Pathfinder;2017
+28;206980;21.01.1999;west;high;1000;1466.93;374699;M;jd;other;13.02.2023;multi-vehicle collision;side collision;Fire;Riverwood;9;3;NO;2;1;NO;60000;5000;10000;45000;Honda;Accord;2004
+34;344159;25.04.1998;north;high;500;1283.53;365408;M;md;married;21.01.2023;single vehicle collision;front collision;Fire;Northbrook;11;1;NO;1;1;NO;67300;6730;6730;53840;Dodge;RAM;2007
+35;268399;10.12.2017;north;low;500;1259.39;353233;F;md;unmarried;25.02.2023;multi-vehicle collision;side collision;Fire;Springfield;21;3;YES;2;0;;79090;14380;7190;57520;Nissan;Maxima;2019
+48;300166;28.07.2004;north;high;2000;768.06;505454;M;masters;other;19.01.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;16;2;?;2;3;NO;60940;5540;11080;44320;Audi;A3;2020
+33;377007;21.07.2012;east;low;1000;838.92;513575;F;high school;married;14.02.2023;single vehicle collision;rear collision;Ambulance;Arlington;2;1;YES;0;2;;82610;7510;7510;67590;Ford;Escape;2009
+39;305082;04.09.1997;west;low;500;1394.94;342276;F;masters;married;06.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;0;4;?;0;3;NO;76890;6990;13980;55920;BMW;X6;2014
+27;453353;05.10.2003;west;high;2000;1172.25;502384;M;college;unmarried;02.02.2023;multi-vehicle collision;rear collision;Fire;Northbend;14;4;YES;0;0;NO;59070;10740;5370;42960;Toyota;Camry;2019
+31;103992;16.04.1997;north;low;500;670.03;368268;M;masters;married;24.01.2023;single vehicle collision;front collision;Other;Riverwood;3;1;?;2;0;;64080;7120;7120;49840;Ford;Escape;2004
+45;535212;17.04.2006;west;mid;1000;1663.56;345821;M;jd;married;29.01.2023;multi-vehicle collision;side collision;Fire;Columbus;9;3;?;2;2;;53280;11840;5920;35520;Toyota;Camry;2013
+27;372477;31.12.2012;east;low;500;963.24;350309;F;masters;unmarried;22.02.2023;multi-vehicle collision;front collision;Ambulance;Arlington;21;3;?;0;1;;51000;8500;8500;34000;Nissan;Pathfinder;2020
+38;420364;30.08.2015;north;low;2000;1156.08;333821;M;md;other;22.02.2023;single vehicle collision;front collision;Police;Hillsdale;20;1;?;2;2;YES;60480;6720;6720;47040;Accura;TL;2008
+44;66588;16.02.2015;west;low;2000;1079.19;368072;M;jd;unmarried;14.02.2023;single vehicle collision;front collision;Other;Springfield;14;1;YES;0;2;;56400;11280;11280;33840;Toyota;Highlander;2021
+55;383388;13.02.2016;east;low;1000;1096.1;342207;F;jd;unmarried;17.02.2023;multi-vehicle collision;rear collision;Police;Hillsdale;0;3;NO;0;3;NO;39690;0;0;39690;Subaru;Legacy;2005
+46;95263;23.11.2007;north;low;1000;868.66;365599;M;phd;unmarried;27.01.2023;single vehicle collision;rear collision;Other;Springfield;19;1;?;0;3;;80280;13380;13380;53520;Chevrolet;Tahoe;2020
+44;464187;23.10.2013;north;high;500;1393.69;366580;F;jd;married;05.02.2023;theft;;Police;Springfield;7;1;NO;2;1;;5590;860;860;3870;BMW;X5;2007
+47;598005;13.01.1999;west;low;2000;1081.12;348850;M;md;other;31.01.2023;multi-vehicle collision;front collision;Police;Arlington;22;4;YES;2;0;;71760;11040;11040;49680;Jeep;Grand Cherokee;2017
+41;438376;12.11.2004;east;high;2000;1613.25;506606;F;associate;other;20.01.2023;theft;;None;Springfield;6;1;NO;0;1;;3740;680;680;2380;Chevrolet;Malibu;2018
+32;545489;27.02.2004;east;high;2000;1244.79;340219;F;phd;other;28.01.2023;single vehicle collision;front collision;Fire;Arlington;10;1;?;0;1;;53100;5900;5900;41300;Subaru;Impreza;2013
+47;388923;21.08.2009;east;high;1000;1210.18;359266;F;md;married;01.03.2023;multi-vehicle collision;side collision;Fire;Northbend;17;3;NO;2;3;NO;56320;7040;7040;42240;Mercedes;ML350;2007
+36;253851;17.03.2022;west;low;500;1270.57;356927;M;college;married;19.02.2023;multi-vehicle collision;front collision;Ambulance;Northbrook;7;3;YES;2;1;;69630;12660;6330;50640;Toyota;Corolla;2005
+30;156241;23.06.2001;west;low;1000;1071.94;338845;F;high school;other;02.02.2023;single vehicle collision;rear collision;Police;Northbrook;12;1;?;0;0;NO;85690;15580;15580;54530;BMW;3 Series;2018
+47;318049;27.06.1999;north;mid;500;1305.22;500616;M;college;other;17.02.2023;multi-vehicle collision;front collision;Police;Northbrook;22;3;NO;0;2;;59730;10860;10860;38010;Audi;A3;2012
+30;339609;28.09.2009;north;mid;500;954.8;338205;F;associate;married;06.02.2023;single vehicle collision;front collision;Other;Hillsdale;20;1;?;1;1;YES;87100;8710;8710;69680;Saab;92x;2007
+21;552104;14.04.2012;east;mid;1000;1388.4;379376;F;masters;other;14.01.2023;single vehicle collision;rear collision;Fire;Northbrook;14;1;NO;0;0;;62900;12580;6290;44030;Accura;MDX;2013
+37;404731;03.07.2020;north;high;2000;1373.4;509194;F;masters;other;31.01.2023;multi-vehicle collision;side collision;Ambulance;Columbus;11;3;?;0;1;;56160;6240;6240;43680;Ford;Fusion;2022
+50;248168;09.03.2009;east;low;500;791.26;520837;M;md;other;14.01.2023;multi-vehicle collision;front collision;Other;Hillsdale;17;3;NO;0;3;NO;81960;13660;13660;54640;Dodge;Neon;2015
+39;562547;02.02.2018;east;mid;500;1363.57;366602;M;college;unmarried;05.02.2023;multi-vehicle collision;side collision;Fire;Columbus;14;3;NO;2;1;NO;44280;4920;4920;34440;Chevrolet;Silverado;2015
+41;427726;25.11.2008;west;low;500;1104.88;503288;F;college;other;26.02.2023;parked car;;Police;Columbus;3;1;?;2;0;NO;5000;500;500;4000;Dodge;RAM;2010
+42;437410;21.10.2001;north;low;1000;1279.83;519779;M;college;other;13.02.2023;multi-vehicle collision;rear collision;Fire;Northbend;20;4;NO;0;2;YES;47740;4340;4340;39060;Honda;Civic;2012
+26;336645;21.08.2012;east;high;1000;1197.55;519852;M;college;other;22.02.2023;multi-vehicle collision;rear collision;Other;Riverwood;0;3;?;1;2;YES;52110;5790;5790;40530;Nissan;Maxima;2019
+61;380858;20.12.1997;east;high;1000;1123.48;504418;F;associate;married;13.01.2023;multi-vehicle collision;rear collision;Police;Northbend;6;3;?;0;2;YES;79800;6650;19950;53200;Saab;95;2007
+37;434930;14.11.2018;west;mid;500;1480.25;513904;F;associate;married;22.02.2023;multi-vehicle collision;rear collision;Other;Arlington;15;3;?;2;1;NO;60750;6750;6750;47250;Subaru;Forrestor;2010
+32;588883;17.05.2008;west;high;500;1692.2;503700;F;associate;married;30.01.2023;single vehicle collision;rear collision;Other;Northbend;0;1;YES;0;2;;57240;4770;9540;42930;BMW;X6;2002
+41;298922;05.03.2003;west;mid;500;1579.38;503795;F;phd;other;07.01.2023;single vehicle collision;front collision;Police;Riverwood;8;1;YES;2;2;NO;63470;5770;11540;46160;BMW;X6;2006
+26;396083;03.01.2013;east;mid;2000;1507.15;511691;F;associate;married;23.02.2023;single vehicle collision;front collision;Ambulance;Riverwood;9;1;YES;2;3;NO;78320;7120;14240;56960;Saab;92x;2014
+32;68406;17.09.2007;west;high;1000;1462.53;368954;F;high school;married;15.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;1;1;?;2;0;NO;62260;5660;5660;50940;Saab;92x;2002
+44;310991;24.07.2014;east;low;2000;717.63;506574;F;high school;other;13.02.2023;parked car;;None;Arlington;9;1;NO;0;3;;5400;600;600;4200;Chevrolet;Malibu;2005
+62;403162;06.09.2016;east;mid;1000;1393.88;511619;F;md;other;07.02.2023;multi-vehicle collision;side collision;Other;Hillsdale;13;3;?;1;3;NO;66480;5540;11080;49860;Saab;92x;2019
+23;527301;23.02.2007;east;mid;1000;1098.06;373077;F;college;married;15.01.2023;single vehicle collision;side collision;Other;Arlington;14;1;NO;1;0;YES;52400;6550;6550;39300;Accura;MDX;2012
+33;567743;01.10.2014;north;low;2000;1460.87;515651;F;college;married;24.02.2023;multi-vehicle collision;rear collision;Ambulance;Columbus;23;3;YES;2;0;NO;44880;8160;4080;32640;Mercedes;C300;2011
+38;364904;23.06.2016;east;high;2000;1439.17;335502;F;masters;married;08.01.2023;single vehicle collision;side collision;Police;Riverwood;18;1;?;2;3;YES;89650;8150;16300;65200;Dodge;RAM;2012
+27;197055;17.03.2011;east;low;500;1046.5;520930;F;masters;other;13.02.2023;single vehicle collision;side collision;Police;Riverwood;2;1;?;2;1;YES;34650;6300;3150;25200;Ford;F150;2003
+40;153133;07.07.1998;west;high;1000;1573.97;361243;F;phd;other;12.01.2023;theft;;Police;Northbrook;3;1;NO;1;1;NO;3190;580;290;2320;Audi;A5;2011
+44;171768;06.07.2015;west;high;2000;1342.67;343312;M;associate;married;12.02.2023;theft;;Police;Northbend;7;1;?;1;2;NO;4680;520;0;4160;Accura;MDX;2006
+57;443838;03.03.2005;west;low;500;863.44;515188;F;high school;other;14.01.2023;multi-vehicle collision;side collision;Ambulance;Hillsdale;7;3;NO;0;1;;59040;9840;9840;39360;Dodge;RAM;2002
+43;580394;08.06.1997;east;mid;500;1255.15;348262;M;associate;other;01.03.2023;single vehicle collision;rear collision;Police;Northbrook;4;1;NO;2;2;YES;51600;10320;5160;36120;Dodge;Neon;2018
+59;181159;11.12.2006;north;mid;500;1342.47;373297;F;jd;other;06.02.2023;parked car;;None;Northbend;8;1;?;2;3;NO;6500;1300;650;4550;Saab;92x;2020
+39;228435;13.05.2011;east;high;500;1755.98;358961;M;high school;other;17.01.2023;multi-vehicle collision;rear collision;Other;Northbrook;9;3;YES;2;1;;55000;5000;10000;40000;Saab;93;2003
+26;331840;24.12.2002;west;high;500;1498.15;513794;M;phd;other;13.02.2023;theft;;Police;Northbrook;5;1;NO;0;2;YES;5160;860;860;3440;Accura;TL;2011
+45;366348;04.03.2014;west;high;2000;1173.18;357089;M;md;other;03.01.2023;single vehicle collision;side collision;Fire;Springfield;23;1;?;1;1;NO;87780;7980;7980;71820;Honda;CRV;2018
+33;457389;06.06.2014;east;low;1000;1425.25;346863;F;associate;other;15.02.2023;parked car;;Police;Northbend;3;1;NO;1;1;NO;2970;330;330;2310;Toyota;Highlander;2015
+46;334506;20.03.2020;west;low;1000;874.99;354402;M;md;other;03.01.2023;single vehicle collision;rear collision;Police;Hillsdale;2;1;NO;2;1;NO;57330;12740;6370;38220;Jeep;Grand Cherokee;2005
+47;531790;31.10.2002;west;high;500;1141.57;501568;M;md;other;18.02.2023;single vehicle collision;front collision;Other;Arlington;4;1;YES;2;1;;58560;9760;9760;39040;Mercedes;E400;2009
+53;563265;01.08.2002;east;mid;2000;1458.04;338552;F;masters;other;09.02.2023;multi-vehicle collision;front collision;Police;Springfield;10;2;YES;1;3;NO;77990;7090;14180;56720;Jeep;Wrangler;2019
+27;381136;02.05.2016;west;low;1000;1629.21;337291;F;high school;married;23.01.2023;parked car;;Police;Arlington;4;1;?;1;2;NO;6030;670;670;4690;Nissan;Pathfinder;2014
+29;228843;18.10.2019;north;mid;500;1207.74;347156;F;masters;other;14.01.2023;single vehicle collision;rear collision;Ambulance;Arlington;17;1;YES;1;0;YES;73260;16280;0;56980;Volkswagen;Jetta;2021
+49;342829;16.02.2003;west;low;2000;1237.17;339328;F;jd;married;10.01.2023;single vehicle collision;front collision;Police;Riverwood;19;1;?;1;1;;57310;5210;10420;41680;Volkswagen;Passat;2009
+47;532755;03.10.2015;north;mid;1000;1391.45;372890;M;high school;other;15.01.2023;multi-vehicle collision;side collision;Ambulance;Northbend;20;3;YES;1;3;YES;56160;6240;12480;37440;Audi;A5;2009
+41;302297;06.09.2021;north;low;1000;1132.79;364113;F;college;married;20.01.2023;single vehicle collision;rear collision;Ambulance;Northbend;18;1;NO;2;2;;69300;6930;13860;48510;Volkswagen;Jetta;2003
+60;285285;27.01.2018;north;low;1000;1553.63;336376;F;md;other;14.02.2023;single vehicle collision;front collision;Ambulance;Northbrook;11;1;YES;1;1;NO;85250;15500;7750;62000;Mercedes;E400;2006
+38;151782;10.10.2015;north;mid;2000;1345.42;336435;F;jd;unmarried;02.02.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;1;3;NO;2;3;;73800;12300;12300;49200;Audi;A3;2002
+41;149143;17.09.2008;west;mid;2000;1798.87;341467;M;jd;other;14.01.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;0;3;NO;1;0;NO;47800;4780;4780;38240;Jeep;Grand Cherokee;2016
+24;547655;04.06.1999;north;low;500;1173.62;374760;M;masters;married;06.01.2023;theft;;Police;Columbus;20;1;?;0;1;YES;7480;680;680;6120;Dodge;Neon;2010
+34;531901;30.07.2001;north;low;1000;1421.45;354367;M;associate;other;21.01.2023;theft;;None;Riverwood;0;1;YES;0;3;NO;9100;1400;1400;6300;Chevrolet;Malibu;2010
+35;410714;21.05.2005;east;low;2000;1219.33;351554;M;masters;other;21.01.2023;single vehicle collision;rear collision;Police;Northbend;2;1;YES;0;1;;52030;9460;4730;37840;Mercedes;E400;2015
+45;592836;10.01.2006;east;mid;500;970.61;369863;F;college;unmarried;19.01.2023;theft;;None;Springfield;3;1;NO;2;3;NO;3190;290;580;2320;Ford;Escape;2002
+51;331458;08.02.2009;west;high;1000;1524.72;371834;M;masters;other;30.01.2023;theft;;Police;Hillsdale;5;1;YES;2;2;;4620;840;840;2940;Dodge;RAM;2016
+30;126788;30.01.2017;north;high;500;1446.65;518650;F;jd;married;11.02.2023;single vehicle collision;side collision;Fire;Northbrook;9;1;YES;1;1;;84590;7690;7690;69210;Toyota;Highlander;2007
+23;77934;19.08.2000;west;mid;2000;1134.94;371268;F;associate;other;02.02.2023;single vehicle collision;side collision;Police;Columbus;14;1;NO;0;3;;98340;8940;17880;71520;Honda;Accord;2011
+60;420435;10.02.2010;west;high;1000;1186.56;359263;F;md;other;18.01.2023;multi-vehicle collision;rear collision;Other;Arlington;9;2;?;0;3;;53900;5390;10780;37730;Saab;95;2013
+37;467452;24.06.2012;west;high;1000;1058.85;371553;M;phd;other;09.01.2023;single vehicle collision;rear collision;Ambulance;Columbus;15;1;YES;2;3;;49100;9820;4910;34370;Subaru;Impreza;2003
+49;505765;29.04.2001;north;high;2000;1568.88;341110;M;jd;other;18.01.2023;theft;;None;Columbus;13;1;NO;0;3;NO;6820;1240;620;4960;Mercedes;ML350;2016
+46;390320;21.05.2006;north;low;1000;1108.48;355333;M;md;other;24.01.2023;multi-vehicle collision;side collision;Other;Riverwood;14;3;NO;0;1;;47700;4770;9540;33390;Accura;MDX;2004
+38;144329;31.07.2000;west;high;2000;1293.04;377324;M;md;unmarried;14.02.2023;multi-vehicle collision;front collision;Ambulance;Springfield;12;3;YES;1;2;NO;64620;7180;0;57440;Dodge;Neon;2010
+32;455693;04.03.2007;east;high;1000;1237.03;353368;M;associate;other;11.02.2023;parked car;;None;Arlington;4;1;?;0;2;;5060;460;920;3680;Honda;CRV;2019
+31;525312;23.05.2011;west;mid;2000;1232.8;513439;F;md;married;06.02.2023;multi-vehicle collision;front collision;Other;Arlington;1;2;NO;2;1;;74400;14880;7440;52080;BMW;M5;2010
+32;270840;02.06.1999;west;mid;500;1477.59;344381;M;masters;unmarried;13.01.2023;single vehicle collision;front collision;Other;Northbrook;15;1;YES;1;3;YES;74690;6790;13580;54320;Dodge;RAM;2015
+39;292459;11.07.2012;east;mid;1000;1258.67;373559;F;jd;other;22.02.2023;multi-vehicle collision;side collision;Police;Northbrook;20;3;NO;0;2;YES;37520;4690;4690;28140;Jeep;Wrangler;2017
+37;112356;19.02.2009;west;low;1000;934.3;354744;M;jd;other;02.02.2023;multi-vehicle collision;side collision;Police;Northbrook;4;3;?;2;1;YES;57900;17370;5790;34740;Audi;A5;2012
+37;335044;05.05.2002;north;high;1000;1330.05;333942;F;masters;other;05.02.2023;single vehicle collision;rear collision;Other;Columbus;17;1;NO;0;2;YES;54560;9920;9920;34720;Saab;95;2011
+37;596214;23.02.1999;east;mid;500;918.92;367622;F;high school;married;13.02.2023;single vehicle collision;rear collision;Fire;Hillsdale;14;1;YES;2;0;;71190;0;7910;63280;Mercedes;C300;2004
+46;524141;27.09.2011;west;mid;2000;1470.54;519762;M;md;married;10.01.2023;multi-vehicle collision;front collision;Ambulance;Arlington;3;3;?;1;3;YES;63580;5780;11560;46240;Volkswagen;Jetta;2011
+32;185763;10.10.2009;west;low;1000;966.57;515735;M;md;other;27.01.2023;multi-vehicle collision;side collision;Ambulance;Columbus;0;3;?;0;2;;59400;6600;13200;39600;Dodge;RAM;2002
+55;402982;11.10.2016;north;mid;500;1268.4;349389;M;college;married;19.02.2023;parked car;;None;Arlington;4;1;NO;0;0;NO;6400;640;640;5120;Honda;Civic;2009
+33;484047;25.06.2009;east;mid;1000;853.25;358550;F;phd;other;04.01.2023;single vehicle collision;side collision;Fire;Northbrook;23;1;YES;0;1;YES;30700;3070;6140;21490;Toyota;Corolla;2022
+44;128830;17.09.2021;west;high;1000;1592.56;352715;M;high school;married;05.02.2023;multi-vehicle collision;side collision;Fire;Columbus;17;2;YES;2;3;NO;55680;6960;6960;41760;Saab;95;2013
+49;266888;04.02.2016;east;mid;500;1449.12;360788;F;college;other;21.02.2023;single vehicle collision;front collision;Ambulance;Springfield;17;1;NO;2;2;NO;28100;2810;5620;19670;Jeep;Grand Cherokee;2019
+27;396571;27.02.2015;north;low;1000;1535.44;368438;F;college;married;20.02.2023;multi-vehicle collision;front collision;Police;Springfield;11;3;YES;1;1;NO;77700;7770;15540;54390;Jeep;Wrangler;2015
+58;455470;14.12.2010;east;mid;2000;1115.15;505089;M;md;other;01.01.2023;multi-vehicle collision;front collision;Other;Northbend;15;3;?;1;2;;65520;10920;5460;49140;Volkswagen;Jetta;2016
+30;557605;27.02.2019;west;mid;500;1037.66;366361;M;md;unmarried;16.02.2023;multi-vehicle collision;front collision;Other;Columbus;4;3;?;2;1;;74030;6730;13460;53840;Chevrolet;Tahoe;2012
+43;222817;25.04.2009;east;mid;500;1298.79;500386;M;phd;unmarried;27.01.2023;parked car;;None;Northbend;0;1;NO;1;3;YES;1920;480;0;1440;Chevrolet;Tahoe;2018
+32;560422;20.10.2001;east;low;1000;1431.53;508296;F;associate;other;22.01.2023;single vehicle collision;rear collision;Police;Arlington;4;1;YES;1;2;NO;54200;5420;10840;37940;Nissan;Ultima;2021
+37;478002;25.02.1999;east;mid;2000;1432.38;357202;F;associate;unmarried;04.01.2023;single vehicle collision;rear collision;Other;Arlington;13;1;?;2;3;;55110;5010;10020;40080;Nissan;Maxima;2009
+29;600943;15.03.2015;east;mid;2000;1089.84;501181;M;phd;other;05.01.2023;multi-vehicle collision;rear collision;Other;Springfield;15;3;?;0;2;YES;49950;5550;5550;38850;Nissan;Ultima;2011
+45;359353;17.05.2021;west;high;2000;1102.61;332179;F;phd;unmarried;15.02.2023;single vehicle collision;rear collision;Police;Northbrook;5;1;NO;2;2;NO;91650;14100;14100;63450;Accura;TL;2018
+34;189046;09.01.2009;north;high;1000;1054.82;364598;F;jd;other;20.01.2023;parked car;;None;Columbus;3;1;NO;2;1;;3770;580;580;2610;Jeep;Grand Cherokee;2009
+39;373411;09.10.2012;north;mid;500;821.28;355657;M;masters;other;23.02.2023;multi-vehicle collision;front collision;Other;Columbus;3;3;?;2;2;NO;61500;6150;12300;43050;Dodge;RAM;2019
+42;185750;30.05.1997;west;low;500;1513.41;503216;F;high school;other;19.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;21;3;NO;1;0;NO;93720;17040;8520;68160;Mercedes;ML350;2012
+34;345425;28.08.1998;west;low;500;1428.07;363275;F;jd;married;12.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbend;11;3;NO;1;2;YES;57200;11440;5720;40040;Toyota;Camry;2012
+21;331358;15.09.2014;north;mid;1000;1246.16;343518;F;high school;married;15.02.2023;multi-vehicle collision;rear collision;Police;Arlington;3;3;YES;1;2;;53280;5920;0;47360;Chevrolet;Malibu;2022
+30;335205;27.09.2007;west;mid;1000;1849.89;365216;F;high school;other;09.02.2023;single vehicle collision;front collision;Fire;Riverwood;13;1;NO;1;0;YES;61740;6860;6860;48020;Audi;A3;2009
+43;208605;06.10.2019;north;low;1000;1557.45;348880;M;jd;other;17.02.2023;single vehicle collision;front collision;Fire;Riverwood;1;1;NO;0;2;;77000;14000;7000;56000;Accura;RSX;2011
+29;81615;27.08.2011;east;mid;2000;1439.71;372191;F;md;other;12.01.2023;multi-vehicle collision;rear collision;Other;Columbus;21;3;YES;0;0;;62900;6290;12580;44030;Jeep;Grand Cherokee;2005
+43;333421;02.05.2006;north;high;2000;927.81;518600;F;phd;married;14.01.2023;single vehicle collision;front collision;Other;Arlington;12;1;?;2;2;YES;63240;10540;5270;47430;Mercedes;E400;2012
+43;133993;26.10.2011;east;low;1000;1515.65;517851;M;jd;other;09.01.2023;multi-vehicle collision;rear collision;Police;Columbus;16;3;NO;2;0;YES;64400;6440;6440;51520;BMW;X5;2018
+25;340074;27.09.2010;east;low;1000;1002.25;359857;M;masters;married;15.02.2023;multi-vehicle collision;front collision;Fire;Hillsdale;13;3;NO;1;3;NO;48000;9600;4800;33600;Dodge;RAM;2002
+35;388716;17.07.1998;east;high;500;1105.18;378836;F;high school;married;04.02.2023;theft;;Police;Hillsdale;21;1;NO;0;0;YES;3300;600;600;2100;Saab;92x;2015
+48;452249;04.09.2016;north;mid;1000;1462.84;343829;M;phd;other;25.01.2023;multi-vehicle collision;side collision;Fire;Arlington;17;3;?;0;0;NO;51480;5720;5720;40040;Toyota;Highlander;2020
+23;313389;11.08.1999;east;high;2000;1469.55;346625;M;high school;other;20.01.2023;single vehicle collision;rear collision;Fire;Riverwood;8;1;NO;2;1;NO;50380;4580;9160;36640;Chevrolet;Tahoe;2014
+43;102172;06.07.2002;east;high;2000;1279.36;363551;M;associate;other;17.01.2023;single vehicle collision;side collision;Police;Columbus;13;1;YES;0;1;NO;57690;6410;12820;38460;Mercedes;C300;2017
+28;121373;21.05.2010;west;low;1000;986.56;330109;F;masters;unmarried;09.01.2023;single vehicle collision;rear collision;Police;Northbrook;3;1;?;1;1;YES;60200;6020;6020;48160;Subaru;Forrestor;2011
+26;460998;12.10.2018;east;low;2000;1186.39;375884;F;jd;married;14.02.2023;multi-vehicle collision;rear collision;Fire;Hillsdale;16;2;YES;1;0;NO;53820;11960;5980;35880;Ford;F150;2022
+40;473456;11.01.2014;east;low;500;1133.02;352703;F;associate;other;29.01.2023;theft;;None;Riverwood;6;1;?;1;0;NO;6400;640;640;5120;Toyota;Camry;2004
+58;310312;28.12.2022;east;high;500;989.09;369397;M;associate;married;02.02.2023;single vehicle collision;front collision;Police;Northbrook;18;1;YES;1;1;;139048;10696;21392;106960;BMW;X5;2019
+30;115635;21.02.2009;east;low;1000;794.46;514134;F;md;other;20.02.2023;multi-vehicle collision;rear collision;Fire;Northbend;9;3;YES;2;1;YES;58960;5360;10720;42880;Ford;F150;2011
+48;533166;22.05.1998;east;high;2000;1420.67;373673;F;md;married;09.02.2023;theft;;None;Springfield;7;1;?;1;2;NO;3520;640;320;2560;Accura;MDX;2020
+40;87876;27.11.2008;north;high;500;883.19;359952;F;masters;other;06.02.2023;single vehicle collision;front collision;Other;Northbend;0;1;YES;0;1;NO;85150;13100;13100;58950;Chevrolet;Malibu;2005
+36;173775;18.04.2001;west;low;1000;947.55;348571;F;masters;other;19.01.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;22;3;?;0;0;NO;69680;8710;8710;52260;Mercedes;ML350;2015
+42;203888;02.10.2015;east;low;2000;1435.44;350307;F;associate;married;24.02.2023;single vehicle collision;rear collision;Other;Columbus;13;1;YES;1;3;NO;70400;12800;12800;44800;BMW;3 Series;2007
+34;552391;01.05.2010;east;mid;500;1381.6;342765;F;masters;other;23.01.2023;multi-vehicle collision;side collision;Police;Arlington;4;3;?;2;3;YES;67500;7500;7500;52500;Subaru;Impreza;2003
+34;274137;02.08.1997;north;low;1000;1140.59;508781;F;jd;other;13.01.2023;single vehicle collision;side collision;Ambulance;Northbend;18;1;YES;2;0;NO;52250;9500;4750;38000;Subaru;Legacy;2019
+36;219715;27.07.2008;north;high;500;1486.37;340799;F;college;married;28.02.2023;multi-vehicle collision;side collision;Police;Northbrook;17;3;NO;2;2;;57900;5790;5790;46320;Saab;95;2015
+35;197775;22.10.2000;east;mid;1000;917.48;359505;F;associate;other;18.01.2023;single vehicle collision;front collision;Ambulance;Northbrook;0;1;?;0;3;;48360;8060;8060;32240;Nissan;Maxima;2004
+35;420708;17.02.2021;east;low;2000;1265.03;513950;M;masters;other;09.01.2023;multi-vehicle collision;rear collision;Other;Arlington;16;3;NO;1;3;YES;71500;16500;11000;44000;Ford;Escape;2013
+33;306975;05.03.2021;east;low;1000;1742.75;332754;M;jd;unmarried;07.02.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;4;3;NO;0;1;NO;36400;3640;7280;25480;Volkswagen;Jetta;2005
+24;421326;18.08.2018;east;mid;1000;1620.78;500281;F;md;married;18.02.2023;multi-vehicle collision;side collision;Ambulance;Riverwood;6;3;NO;1;1;;74700;14940;7470;52290;Subaru;Forrestor;2004
+32;531034;16.03.2013;east;high;1000;1213.96;354953;M;high school;married;02.01.2023;theft;;Police;Hillsdale;8;1;YES;1;1;YES;7040;1280;640;5120;Nissan;Maxima;2022
+32;185599;30.12.2002;north;high;1000;1412.85;364659;F;masters;other;22.02.2023;parked car;;None;Riverwood;19;1;NO;1;3;NO;2400;300;300;1800;Chevrolet;Silverado;2021
+19;131325;18.10.2021;north;mid;1000;1183.89;378805;F;jd;married;01.02.2023;single vehicle collision;side collision;Police;Northbend;5;1;?;0;2;;48950;4450;8900;35600;Accura;TL;2018
+46;356043;23.03.2006;north;low;500;1670.99;378915;F;high school;married;17.02.2023;single vehicle collision;rear collision;Fire;Columbus;5;1;YES;1;1;NO;60700;12140;6070;42490;Honda;Civic;2004
+61;204124;09.04.2013;north;high;1000;1035.43;338805;F;high school;married;30.01.2023;multi-vehicle collision;rear collision;Police;Hillsdale;1;3;?;2;1;NO;80880;6740;13480;60660;Nissan;Ultima;2012
+45;296117;15.09.1999;west;high;1000;1360.4;342566;M;high school;unmarried;27.02.2023;multi-vehicle collision;front collision;Ambulance;Northbend;18;3;NO;0;0;NO;64000;12800;6400;44800;Saab;95;2006
+57;239236;20.01.2005;east;low;2000;1565.48;502482;F;jd;married;15.02.2023;single vehicle collision;front collision;Other;Riverwood;10;1;?;2;3;NO;58300;5830;11660;40810;Nissan;Maxima;2021
+39;101761;30.05.2017;east;low;1000;1253.46;354144;F;jd;other;14.02.2023;multi-vehicle collision;rear collision;Ambulance;Riverwood;22;2;NO;0;3;YES;59300;11860;5930;41510;Dodge;RAM;2015
+38;250149;22.01.2000;west;low;2000;1586.66;335726;M;md;unmarried;09.01.2023;single vehicle collision;side collision;Other;Columbus;8;1;NO;0;0;;40320;5760;5760;28800;Subaru;Impreza;2008
+39;199585;01.12.2002;east;mid;1000;1420.47;504636;F;jd;unmarried;24.01.2023;multi-vehicle collision;side collision;Fire;Columbus;12;3;NO;1;3;;46560;7760;7760;31040;Nissan;Ultima;2019
+35;295639;18.04.2018;west;high;500;1196.55;338891;M;md;married;14.01.2023;theft;;Police;Columbus;9;1;NO;0;3;NO;3080;560;560;1960;Nissan;Ultima;2005
+32;471378;15.11.2021;east;low;500;1535.18;357701;M;jd;married;04.02.2023;single vehicle collision;side collision;Other;Northbend;11;1;NO;1;0;NO;47400;9480;4740;33180;Chevrolet;Silverado;2011
+31;94271;27.04.1998;west;high;2000;1372.33;370571;F;phd;other;26.02.2023;single vehicle collision;rear collision;Police;Hillsdale;16;1;NO;0;3;NO;51260;9320;9320;32620;Subaru;Legacy;2009
+39;64038;25.12.2013;east;mid;1000;1349.21;378424;F;phd;unmarried;02.01.2023;multi-vehicle collision;rear collision;Fire;Arlington;19;3;NO;0;2;NO;64100;6410;6410;51280;Saab;95;2010
+51;87457;11.12.2006;east;mid;2000;1122.49;518284;M;associate;other;24.02.2023;theft;;None;Northbrook;9;1;YES;1;1;YES;7080;1180;1180;4720;Ford;F150;2008
+40;295053;06.04.2010;west;high;1000;1522.56;352406;F;masters;married;11.02.2023;multi-vehicle collision;side collision;Other;Northbrook;17;3;YES;0;2;YES;82400;8240;8240;65920;Nissan;Pathfinder;2013
+46;212326;18.04.2004;east;high;1000;1370.29;339897;M;high school;other;13.01.2023;multi-vehicle collision;side collision;Other;Riverwood;22;3;NO;1;3;;90600;15100;15100;60400;BMW;X5;2016
+27;172182;16.10.2016;east;high;1000;1662.77;365889;F;associate;other;05.02.2023;single vehicle collision;side collision;Ambulance;Springfield;3;1;?;0;3;;57500;5750;5750;46000;Audi;A3;2017
+40;546643;23.02.2017;west;high;1000;1359.56;504801;M;phd;unmarried;15.02.2023;single vehicle collision;rear collision;Ambulance;Northbend;12;1;YES;0;2;YES;82170;7470;7470;67230;Subaru;Forrestor;2006
+43;391297;22.07.2016;east;high;500;1233.21;366927;F;masters;other;10.02.2023;single vehicle collision;rear collision;Police;Springfield;14;1;NO;2;1;NO;54400;5440;5440;43520;BMW;M5;2018
+30;575971;08.11.2019;west;high;2000;1191.51;361340;M;phd;other;02.02.2023;multi-vehicle collision;side collision;Other;Columbus;16;3;NO;2;3;;48950;8900;4450;35600;Subaru;Legacy;2012
+32;445593;02.05.2018;east;high;1000;1375.15;341331;M;college;married;17.01.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;6;4;?;1;1;NO;39720;6620;6620;26480;Accura;MDX;2009
+42;312869;10.01.2016;east;high;500;1846.92;335457;M;jd;other;06.02.2023;multi-vehicle collision;front collision;Fire;Northbend;20;3;YES;2;2;YES;68520;11420;5710;51390;Subaru;Legacy;2010
+42;316905;16.07.2002;east;low;500;1336.65;338146;M;associate;married;29.01.2023;single vehicle collision;side collision;Ambulance;Arlington;13;1;YES;0;1;;94160;8560;17120;68480;Chevrolet;Malibu;2003
+33;61764;08.05.2019;west;low;1000;1458.07;500095;F;high school;married;07.01.2023;multi-vehicle collision;side collision;Ambulance;Northbend;15;3;NO;0;1;NO;41690;7580;7580;26530;Saab;95;2006
+38;130602;25.11.2001;west;mid;1000;1435.64;337857;F;college;other;02.02.2023;multi-vehicle collision;side collision;Ambulance;Northbrook;6;3;?;0;2;NO;53730;11940;5970;35820;Dodge;RAM;2020
+31;100573;27.04.2005;west;high;2000;1318.86;341459;F;jd;married;01.02.2023;multi-vehicle collision;rear collision;Police;Springfield;20;3;?;0;3;YES;45630;5070;5070;35490;Accura;MDX;2018
+30;175379;25.05.2001;north;low;1000;1675.37;339658;M;college;other;10.01.2023;theft;;Police;Springfield;7;1;YES;1;3;YES;4590;510;510;3570;Volkswagen;Jetta;2020
+43;399196;20.04.2001;west;low;500;1562.54;377612;F;md;unmarried;31.01.2023;single vehicle collision;rear collision;Fire;Northbrook;18;1;?;2;2;YES;34290;3810;3810;26670;Jeep;Grand Cherokee;2020
+37;167942;10.09.2017;east;low;500;1078.24;506258;M;associate;other;04.01.2023;multi-vehicle collision;rear collision;Ambulance;Springfield;15;3;YES;0;3;NO;41490;4610;4610;32270;Nissan;Pathfinder;2008
+33;168136;16.02.2021;east;low;2000;1325.52;340898;F;associate;other;04.01.2023;single vehicle collision;side collision;Other;Hillsdale;0;1;?;0;0;;35000;3500;7000;24500;Subaru;Legacy;2019
+47;95298;06.08.2008;west;high;500;1237;500529;M;masters;other;31.01.2023;theft;;None;Northbend;3;1;?;0;3;NO;6240;960;960;4320;Ford;Fusion;2018
+39;87147;21.09.2008;east;mid;500;1452.06;370357;F;phd;other;07.01.2023;multi-vehicle collision;side collision;Fire;Springfield;17;3;YES;0;3;NO;29300;2930;5860;20510;Audi;A3;2017
+32;79840;05.10.2021;north;low;1000;1056.32;518623;M;jd;unmarried;10.01.2023;single vehicle collision;front collision;Fire;Arlington;17;1;YES;1;1;NO;41130;4570;4570;31990;Dodge;RAM;2006
+42;207003;09.09.2013;north;mid;2000;1195.33;368144;M;md;other;21.01.2023;theft;;Police;Riverwood;8;1;?;0;0;;5070;780;780;3510;Mercedes;E400;2014
+54;243547;10.07.2019;north;low;2000;1316.08;369821;M;high school;married;18.01.2023;multi-vehicle collision;front collision;Ambulance;Columbus;18;3;?;1;2;;32280;5380;5380;21520;Ford;Fusion;2017
+46;453588;14.11.2022;north;high;1000;1010.89;369094;M;md;other;26.01.2023;single vehicle collision;front collision;Fire;Arlington;18;1;NO;1;1;NO;135993;24726;24726;86541;Mercedes;ML350;2006
+43;524065;28.04.1999;west;high;2000;1535.24;371582;F;phd;other;02.01.2023;multi-vehicle collision;side collision;Other;Northbend;3;3;NO;0;2;YES;57060;6340;6340;44380;Ford;Fusion;2019
+60;547644;27.06.1999;north;mid;500;1360.42;346574;M;high school;married;13.01.2023;single vehicle collision;front collision;Ambulance;Arlington;16;1;NO;0;2;NO;82060;14920;7460;59680;Saab;93;2012
+45;165028;24.10.2006;north;mid;500;1592.48;506251;M;associate;other;18.01.2023;parked car;;None;Riverwood;13;1;NO;0;3;YES;7260;660;1320;5280;Saab;92x;2015
+39;439773;31.10.1997;north;mid;2000;623.19;337124;F;jd;married;03.01.2023;single vehicle collision;front collision;Fire;Riverwood;10;1;NO;2;3;YES;87890;15980;7990;63920;BMW;X6;2021
+26;236273;25.12.2005;east;low;500;1380.99;334891;M;jd;other;12.01.2023;single vehicle collision;rear collision;Police;Northbend;11;1;?;1;1;YES;81840;14880;7440;59520;Chevrolet;Malibu;2018
+27;72990;04.12.2003;west;low;1000;1382.62;376695;M;phd;other;18.02.2023;single vehicle collision;rear collision;Other;Springfield;14;1;NO;2;3;;71680;8960;8960;53760;Volkswagen;Jetta;2014
+35;600197;08.07.2021;west;low;500;1431.35;376171;F;college;other;22.02.2023;multi-vehicle collision;side collision;Fire;Riverwood;11;3;NO;2;1;;24570;2730;2730;19110;Saab;95;2013
+53;597586;24.09.2020;west;mid;500;1791.27;519134;M;associate;married;15.01.2023;single vehicle collision;front collision;Fire;Riverwood;23;1;YES;2;2;NO;68750;12500;6250;50000;Chevrolet;Malibu;2016
+38;192821;13.01.2005;west;mid;2000;1267.87;367711;F;phd;other;17.01.2023;single vehicle collision;rear collision;Fire;Hillsdale;4;1;NO;1;3;YES;90000;18000;9000;63000;Ford;Fusion;2022
+35;264058;16.06.2008;north;mid;1000;1073.1;353588;F;associate;married;02.01.2023;theft;;Police;Columbus;16;1;?;2;0;;7590;1380;690;5520;Accura;MDX;2019
+26;253768;23.10.2014;east;low;1000;1274.68;367752;M;phd;other;06.01.2023;single vehicle collision;rear collision;Fire;Arlington;3;1;YES;1;2;NO;78900;15780;7890;55230;Chevrolet;Silverado;2002
+31;77670;14.06.2009;north;low;1000;1002.74;360327;M;jd;other;07.01.2023;multi-vehicle collision;rear collision;Ambulance;Hillsdale;14;3;YES;2;0;NO;63910;5810;11620;46480;Subaru;Forrestor;2006
+38;593796;26.01.2022;west;mid;500;1379.25;372221;F;college;married;22.02.2023;multi-vehicle collision;rear collision;Other;Northbrook;10;3;NO;0;3;NO;57200;5200;10400;41600;BMW;M5;2018
+33;69360;02.07.2016;north;high;2000;1003.58;341839;F;jd;other;15.02.2023;multi-vehicle collision;rear collision;Ambulance;Columbus;12;4;?;2;3;YES;57700;11540;5770;40390;Jeep;Grand Cherokee;2009
+51;263747;09.09.2015;west;low;1000;957.94;335777;F;masters;other;02.02.2023;multi-vehicle collision;side collision;Fire;Northbend;18;3;?;2;2;YES;75400;17400;11600;46400;BMW;X6;2013
+28;223246;05.10.2014;east;low;500;1328.5;512632;M;md;married;22.01.2023;single vehicle collision;front collision;Other;Columbus;3;1;NO;2;2;YES;49900;4990;9980;34930;Dodge;Neon;2005
+34;553777;20.06.2012;north;mid;2000;1584.52;508676;F;high school;other;20.01.2023;single vehicle collision;front collision;Police;Northbrook;10;1;YES;1;3;;75570;6870;13740;54960;BMW;X5;2017
+42;154184;07.02.2012;north;low;500;1053.71;357930;M;high school;married;03.01.2023;single vehicle collision;rear collision;Other;Columbus;16;1;?;1;1;;74800;13600;6800;54400;Ford;Fusion;2016
+61;520646;01.07.2000;north;mid;1000;1560.91;358965;F;masters;other;18.01.2023;single vehicle collision;front collision;Fire;Hillsdale;10;1;?;1;2;YES;49390;8980;4490;35920;Subaru;Legacy;2016
+56;483928;24.02.2006;east;mid;1000;1126;360690;M;associate;other;28.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;0;1;YES;2;0;YES;39480;6580;6580;26320;Subaru;Forrestor;2009
+25;97143;16.11.2015;north;mid;500;1257.13;339502;F;jd;unmarried;16.02.2023;parked car;;None;Northbend;8;1;NO;2;2;;5640;940;940;3760;Nissan;Ultima;2012
+58;486174;01.04.2010;north;high;2000;975.51;344468;M;masters;other;03.01.2023;single vehicle collision;front collision;Fire;Columbus;2;1;YES;2;3;NO;55700;5570;11140;38990;Nissan;Maxima;2021
+41;341314;07.01.2020;east;low;500;1193.12;376195;F;associate;other;08.01.2023;multi-vehicle collision;side collision;Other;Northbend;13;3;NO;0;2;;42700;0;6100;36600;Mercedes;ML350;2018
+31;234484;14.07.2004;east;mid;2000;1552.97;508726;F;jd;married;16.02.2023;parked car;;None;Arlington;2;1;YES;1;2;;6120;680;680;4760;Honda;Civic;2009
+42;554821;04.08.2006;west;mid;500;1122.71;512872;M;associate;other;30.01.2023;multi-vehicle collision;rear collision;Police;Arlington;23;3;YES;0;0;;51740;11940;7960;31840;Jeep;Wrangler;2013
+46;106102;01.09.2003;west;high;500;1312.71;358107;F;md;other;23.02.2023;single vehicle collision;rear collision;Other;Hillsdale;0;1;?;2;3;;70290;12780;6390;51120;Saab;92x;2005
+29;479107;03.01.2019;east;mid;2000;1200.39;379295;M;high school;other;12.01.2023;single vehicle collision;side collision;Ambulance;Hillsdale;4;1;?;1;2;NO;43700;4370;4370;34960;Nissan;Pathfinder;2014
+39;365637;21.06.2003;east;mid;500;1388.83;348917;M;masters;other;20.02.2023;parked car;;None;Northbrook;6;1;YES;2;1;YES;5830;1060;530;4240;Nissan;Pathfinder;2018
+46;500929;26.06.2013;east;high;1000;992.85;352669;F;high school;other;25.01.2023;parked car;;Police;Hillsdale;8;1;NO;2;2;YES;5580;620;620;4340;Volkswagen;Passat;2012
+37;457995;11.03.2010;north;low;500;1631.04;514385;F;college;other;23.02.2023;multi-vehicle collision;rear collision;Fire;Riverwood;7;3;NO;2;0;YES;57120;9520;4760;42840;Mercedes;C300;2009
+54;565225;13.01.2021;east;high;500;1493.21;509342;M;college;married;12.02.2023;multi-vehicle collision;side collision;Police;Northbend;15;3;NO;0;0;;93480;15580;7790;70110;Chevrolet;Malibu;2021
+44;179971;18.04.2004;west;low;2000;1398.85;511086;M;college;other;21.01.2023;multi-vehicle collision;rear collision;Police;Arlington;23;3;YES;0;2;;87300;17460;17460;52380;Jeep;Wrangler;2020
+47;478252;04.07.2015;north;high;500;1283.12;359598;M;masters;other;02.02.2023;single vehicle collision;rear collision;Ambulance;Hillsdale;21;1;NO;2;2;YES;58500;5850;5850;46800;Toyota;Camry;2017
+30;161967;23.11.2005;west;high;2000;914.24;331357;M;college;unmarried;07.01.2023;multi-vehicle collision;rear collision;Police;Northbend;16;3;YES;2;0;NO;74160;6180;12360;55620;Mercedes;E400;2009
+25;253937;16.05.2010;east;low;1000;1219.28;517428;F;masters;other;24.01.2023;multi-vehicle collision;rear collision;Ambulance;Northbrook;4;3;YES;0;0;YES;51030;5670;11340;34020;Subaru;Impreza;2003
+27;480042;19.06.2006;north;high;2000;964.37;371672;F;high school;other;06.02.2023;multi-vehicle collision;front collision;Ambulance;Springfield;1;3;YES;0;0;;67200;6720;6720;53760;Volkswagen;Passat;2002
+39;438585;17.03.2008;east;high;2000;1522.29;505188;M;jd;unmarried;08.01.2023;multi-vehicle collision;rear collision;Fire;Northbrook;20;3;?;1;0;YES;48870;5430;5430;38010;Saab;95;2006
+36;362728;30.03.2003;north;mid;2000;1461.18;515579;M;md;other;24.01.2023;theft;;Police;Springfield;3;1;?;1;1;NO;5300;530;530;4240;Jeep;Grand Cherokee;2008
+23;506868;02.02.2005;east;high;500;1213.47;332188;M;md;married;22.01.2023;single vehicle collision;rear collision;Ambulance;Northbend;9;1;YES;1;0;NO;56520;4710;9420;42390;Saab;95;2007
+32;290779;13.04.2005;west;high;500;1590.52;374292;M;masters;married;06.02.2023;single vehicle collision;rear collision;Ambulance;Columbus;22;1;?;2;3;YES;53400;5340;5340;42720;Jeep;Wrangler;2003
+43;81004;17.09.2016;west;low;500;945.86;358438;F;masters;other;03.02.2023;theft;;Police;Riverwood;15;1;NO;1;3;NO;7680;1280;640;5760;Audi;A5;2015
+30;445512;11.01.2001;north;high;1000;1452.53;359556;M;associate;other;31.01.2023;single vehicle collision;side collision;Other;Springfield;19;1;YES;0;1;YES;74280;12380;12380;49520;Subaru;Forrestor;2013
+32;329928;20.09.2008;east;low;2000;767.02;343490;F;college;other;26.02.2023;single vehicle collision;rear collision;Fire;Columbus;0;1;?;1;0;NO;59800;5980;5980;47840;Ford;F150;2006
+28;326629;06.02.1999;east;high;1000;1001.26;362345;F;jd;other;23.01.2023;multi-vehicle collision;front collision;Ambulance;Hillsdale;21;2;YES;2;1;NO;85020;13080;13080;58860;Ford;Fusion;2017
+31;585409;26.05.2014;east;high;500;1491.61;342303;F;associate;other;31.01.2023;theft;;Police;Northbrook;7;1;NO;2;1;NO;8030;1460;730;5840;Mercedes;E400;2002
+34;91042;09.06.2010;north;high;500;1230.68;512954;F;phd;other;22.02.2023;multi-vehicle collision;side collision;Fire;Arlington;7;3;?;0;0;;45100;8200;4100;32800;Nissan;Pathfinder;2018
+39;132021;26.08.2001;west;high;1000;1387.7;379102;F;masters;other;24.02.2023;multi-vehicle collision;rear collision;Fire;Northbend;23;3;YES;1;3;NO;41580;3780;7560;30240;Chevrolet;Malibu;2022
+46;171242;11.10.2019;east;low;2000;1088.43;335486;M;college;married;05.01.2023;single vehicle collision;front collision;Ambulance;Columbus;17;1;NO;1;2;;51390;5710;5710;39970;Volkswagen;Jetta;2014
+36;273733;23.01.2000;north;high;1000;1150.51;515889;F;associate;unmarried;25.01.2023;parked car;;Police;Springfield;0;1;YES;2;3;;6160;560;1680;3920;Mercedes;E400;2021
+43;484765;31.03.2020;north;mid;1000;1265.51;354107;M;jd;married;09.02.2023;single vehicle collision;side collision;Fire;Hillsdale;0;1;NO;2;1;;50700;5070;5070;40560;Accura;RSX;2013
+44;563208;08.09.2008;north;high;500;1410.42;520705;M;high school;unmarried;01.02.2023;theft;;Police;Riverwood;6;1;NO;1;3;NO;5000;1000;500;3500;Jeep;Wrangler;2012
+28;487395;10.11.2006;east;mid;500;1073.52;345616;M;md;married;15.02.2023;single vehicle collision;side collision;Police;Northbend;6;1;NO;1;0;NO;73400;7340;7340;58720;Dodge;Neon;2003
+50;479862;25.01.2017;east;high;500;1214.35;513913;M;masters;married;14.01.2023;single vehicle collision;rear collision;Fire;Columbus;7;1;NO;2;0;;50000;5000;10000;35000;Chevrolet;Silverado;2015
+45;100275;07.03.2021;west;low;2000;1288.85;330800;F;high school;married;12.02.2023;multi-vehicle collision;side collision;Ambulance;Springfield;6;3;NO;2;0;YES;78870;7170;14340;57360;Subaru;Legacy;2020
+34;268698;06.08.2011;west;mid;1000;1191.56;364711;M;jd;other;24.01.2023;single vehicle collision;rear collision;Ambulance;Northbend;11;1;?;2;1;YES;58800;11760;5880;41160;Nissan;Pathfinder;2004
+53;379692;04.01.2015;east;mid;500;1076.76;515698;M;jd;other;03.01.2023;single vehicle collision;front collision;Police;Northbend;16;1;?;2;3;YES;66660;12120;6060;48480;Honda;Civic;2013
+44;431508;20.01.2016;east;high;1000;1651.43;360485;F;college;other;25.01.2023;single vehicle collision;rear collision;Ambulance;Springfield;3;1;YES;2;0;;54240;6780;6780;40680;Subaru;Impreza;2016
+45;432339;26.09.2018;north;mid;1000;1395.78;507857;M;jd;married;22.01.2023;multi-vehicle collision;front collision;Other;Arlington;0;3;YES;1;2;NO;84720;14120;14120;56480;Ford;Escape;2006
+44;287588;28.10.1997;west;low;1000;1224.6;360276;F;phd;unmarried;05.02.2023;theft;;None;Riverwood;3;1;NO;0;1;NO;6100;610;1220;4270;Ford;Fusion;2009
+62;321640;30.01.2019;west;high;2000;1355.03;341682;M;associate;married;26.02.2023;single vehicle collision;rear collision;Other;Arlington;2;1;?;0;1;YES;46980;5220;5220;36540;Audi;A5;2005
+37;232053;24.04.2000;north;mid;500;1088.76;508299;M;high school;unmarried;16.01.2023;multi-vehicle collision;rear collision;Police;Columbus;16;4;?;1;2;YES;53400;5340;5340;42720;Honda;Civic;2017
+47;433495;29.11.2020;east;low;1000;1011.72;352317;F;associate;other;03.01.2023;parked car;;None;Springfield;7;1;?;1;1;YES;5590;860;860;3870;Subaru;Impreza;2009
+32;207178;23.08.2021;west;high;1000;991.62;368735;M;high school;unmarried;12.01.2023;single vehicle collision;side collision;Other;Hillsdale;12;1;NO;0;3;YES;56300;5630;11260;39410;BMW;M5;2018
+41;199636;18.10.2000;east;high;2000;1101.69;375260;M;high school;unmarried;19.01.2023;multi-vehicle collision;side collision;Police;Northbend;20;3;?;2;2;NO;70400;6400;12800;51200;Toyota;Highlander;2018
+49;584059;14.12.2008;east;high;500;1432.62;360503;F;masters;married;23.02.2023;single vehicle collision;rear collision;Police;Riverwood;19;1;?;0;2;YES;71440;8930;8930;53580;Mercedes;ML350;2012
+31;162582;30.11.2006;north;low;1000;1336.51;331905;F;high school;other;25.02.2023;single vehicle collision;side collision;Police;Hillsdale;19;1;?;1;0;NO;60570;6730;6730;47110;Nissan;Maxima;2018
+33;79205;21.10.2017;east;low;1000;1332.26;379192;M;high school;other;24.01.2023;single vehicle collision;front collision;Other;Springfield;15;1;YES;2;0;YES;53100;10620;5310;37170;Mercedes;C300;2002
+50;314298;16.05.2004;west;low;2000;834.22;364198;M;masters;other;20.01.2023;multi-vehicle collision;side collision;Fire;Springfield;1;4;YES;1;2;NO;72840;12140;6070;54630;Dodge;Neon;2017
+39;377806;03.08.2017;east;high;1000;1487.35;508303;F;jd;married;24.01.2023;theft;;None;Springfield;15;1;YES;2;2;YES;8060;1240;1240;5580;Saab;95;2011
+38;322913;04.07.2013;east;mid;2000;1216.67;377341;F;masters;married;01.03.2023;multi-vehicle collision;front collision;Police;Arlington;23;3;YES;2;2;;68760;11460;5730;51570;Saab;95;2005
+32;161030;31.03.2022;north;low;2000;1480.64;520326;F;md;other;23.01.2023;parked car;;Police;Northbrook;5;1;YES;1;2;;100;10;20;70;Audi;A3;2009
+29;535450;08.04.2017;east;low;2000;1305.79;506910;F;md;married;29.01.2023;single vehicle collision;rear collision;Police;Columbus;10;1;YES;1;2;NO;54360;4530;9060;40770;Mercedes;E400;2002
+34;249669;17.08.2007;north;mid;1000;1331.46;341684;M;phd;married;13.01.2023;multi-vehicle collision;front collision;Police;Springfield;0;3;?;0;0;;78650;21450;7150;50050;Nissan;Pathfinder;2019
+43;350770;19.10.1998;west;high;500;1185.12;513404;F;associate;unmarried;02.02.2023;theft;;Police;Northbrook;9;1;NO;0;1;;3840;640;640;2560;Chevrolet;Tahoe;2021
+43;578179;19.03.1999;west;mid;500;1121.95;509866;M;phd;other;23.01.2023;multi-vehicle collision;side collision;Fire;Columbus;12;3;NO;0;0;YES;36960;6720;3360;26880;Chevrolet;Tahoe;2014
+47;346106;05.11.2012;north;mid;2000;1154.08;331072;M;high school;married;23.02.2023;single vehicle collision;side collision;Other;Columbus;5;1;YES;0;3;;61490;5590;11180;44720;Dodge;RAM;2016
+43;123232;05.07.2017;north;low;2000;1329.8;369621;F;masters;other;18.02.2023;single vehicle collision;rear collision;Police;Northbend;12;1;?;1;2;NO;66950;10300;10300;46350;Chevrolet;Malibu;2022
+30;295984;29.03.2005;north;high;500;1410.87;503228;M;phd;married;10.01.2023;single vehicle collision;side collision;Other;Riverwood;22;1;YES;2;3;NO;67320;11220;11220;44880;Volkswagen;Jetta;2003
+39;466219;10.01.2014;west;mid;1000;839.06;331170;F;jd;unmarried;26.02.2023;parked car;;Police;Arlington;9;1;?;2;1;;3440;430;430;2580;Subaru;Legacy;2009
+41;137968;07.08.1997;west;mid;2000;1413.85;508085;F;phd;unmarried;10.01.2023;single vehicle collision;front collision;Police;Arlington;5;1;?;1;2;NO;63400;6340;6340;50720;Chevrolet;Tahoe;2021
+44;463043;03.03.2012;west;low;1000;1154.3;506217;F;college;married;15.02.2023;multi-vehicle collision;side collision;Fire;Northbrook;20;3;YES;0;3;;49400;9880;4940;34580;Jeep;Wrangler;2017
+41;228434;28.02.2006;east;mid;2000;1105.7;368170;M;phd;other;23.01.2023;single vehicle collision;side collision;Other;Columbus;23;1;NO;1;3;NO;62640;10440;10440;41760;Mercedes;C300;2016
+41;238443;15.01.2020;west;high;500;1220.86;332749;M;high school;other;30.01.2023;multi-vehicle collision;rear collision;Other;Columbus;12;3;?;2;0;NO;81070;14740;14740;51590;BMW;X5;2008
+38;300039;02.12.2016;east;mid;500;1731.67;341393;M;high school;married;09.01.2023;multi-vehicle collision;side collision;Fire;Hillsdale;13;3;NO;2;1;YES;66780;7420;14840;44520;Mercedes;ML350;2003
+43;358275;18.07.2014;north;high;500;982.13;372692;F;jd;unmarried;10.02.2023;multi-vehicle collision;side collision;Fire;Columbus;14;2;?;2;2;;74700;7470;14940;52290;Nissan;Maxima;2014
+61;157157;19.06.2006;west;low;1000;1230.9;341935;F;high school;unmarried;07.01.2023;single vehicle collision;rear collision;Other;Springfield;3;1;YES;2;0;YES;70500;7050;14100;49350;Subaru;Forrestor;2014
+35;80169;08.03.1999;west;high;1000;1344.38;368476;M;masters;other;03.01.2023;single vehicle collision;front collision;Ambulance;Arlington;11;1;NO;0;2;;58200;5820;5820;46560;BMW;X5;2020
+60;573282;15.02.2013;north;low;1000;1176.72;346576;M;md;other;20.02.2023;single vehicle collision;side collision;Ambulance;Springfield;23;1;YES;1;2;YES;90860;12980;19470;58410;Volkswagen;Jetta;2011
+24;160338;16.03.2013;north;high;1000;1068.74;362074;F;high school;unmarried;20.02.2023;multi-vehicle collision;front collision;Fire;Arlington;0;3;?;0;1;NO;61600;6160;12320;43120;Honda;CRV;2010
+28;600601;17.02.2022;west;high;1000;1738.68;342110;F;college;married;20.01.2023;single vehicle collision;rear collision;Police;Northbend;3;1;?;0;1;;33480;3720;3720;26040;Dodge;Neon;2018
+33;218379;30.11.2001;east;high;2000;1019.25;518386;F;masters;married;19.01.2023;multi-vehicle collision;side collision;Ambulance;Northbend;1;3;NO;2;3;;79090;14380;14380;50330;Dodge;RAM;2021
+31;392451;11.12.2001;north;high;1000;1352.61;356570;M;masters;married;02.01.2023;multi-vehicle collision;front collision;Ambulance;Arlington;6;3;?;0;3;YES;64800;6480;12960;45360;Subaru;Forrestor;2007
+60;357361;03.02.2014;east;high;500;1062.6;362772;M;associate;other;13.02.2023;single vehicle collision;front collision;Ambulance;Arlington;23;1;NO;2;1;;62880;5240;10480;47160;Mercedes;E400;2014
+48;175864;23.12.2012;east;low;500;1696.62;344346;M;jd;unmarried;10.02.2023;multi-vehicle collision;rear collision;Fire;Hillsdale;18;3;NO;2;1;;51840;8640;8640;34560;Volkswagen;Jetta;2008
+44;347316;18.02.2007;west;mid;500;1609.94;360144;M;high school;married;02.01.2023;single vehicle collision;front collision;Police;Riverwood;4;1;?;1;2;YES;32800;3280;3280;26240;BMW;3 Series;2019
+53;477651;03.03.1998;west;low;2000;1394.54;348690;F;associate;unmarried;29.01.2023;single vehicle collision;front collision;Fire;Hillsdale;16;1;YES;2;1;;47430;5270;5270;36890;Toyota;Camry;2007
+32;265179;20.11.2013;east;high;2000;1255.11;516309;F;high school;unmarried;11.01.2023;single vehicle collision;front collision;Other;Northbrook;23;1;NO;1;3;NO;61270;5570;11140;44560;Subaru;Legacy;2006
+29;182883;11.09.2013;west;low;1000;1521.28;510447;M;masters;other;21.02.2023;multi-vehicle collision;front collision;Fire;Northbend;10;3;?;1;2;YES;94560;7880;15760;70920;Jeep;Grand Cherokee;2002
+56;438442;28.10.2009;west;mid;500;1040.67;516735;M;high school;other;20.01.2023;multi-vehicle collision;front collision;Police;Springfield;19;3;NO;0;2;NO;68040;15120;7560;45360;Subaru;Forrestor;2004
+57;576553;02.05.2002;east;low;500;1214.67;336490;M;masters;other;31.01.2023;single vehicle collision;front collision;Police;Hillsdale;20;1;?;0;2;NO;78000;6500;13000;58500;Subaru;Forrestor;2007
