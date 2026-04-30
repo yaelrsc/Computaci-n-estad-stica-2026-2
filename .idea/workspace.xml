@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Documentos/Estadística_Bayesiana_MCMC.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/gibbs_sampling.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/mcmc.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/metropolis_hastings.ipynb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/riceImage.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +144,7 @@
       <workItem from="1777224300252" duration="4149000" />
       <workItem from="1777236608635" duration="13667000" />
       <workItem from="1777430209824" duration="10498000" />
-      <workItem from="1777504803084" duration="6216000" />
+      <workItem from="1777504803084" duration="7324000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
