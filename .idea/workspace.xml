@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stochastic Optimization/EM.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/EM.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2/MCMC/GLM/data",
+    "last_opened_file_path": "C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2/Stochastic Optimization/data",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -77,6 +78,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\Stochastic Optimization\data" />
       <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\MCMC\GLM\data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -144,7 +146,12 @@
       <workItem from="1777224300252" duration="4149000" />
       <workItem from="1777236608635" duration="13667000" />
       <workItem from="1777430209824" duration="10498000" />
-      <workItem from="1777504803084" duration="7324000" />
+      <workItem from="1777504803084" duration="7615000" />
+      <workItem from="1777609435858" duration="5276000" />
+      <workItem from="1777667020883" duration="4302000" />
+      <workItem from="1777689710351" duration="4566000" />
+      <workItem from="1777773877044" duration="1397000" />
+      <workItem from="1777953116943" duration="6068000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -187,8 +194,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MCMC/GLM/bayesian_glm/mcmc_glm.py</url>
-          <line>800</line>
+          <line>1060</line>
           <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MCMC/GLM/bayesian_glm/mcmc_glm.py</url>
+          <line>288</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MCMC/GLM/bayesian_glm/mcmc_glm.py</url>
+          <line>419</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MCMC/GLM/bayesian_glm/mcmc_glm.py</url>
+          <line>733</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
