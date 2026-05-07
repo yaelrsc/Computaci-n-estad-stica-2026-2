@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/FIFA_players_overall.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +153,7 @@
       <workItem from="1777773877044" duration="1397000" />
       <workItem from="1777953116943" duration="6825000" />
       <workItem from="1778039673053" duration="8975000" />
-      <workItem from="1778101451657" duration="8685000" />
+      <workItem from="1778101451657" duration="11197000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
