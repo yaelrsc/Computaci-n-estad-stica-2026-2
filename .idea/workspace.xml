@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Stochastic Optimization/SGD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/SGD.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -153,7 +155,15 @@
       <workItem from="1777773877044" duration="1397000" />
       <workItem from="1777953116943" duration="6825000" />
       <workItem from="1778039673053" duration="8975000" />
-      <workItem from="1778101451657" duration="11197000" />
+      <workItem from="1778101451657" duration="11623000" />
+      <workItem from="1778125781685" duration="805000" />
+      <workItem from="1778207595755" duration="17633000" />
+      <workItem from="1778269056846" duration="7417000" />
+      <workItem from="1778283327080" duration="8425000" />
+      <workItem from="1778356802936" duration="217000" />
+      <workItem from="1778357525496" duration="19729000" />
+      <workItem from="1778443804499" duration="11536000" />
+      <workItem from="1778470860600" duration="8563000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
@@ -188,6 +198,11 @@
           <url>file://$PROJECT_DIR$/../mcmc_glm.ipynb</url>
           <line>55</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="jupyter-line">
+          <url>file://$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb</url>
+          <line>1</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Monte Carlo/monte_carlo_variance_reduction.py</url>
