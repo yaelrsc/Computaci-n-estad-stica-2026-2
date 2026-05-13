@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/MCMC/GLM/glm_numpyro.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stochastic Optimization/SGD.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/SGD.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Stochastic Optimization/SVI.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Bayesian_Neural_Network.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Bayesian_Neural_Network.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Simulated_annealing_hyperparameter_tuning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Simulated_annealing_EA_hyperparameter_tuning.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +162,11 @@
       <workItem from="1778356802936" duration="217000" />
       <workItem from="1778357525496" duration="19729000" />
       <workItem from="1778443804499" duration="11536000" />
-      <workItem from="1778470860600" duration="8563000" />
+      <workItem from="1778470860600" duration="9685000" />
+      <workItem from="1778534834938" duration="3221000" />
+      <workItem from="1778546076203" duration="5721000" />
+      <workItem from="1778639472087" duration="4996000" />
+      <workItem from="1778701020309" duration="3458000" />
     </task>
     <task id="LOCAL-00001" summary="cambios realizados">
       <option name="closed" value="true" />
