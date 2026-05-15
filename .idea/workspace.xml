@@ -6,6 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea2ce3b-2e24-4f28-aca1-dfb8542521bf" name="Changes" comment="cambios realizados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Bayesian_Neural_Network.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Bayesian_Neural_Network.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Beta_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Beta_regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Gamma_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Gamma_regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Linear_regression_and_priors.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Linear_regression_and_priors.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Logistic_Regression_or_Binary_Regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Logistic_Regression_or_Binary_Regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Multinomial_Regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Multinomial_Regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Poisson_Regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Poisson_Regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Robust_regression.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Robust_regression.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Proyectos/Simulated_annealing_EA_hyperparameter_tuning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/Simulated_annealing_EA_hyperparameter_tuning.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,27 +63,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2/Stochastic Optimization/data&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/Academica/Documents/Python Scripts/Computaci-n-estad-stica-2026-2/Stochastic Optimization/data",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Academica\Documents\Python Scripts\Computaci-n-estad-stica-2026-2\Stochastic Optimization\data" />
@@ -88,8 +101,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
       </set>
     </attachedChunks>
   </component>
