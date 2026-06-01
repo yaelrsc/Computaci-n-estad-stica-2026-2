@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6128570a-4cd9-44bb-baf8-918486725e1e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Proyectos/EM_for_Gaussian_Mixture_Models.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Proyectos/EM_for_Gaussian_Mixture_Models.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Bootstrap.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Bootstrap.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentos/Machine_Learnig_Supervisado.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/Documentos/Machine_Learnig_Supervisado.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +102,8 @@
       <workItem from="1779140715826" duration="4844000" />
       <workItem from="1779243656354" duration="4797000" />
       <workItem from="1779333122711" duration="9897000" />
-      <workItem from="1779419175044" duration="4937000" />
+      <workItem from="1779419175044" duration="6510000" />
+      <workItem from="1779502746887" duration="871000" />
     </task>
     <servers />
   </component>
